@@ -56,9 +56,9 @@ Réalisations :
 * Préparation des audits PCI-DSS et pentests.
 * Réduction des temps de mise à jour des cluster de Pare feux et passage des upgrades sans interruption.
 * Création d’indicateurs de bench, audit et optimisation des performance allant des aspects physiques des seveurs aux applicatifs tels que MySQL ou Apache.
-* Mise à niveau à l’aide de puppet de l’infrastucture tri site hébergeant les services Orange utilisateurs finaux afin de mettre à jour l’ensemble des composants, améliorer la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
+* Mise à niveau à l’aide de puppet de l’infrastucture tri site hébergeant les services Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
 * Refonte et automatisation de l’installation avec Ansible de l’infractucture des Serveurs Vocaux pour passer sur VOIP, en bi site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision. +
-  Passage de 2 jours pour l’installation d’un serveur à 12 serveurs installés en 2 jours.
+  Passage de 2 jours pour l’installation d’un serveur à 10 serveurs physiques installés en 2 jours.
 
 [#OAB.competences]
 Systèmes : Linux +
