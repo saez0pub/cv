@@ -93,3 +93,33 @@ h2 {
   font-style: italic;
   color: #646464;
 }
+
+
+.timeline-item {
+  border-left: 2px solid #325D72;
+  padding: 10px 2em 2em;
+  position: relative;
+}
+
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid #325D72;
+  background: white;
+}
+
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, #325D72 60%, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+     border-image: linear-gradient(to bottom, #325D72 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.radar{
+  text-align: center;
+}

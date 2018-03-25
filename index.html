@@ -739,6 +739,14 @@ h2 { color: #325D72; border-bottom: 1px solid #dddddd; }
 
 .competences { text-align: right !important; font-style: italic; color: #646464; }
 
+.timeline-item { border-left: 2px solid #325D72; padding: 10px 2em 2em; position: relative; }
+
+.timeline-item::after { width: 10px; height: 10px; display: block; top: 1em; position: absolute; left: -7px; border-radius: 10px; content: ''; border: 2px solid #325D72; background: white; }
+
+.timeline-item:last-child { -o-border-image: linear-gradient(to bottom, #325d72 60%, rgba(0, 0, 0, 0)) 1 100%; border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%; border-image: linear-gradient(to bottom, #325d72 60%, rgba(0, 0, 0, 0)) 1 100%; }
+
+.radar { text-align: center; }
+
 </style>
 </head>
 <body class="article">
@@ -750,6 +758,15 @@ h2 { color: #325D72; border-bottom: 1px solid #dddddd; }
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock radar">
+<div class="content">
+<img src="images/radar.svg" alt="radar">
+</div>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_a_propos">A Propos</h2>
 <div class="sectionbody">
@@ -779,7 +796,7 @@ Je travaille aujourd&#8217;hui essentiellement sur Linux, des logiciels Open Sou
 <div class="sect1">
 <h2 id="_experience">Experience</h2>
 <div class="sectionbody">
-<div class="sect2">
+<div class="sect2 timeline-item">
 <h3 id="_depuis_2013_orange_applications_for_business">Depuis 2013 - Orange Applications for Business</h3>
 <div class="sidebarblock">
 <div class="content">
@@ -865,7 +882,7 @@ Passage de 2 jours pour l’installation d’un serveur à 12 serveurs installé
 </li>
 </ul>
 </div>
-<div class="paragraph competences">
+<div id="OAB" class="paragraph competences">
 <p>Systèmes : Linux<br>
 BDD : MySQL/MariaDB, Elasticsearch<br>
 HA : HA-Proxy, Keepalived, Corosync<br>
@@ -877,7 +894,7 @@ Divers : Snort, Rsyslog, Logstash, Kibana, Grafana</p>
 </div>
 </div>
 </div>
-<div class="sect2">
+<div class="sect2 timeline-item">
 <h3 id="_2007_2013_cheops_technology_france">2007-2013 - Cheops Technology France</h3>
 <div class="sidebarblock">
 <div class="content">
@@ -932,7 +949,7 @@ Divers : Snort, Rsyslog, Logstash, Kibana, Grafana</p>
 <p>Mise en oeuvre PRA/PCA multi site (Load balancing, geoDNS, boot on SAN, Réplication BDD)</p>
 </li>
 <li>
-<p>Administration Réseau en envirronement cloud privé et mutualisé.</p>
+<p>Administration Réseau en environement cloud privé et mutualisé.</p>
 </li>
 <li>
 <p>Adaptation des outils à l’aide de PHP, MySQL et javascript, dont la création d’une interface de communication Nagios/GLPI.</p>
@@ -975,7 +992,7 @@ Divers : GLPI, OCS Inventory, mediawiki, Rsyslog, Logstash, Kibana</p>
 </div>
 </div>
 </div>
-<div class="sect2">
+<div class="sect2 timeline-item">
 <h3 id="_2004_2007_arexia_sas">2004 - 2007 - Arexia SAS</h3>
 <div class="sidebarblock">
 <div class="content">
@@ -1061,8 +1078,10 @@ Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j&
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-25 11:26:33 CEST
+Last updated 2018-03-25 22:13:24 CEST
 </div>
 </div>
+<script src="vendors/highcharts.com/highcharts.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
