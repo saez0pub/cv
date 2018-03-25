@@ -49,10 +49,20 @@ Réalisations :
 * Passage d’une architecture mono site à un multi site actif-actif pour le paiment CB orange.fr : +
 les mise à jour des application et systèmes se font maintenant en heure de bureau.
 * Préparation des audits PCI-DSS et pentests.
+* Réduction des temps de mise à jour des cluster de Pare feux et passage des upgrades sans interruption.
 * Création d’indicateurs de bench, audit et optimisation des performance allant des aspects physiques des seveurs aux applicatifs tels que MySQL ou Apache.
 * Mise à niveau à l’aide de puppet de l’infrastucture tri site hébergeant les service Orange utilisateurs finaux afin de mettre à jour l’ensemble des composants, améliorer la gestion du tri site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
 * Refonte et automatisation de l’instalation avec Ansible de l’infractucture des Serveur Vocaux pour passer sur VOIP, en bi site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision. +
    Passage de 2 jours pour l’installation d’un serveur à 12 serveurs installés en 2 jours.
+
+[.competences]
+Systèmes : Linux +
+BDD : MySQL/MariaDB, Elasticsearch +
+HA : HA-Proxy, Keepalived, Corosync +
+Virtualisation : RHVM/Ovirt, libvirt, docker, vagrant +
+Automatisation/Intégration continue : Ansible, Puppet, Gitlab-CI, Ansible AWX +
+Réseau : Pare feux Cisco ASA, Juniper, Stormhield et Switchs Cisco, H3C et Procurve +
+Divers : Snort, Rsyslog, Logstash, Kibana, Grafana
 ****
 
 === 2007-2013 - Cheops Technology France
@@ -85,6 +95,17 @@ Réalisations :
 ** Rédaction des procédures d'exploitation, d'incidents et des documents d'architecture.
 ** Contrôle des liens entre les alarmes de supervision et procédures d'incident.
 * Contruction d'un système de gestion des logs ELK intégrant plus de 2000 messages par secondes.
+
+[.competences]
+Systèmes : Linux, HP-UX +
+BDD : Oracle, MySQL, Elasticsearch +
+HA : Citrix Netscaler, Redhat cluster suite +
+ERP : SAP ECC6/ECC5/47/46/40B, SAP BW 7.0 +
+Supervision : Nagios, Thruck, Cacti, PNP4Nagios, Icinga, Gearmand, SNMP +
+Virtualisation : VMware Vsphere, HyperV +
+Réseau : Pare feux Fortinet, NetAsq, Cisco PIX et Switchs H3C et Procurve. HP IMC +
+Sauvegarde : Dataprotector, Symantec Backup Exec, TINA. +
+Divers : GLPI, OCS Inventory, mediawiki, Rsyslog, Logstash, Kibana
 ****
 
 === 2004 - 2007 - Arexia SAS
@@ -96,8 +117,13 @@ En charge de l'administration SAP, Oracle et Unix :
 * Gestion des remontées de bug logiciel.
 * Mise en place et gestion des stratégies de sauvegarde.
 * Gestion, intervention et résultion des incidents matériels et logiciels.
-* Dévelopement de programmes réduisant les temps.
+* Dévelopement de programmes réduisant les temps des taches quotidiennes.
 
+[.competences]
+Systèmes : HP-UX, Linux, FreeBSD +
+BDD : Oracle, MySQL +
+ERP : SAP 47/46/40B, SAP BW 7.0 +
+Sauvegarde : Dataprotector
 ****
 
 == Sur mon temps personel
