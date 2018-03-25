@@ -6,7 +6,7 @@
 :Revision:  2017
 :docinfo:
 
-[.radar]
+[#radar]
 image::images/radar.svg[]
 
 == A Propos
