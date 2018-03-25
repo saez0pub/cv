@@ -885,7 +885,7 @@ Passage de 2 jours pour l’installation d’un serveur à 12 serveurs installé
 <div id="OAB" class="paragraph competences">
 <p>Systèmes : Linux<br>
 BDD : MySQL/MariaDB, Elasticsearch<br>
-HA : HA-Proxy, Keepalived, Corosync<br>
+HA/Web : HA-Proxy, Keepalived, Corosync, Apache, Tomcat<br>
 Virtualisation : RHVM/Ovirt, libvirt, docker, vagrant<br>
 Automatisation/Intégration continue : Ansible, Puppet, Gitlab-CI, Ansible AWX<br>
 Réseau : Pare feux Cisco ASA, Juniper, Stormhield et Switchs Cisco, H3C et Procurve<br>
@@ -978,12 +978,12 @@ Divers : Snort, Rsyslog, Logstash, Kibana, Grafana</p>
 </li>
 </ul>
 </div>
-<div class="paragraph competences">
+<div id="CHEOPS" class="paragraph competences">
 <p>Systèmes : Linux, HP-UX<br>
 BDD : Oracle, MySQL, Elasticsearch<br>
-HA : Citrix Netscaler, Redhat cluster suite<br>
+HA/Web : Citrix Netscaler, Redhat cluster suite, Apache<br>
 ERP : SAP ECC6/ECC5/47/46/40B, SAP BW 7.0<br>
-Supervision : Nagios, Thruck, Cacti, PNP4Nagios, Icinga, Gearmand, SNMP<br>
+Supervision : Nagios, Thruk, Cacti, PNP4Nagios, Icinga, Gearmand, SNMP<br>
 Virtualisation : VMware Vsphere, HyperV<br>
 Réseau : Pare feux Fortinet, NetAsq, Cisco PIX et Switchs H3C et Procurve. HP IMC<br>
 Sauvegarde : Dataprotector, Symantec Backup Exec, TINA.<br>
@@ -1016,7 +1016,7 @@ Divers : GLPI, OCS Inventory, mediawiki, Rsyslog, Logstash, Kibana</p>
 </li>
 </ul>
 </div>
-<div class="paragraph competences">
+<div id="AREXIA" class="paragraph competences">
 <p>Systèmes : HP-UX, Linux, FreeBSD<br>
 BDD : Oracle, MySQL<br>
 ERP : SAP 47/46/40B, SAP BW 7.0<br>
@@ -1033,8 +1033,8 @@ Sauvegarde : Dataprotector</p>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>La base de mes scripts ansible pour installer des serveurs sécurisés a été faite hors de mon temps de travail : <a href="https://github.com/pihomecloud/pihomecloud">Github</a><br>
-Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j&#8217;utilise dans mon travail a été repensé pour un travail collaboratif.</p>
+<p>La base de mes scripts ansible pour installer des serveurs sécurisés a été faite hors de mon temps de travail est disponible sur <a href="https://github.com/pihomecloud/pihomecloud">Github</a><br>
+Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j&#8217;utilise dans mon travail a été amélioré et repensé pour un travail collaboratif.</p>
 </div>
 <div class="paragraph">
 <p>Je maintiens des paquets archlinux soit sur <a href="https://aur.archlinux.org/packages/?K=saez0pub&amp;SeB=m">l&#8217;AUR</a> soit sur github : <a href="https://github.com/saez0pub?tab=repositories">Nominatif</a> ou <a href="https://github.com/pihomecloud?tab=repositories">Anonyme</a></p>
@@ -1078,10 +1078,13 @@ Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j&
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-25 22:13:24 CEST
+Last updated 2018-03-25 23:41:40 CEST
 </div>
 </div>
+<script src="vendors/jquery.com/jquery-3.1.1.min.js"></script>
 <script src="vendors/highcharts.com/highcharts.js"></script>
+<script src="vendors/highcharts.com/highcharts-more.js"></script>
+<script src="index-radar.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

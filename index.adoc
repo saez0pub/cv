@@ -63,7 +63,7 @@ Réalisations :
 [#OAB.competences]
 Systèmes : Linux +
 BDD : MySQL/MariaDB, Elasticsearch +
-HA : HA-Proxy, Keepalived, Corosync +
+HA/Web : HA-Proxy, Keepalived, Corosync, Apache, Tomcat +
 Virtualisation : RHVM/Ovirt, libvirt, docker, vagrant +
 Automatisation/Intégration continue : Ansible, Puppet, Gitlab-CI, Ansible AWX +
 Réseau : Pare feux Cisco ASA, Juniper, Stormhield et Switchs Cisco, H3C et Procurve +
@@ -102,12 +102,12 @@ Réalisations :
 ** Contrôle des liens entre les alarmes de supervision et procédures d'incidents.
 * Contruction d'un système de gestion des logs ELK intégrant plus de 2000 messages par secondes.
 
-[.competences]
+[#CHEOPS.competences]
 Systèmes : Linux, HP-UX +
 BDD : Oracle, MySQL, Elasticsearch +
-HA : Citrix Netscaler, Redhat cluster suite +
+HA/Web : Citrix Netscaler, Redhat cluster suite, Apache +
 ERP : SAP ECC6/ECC5/47/46/40B, SAP BW 7.0 +
-Supervision : Nagios, Thruck, Cacti, PNP4Nagios, Icinga, Gearmand, SNMP +
+Supervision : Nagios, Thruk, Cacti, PNP4Nagios, Icinga, Gearmand, SNMP +
 Virtualisation : VMware Vsphere, HyperV +
 Réseau : Pare feux Fortinet, NetAsq, Cisco PIX et Switchs H3C et Procurve. HP IMC +
 Sauvegarde : Dataprotector, Symantec Backup Exec, TINA. +
@@ -126,7 +126,7 @@ En charge de l'administration SAP, Oracle et Unix :
 * Gestion, intervention et résolution des incidents matériels et logiciels.
 * Dévelopement de programmes réduisant les temps des taches quotidiennes.
 
-[.competences]
+[#AREXIA.competences]
 Systèmes : HP-UX, Linux, FreeBSD +
 BDD : Oracle, MySQL +
 ERP : SAP 47/46/40B, SAP BW 7.0 +
@@ -136,8 +136,8 @@ Sauvegarde : Dataprotector
 == Sur mon temps personel
 
 ****
-La base de mes scripts ansible pour installer des serveurs sécurisés a été faite hors de mon temps de travail : https://github.com/pihomecloud/pihomecloud[Github] +
-Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j'utilise dans mon travail a été repensé pour un travail collaboratif.
+La base de mes scripts ansible pour installer des serveurs sécurisés a été faite hors de mon temps de travail est disponible sur https://github.com/pihomecloud/pihomecloud[Github] +
+Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j'utilise dans mon travail a été amélioré et repensé pour un travail collaboratif.
 
 Je maintiens des paquets archlinux soit sur https://aur.archlinux.org/packages/?K=saez0pub&SeB=m[l'AUR] soit sur github : https://github.com/saez0pub?tab=repositories[Nominatif] ou https://github.com/pihomecloud?tab=repositories[Anonyme]
 
