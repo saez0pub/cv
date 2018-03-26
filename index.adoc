@@ -73,7 +73,7 @@ Divers : Snort, Rsyslog, Logstash, Kibana, Grafana
 [.timeline-item]
 === 2007-2013 - Cheops Technology France
 
-.*Responsable supervision*
+.*Responsable supervision, support N3*
 ****
 
 
