@@ -12,7 +12,7 @@ image::images/radar.svg[]
 == A Propos
 
 ****
-Ayant beaucoup pratiqué l’autoformation durant mes 14 années d’experience et l’écoute des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je me suis constitué une base de connaissance au fil des ans. +
+Ayant beaucoup pratiqué l’autoformation durant mes 14 années d’expérience et l’écoute des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je me suis constitué une base de connaissance au fil des ans. +
 Ceci m’a permis de faire reconnaître mes compétences et de pouvoir mettre en avant mon expertise dans la gestion d’incidents et la vision technique.
 
 J’ai commencé à travailler sur les environnements Unix en tant qu’administrateur SAP en 2004 pour devenir aujourd’hui administrateur système et réseaux avec un fort apport en matière de sécurité.
@@ -20,12 +20,12 @@ Je travaille aujourd'hui essentiellement sur Linux, des logiciels Open Source ai
 
 Autonome, je sais aller chercher l’information où elle est précise et faire preuve de réactivité afin de m’adapter aux situations complexes autant techniques qu’humaines.
 
-J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité,  j’ai pu ne jamais mettre en retard ou bloquer la livraision d’applications. Aujourd’hui je travaille en accord avec les développeurs et ceux ci me consultent sur les contraintes techniques.
+J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité,  j’ai pu ne jamais mettre en retard ou bloquer la livraison d’applications. Aujourd’hui je travaille en accord avec les développeurs et ceux ci me consultent sur les contraintes techniques.
 
-J'ai pour projet de passer la cetification OSCP.
+J'ai pour projet de passer la certification OSCP.
 ****
 
-== Experience
+== Expérience
 
 [.timeline-item]
 === Depuis 2013 - Orange Applications for Business
@@ -45,19 +45,19 @@ Administrateur sur près de 200 machines et 70 équipements réseaux :
 Réalisations :
 
 * Interventions sur des portails à forte affluence, impliquant des opérations HNO, des études et solutions de diminution des arrêts de services.
-* Mise à l’actualité de plateformes viellissantes, implémentant une meilleure sécurité et une meilleure disponibilité.
+* Mise à l’actualité de plateformes vieillissantes, implémentant une meilleure sécurité et une meilleure disponibilité.
 * Que ce soit dans un projet de modernisation ou un départ à zéro, j’ai une autonomie complète.
-* Developement par les tests de rôles Ansible et mise en oeuvre d'une intégration continue des rôles Ansible.
+* Développement par les tests de rôles Ansible et mise en œuvre d'une intégration continue des rôles Ansible.
 * Utilisation de lynis pour effectuer un scoring CIS.
-* Mise en oeuvre d’un système de livraison continu compatible PCI-DSS via Gitlab-CI, Ansible et AWX.
-* Mise en œuvre d’un cloud privé à a base de RHVM (KVM+QEMU sous libvirt) allant du choix du matériel réseau et serveurs à son installation, en passant par la sécurisation de l’infrastucture et l’automatisation du provisionning sous Ansible.
-* Passage d’une architecture mono site à un multi site actif-actif pour le paiment CB orange.fr : +
+* Mise en œuvre d’un système de livraison continu compatible PCI-DSS via Gitlab-CI, Ansible et AWX.
+* Mise en œuvre d’un cloud privé à a base de RHVM (KVM+QEMU sous libvirt) allant du choix du matériel réseau et serveurs à son installation, en passant par la sécurisation de l’infrastructure et l’automatisation du provisionning sous Ansible.
+* Passage d’une architecture mono site à un multi site actif-actif pour le paiement CB orange.fr : +
   les mises à jour des applications et systèmes se font maintenant en heure de bureau.
 * Préparation des audits PCI-DSS et pentests.
 * Réduction des temps de mise à jour des cluster de Pare feux et passage des upgrades sans interruption.
-* Création d’indicateurs de bench, audit et optimisation des performance allant des aspects physiques des seveurs aux applicatifs tels que MySQL ou Apache.
-* Mise à niveau à l’aide de puppet de l’infrastucture tri site hébergeant les services Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
-* Refonte et automatisation de l’installation avec Ansible de l’infractucture des Serveurs Vocaux pour passer sur VOIP, en bi site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision. +
+* Création d’indicateurs de bench, audit et optimisation des performance allant des aspects physiques des serveurs aux applicatifs tels que MySQL ou Apache.
+* Mise à niveau à l’aide de puppet de l’infrastructure tri site hébergeant les services Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
+* Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision. +
   Passage de 2 jours pour l’installation d’un serveur à 10 serveurs physiques installés en 2 jours.
 
 [#OAB.competences]
@@ -90,17 +90,17 @@ Responsable de la supervision de plus de 2000 équipements et support N3 :
 Réalisations :
 
 * Nous avons monté un service infogérance partant de zéro pour des clients allant du géant de la cosmétique à des cliniques en passant par des sites de e-commerce à forte affluence.
-* Certification Hebergeur de données de santé.
-* Mise en place d’une plateforme redondante et multisite de supervision sous Nagios.
-* Mise en oeuvre PRA/PCA multi site (Load balancing, geoDNS, boot on SAN, Réplication BDD)
-* Administration Réseau en environement cloud privé et mutualisé.
+* Certification Hébergeur de données de santé.
+* Mise en place d’une plateforme redondante et multi-site de supervision sous Nagios.
+* Mise en œuvre PRA/PCA multi-site (Load balancing, geoDNS, boot on SAN, Réplication BDD)
+* Administration Réseau en environnement cloud privé et mutualisé.
 * Adaptation des outils à l’aide de PHP, MySQL et javascript, dont la création d’une interface de communication Nagios/GLPI.
 * Développement des processus métiers et application de la méthodologie ITIL :
-** Mise en oeuvre d'une CMDB et d'un outil de gestion des SLA et incidents à base de GLPI et OCS inventory
-** Mise en oeuvre d'un outil de documentation sous mediawiki et conception des templates de pages.
+** Mise en œuvre d'une CMDB et d'un outil de gestion des SLA et incidents à base de GLPI et OCS inventory
+** Mise en œuvre d'un outil de documentation sous mediawiki et conception des templates de pages.
 ** Rédaction des procédures d'exploitation, d'incidents et des documents d'architecture.
 ** Contrôle des liens entre les alarmes de supervision et procédures d'incidents.
-* Contruction d'un système de gestion des logs ELK intégrant plus de 2000 messages par secondes.
+* Construction d'un système de gestion des logs ELK intégrant plus de 2000 messages par secondes.
 
 [#CHEOPS.competences]
 Systèmes : Linux, HP-UX +
@@ -124,7 +124,7 @@ En charge de l'administration SAP, Oracle et Unix :
 * Gestion des remontées de bug logiciel SAP.
 * Mise en place et gestion des stratégies de sauvegarde.
 * Gestion, intervention et résolution des incidents matériels et logiciels.
-* Dévelopement de programmes réduisant les temps des taches quotidiennes.
+* Développement de programmes réduisant les temps des taches quotidiennes.
 
 [#AREXIA.competences]
 Systèmes : HP-UX, Linux, FreeBSD +
@@ -133,7 +133,7 @@ ERP : SAP 47/46/40B, SAP BW 7.0 +
 Sauvegarde : Dataprotector
 ****
 
-== Sur mon temps personel
+== Sur mon temps personnel
 
 ****
 La base de mes scripts ansible pour installer des serveurs sécurisés a été faite hors de mon temps de travail est disponible sur https://github.com/pihomecloud/pihomecloud[Github] +
