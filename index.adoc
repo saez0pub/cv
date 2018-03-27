@@ -136,8 +136,7 @@ Sauvegarde : Dataprotector
 == Sur mon temps personnel
 
 ****
-La base de mes scripts ansible pour installer des serveurs sécurisés a été faite hors de mon temps de travail est disponible sur https://github.com/pihomecloud/pihomecloud[Github] +
-Cette publication est un partage de ce que je fais chez moi, bien sur, ce que j'utilise dans mon travail a été amélioré et repensé pour un travail collaboratif.
+Mon expérience de sécurisation de serveur était à l'origine un besoin personnel car je pratique l'auto hébergement, j'ai donc pu en faire profiter mon équipe en me basant dessus : https://github.com/pihomecloud/pihomecloud[Github]
 
 Je maintiens des paquets archlinux soit sur https://aur.archlinux.org/packages/?K=saez0pub&SeB=m[l'AUR] soit sur github : https://github.com/saez0pub?tab=repositories[Nominatif] ou https://github.com/pihomecloud?tab=repositories[Anonyme]
 
