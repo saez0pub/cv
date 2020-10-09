@@ -1,15 +1,24 @@
 "use strict";
 
-{{ $site_data_with_target_language := index .Site.Data .Site.Language.Lang -}}
-{{- $homepage_data := $site_data_with_target_language.homepage -}}
-{{- with $homepage_data.radar -}}
-{{- $seriesName := slice -}}
-{{- $seriesValue := slice -}}
-{{- range $i, $v := . -}}
-{{- $seriesName = $seriesName | append $v.name -}}
-{{- $seriesValue = $seriesValue | append $v.value -}}
-{{- end -}}
+{{- $seriesNames := dict -}}
+{{- $seriesValues := dict -}}
+{{ range $lang, $site_data := .Site.Data }}
+  {{- $homepage_data := $site_data.homepage -}}
+  {{- $seriesName := slice -}}
+  {{- $seriesValue := slice }}
+  {{ range $i, $v := $homepage_data.radar -}}
+    {{- $seriesName = $seriesName | append $v.name -}}
+    {{- $seriesValue = $seriesValue | append $v.value -}}
+  {{- end -}}
+  {{- $seriesNames = merge $seriesNames (dict $lang $seriesName) -}}
+  {{- $seriesValues = merge $seriesValues (dict $lang $seriesValue) -}}
+{{- end }}
+const seriesNames={{ $seriesNames | jsonify }};
+const seriesValues={{ $seriesValues | jsonify }};
 
+{{- $site_data_with_target_language := index .Site.Data .Site.Language.Lang -}}
+{{-  $homepage_data := $site_data_with_target_language.homepage -}}
+{{- with $homepage_data.radar }}
 Highcharts.chart('radar', {
   chart: {
     polar: true,
@@ -23,7 +32,7 @@ Highcharts.chart('radar', {
       size: '80%'
   },
   xAxis: {
-      categories: {{ $seriesName | jsonify }},
+      categories: seriesNames[curentLanguage],
       tickmarkPlacement: 'on',
       lineWidth: 0
   },
@@ -45,7 +54,7 @@ Highcharts.chart('radar', {
   },
   series: [{
       name: '{{ with site.Params.author }}{{ . }}{{ end }}',
-      data:  {{ $seriesValue | jsonify }},
+      data:  seriesValues[curentLanguage],
       pointPlacement: 'on'
   }],
   responsive: {
@@ -68,23 +77,36 @@ Highcharts.chart('radar', {
 });
 {{ end }}
 
-
-{{- with $homepage_data.experience -}}
-let container;
-let categories;
-let data;
-{{- range . -}}
-{{- if .graph -}}
-{{- $series := slice -}}
-{{- range .graph -}}
-  {{- $data := slice -}}
-  {{- range .data -}}
-    {{- $data = $data | append (dict "name" .subcategory "value" .value) -}}
-  {{- end -}}
-  {{- $serie := dict "name" .category "data" $data -}}
-  {{- $series = $series | append $serie -}}
+let series;
+{{- $datas := dict -}}
+{{- $categories := slice -}}
+{{ range $lang, $site_data := .Site.Data }}
+  {{- $experience_data := $site_data.homepage.experience }}
+  {{- $series := slice -}}
+  {{- range $i, $v := $experience_data -}}
+    {{- $series := slice -}} 
+    {{- if $v.graph }}
+      {{ range $v.graph }}
+        {{- $data := slice }}
+        {{- range .data -}}
+          {{- $data = $data | append (dict "name" .subcategory "value" .value) -}}
+        {{- end -}}
+        {{- $serie := dict "name" .category "data" $data -}}
+        {{- $series = $series | append $serie -}}
+      {{ end }}
+    {{- end }}
+    {{- $categories = $categories | append (slice $series) -}}
+  {{- end }}
+  {{- $datas = merge $datas (dict $lang $categories) -}}
 {{- end }}
-container="graph{{ anchorize .when }}";
+
+series={{ $datas | jsonify }};
+
+{{ with $homepage_data.experience }}
+let container;
+
+{{- range $i, $v := . -}}
+container="graph{{ $i }}";
 Highcharts.chart(container, {
   chart: {
     type: 'packedbubble'
@@ -119,8 +141,7 @@ Highcharts.chart(container, {
       }
     }
   },
-  series: {{ $series | jsonify }}
+  series: series[curentLanguage][{{ $i }}]
 });
-{{- end -}}
 {{- end -}}
 {{- end -}}

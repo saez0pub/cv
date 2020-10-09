@@ -30,18 +30,18 @@
         <div class="col-12 border-bottom mt-2 mb-2">
           <h2 class="text-primary font-weight-bold">{{ site.Params.experience | markdownify }}</h2>
         </div>
-        {{ range . }}
+        {{ range $i, $v :=. }}
         <div class="col-12 timeline-item">
-          <div class="row" id="{{ anchorize .when }}">
+          <div class="row" id="{{ anchorize $v.when }}">
             <div class="col-12">
-              <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ .where | markdownify -}}</h3>
+              <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
               <div class="col-12 border rounded p-0">
-                <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- .title -}}</div>
+                <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
                 <div class="p-4">
                   <div>
-                    {{- .summary.title | markdownify -}}
+                    {{- $v.summary.title | markdownify -}}
                     <ul>
-                      {{- range .summary.forces -}}
+                      {{- range $v.summary.forces -}}
                       <li>
                         {{- .name | markdownify -}}
                         {{- with .points -}}
@@ -57,16 +57,16 @@
                       {{- end -}}
                     </ul>
                   </div>
-                  {{- if .achievements -}}
+                  {{- if $v.achievements -}}
                   {{- site.Params.achievements | markdownify -}}
-                  {{- .achievements | markdownify -}}
+                  {{- $v.achievements | markdownify -}}
                   {{- end -}}
                 </div>
               </div>
             </div>
           </div>
-          {{- if .graph -}}
-          <div class="col-12" id="graph{{ anchorize .when }}"></div>
+          {{- if $v.graph -}}
+          <div class="col-12" id="graph{{ anchorize $i }}"></div>
           {{- end -}}
         </div>
         {{- end -}}

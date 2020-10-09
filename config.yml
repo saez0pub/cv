@@ -1,10 +1,9 @@
 baseURL: "https://cv.prat.xyz/"
-DefaultContentLanguage: fr
+DefaultContentLanguage: 'fr'
 languages:
   fr:
     title: "Jean Prat - Expert système et réseau"
     params:
-      linkedin: https://linkedin.com/fr/whoever
       experience: "Expérience"
       achievements: "Réalisations"
       graphtitle: "Compétences"
@@ -14,7 +13,18 @@ languages:
         Title: "Expert système et réseau"
       footerNotes: "Vous êtes arrivés ici et je vous remercie, si vous souhaitez savoir comment a été fait ce site, apporter un retour, ou une modification, [voici le code](https://github.com/saez0pub/cv)"
     weight: 1
-languageCode: "fr-fr"
+  en:
+    title: "Jean Prat - System and network expert"
+    params:
+      experience: "Professional experience"
+      achievements: "Achievements"
+      graphtitle: "Skills"
+      formations: "Educations"
+      languages: "Langues"
+      navbar:
+        Title: "System and network expert"
+      footerNotes: "Thank you for reading, If you want to know how is made this site, give a feedback, or ask for modification, [here is the source code](https://github.com/saez0pub/cv)"
+      weight: 2
 theme: "cv"
 
 params:

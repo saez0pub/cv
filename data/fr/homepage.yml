@@ -21,7 +21,7 @@ about:
     
     Autonome, je sais aller chercher l’information où elle est précise et faire preuve de réactivité afin de m’adapter aux situations complexes autant techniques qu’humaines ou organisationnelles.
     
-    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité, j'ai permis à l'équipe de respecter ses délais de livraison. Je travaille de concert avec les développeurs sur tout le cycle de vie de l'application.
+    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité, j’ai permis à l’équipe de respecter ses délais de livraison. Je travaille de concert avec les développeurs sur tout le cycle de vie de l’application.
     
     J’ai pour projet de passer la certification OSCP.
 
@@ -34,7 +34,7 @@ experience:
       forces:
         - name: 'Infrastructure as code :'
           points:
-            - "Création, développement et maintien d'infrastructures immuables."
+            - "Création, développement et maintien d’infrastructures immuables."
             - 'Automatisation des tests, builds et déploiements.'
             - 'Découpages des "bounded contexts" systèmes pour refléter l’applicatif.'
         - name: "La recherche de la performance et la sécurité :"
@@ -42,30 +42,28 @@ experience:
             - 'Une infrastructure centralisée de log de plateformes distribuées.'
             - 'Suivi des performances applicatives et systèmes.'
             - 'Le suivi des événements de sécurité.'
-        - name: "La recherche de la performance et la sécurité au sein d’une équipe expérimentée :"
+        - name: "Au sein d’une équipe expérimentée :"
           points:
             - 'Équipe fortement XP, de confiance et accordant l’autonomie nécessaire pour être efficace.'
             - 'Sujets cryptomonnaie passionnants.'
             - 'Revue de code, pair programming, mob programming.'
             - 'Participation à des événements comme le forum ouvert d’Agile Open ou Newcrafts.'
-            - 'Menace de piratage réelle, c’est des millions qui transitent chaque jour sur notre infrastructure.'
+            - 'Menace de piratage réelle, c’est des millions de dolars qui transitent chaque jour sur notre infrastructure.'
     achievements: |
-      * Garantie d'état fonctionnel de la plateforme via une infrastructure immuable :
-        * Planification et exécution des mises à jour simple.
+      * Garantie d’état fonctionnel de la plateforme via une infrastructure immuable :
+        * Planification et exécution des mises à jour sont simples.
         * Système de réparation automatique.
-        * Duplication des environnements facilité.
-        * Limite des deltas des environnements à la configuration et l'emplacement.
+        * Duplication des environnements facilitée.
+        * Limite des deltas des environnements à la configuration et l’emplacement.
         * Suppression de la contrainte de connaître l’IP des équipements.
-      * Création d'un zero trust network avec consul connect.
+      * Création d’un zero trust network avec Consul Connect.
       * Infrastructure de log distribuée et centralisée (Stack Elastic).
-      * Suivi des performances systèmes via prometheus et centralisation via thanos.
-      * Infrastructure de suivi des applications et leurs performances avec jaeger tracing.
-      * Le suivi des événements de sécurité (auditbeat, wazuh, lynis).
-      * Création, suivi, analyse des reports du Bug bounty (yeswehack).
+      * Suivi des performances systèmes via Prometheus et centralisation via Thanos.
+      * Infrastructure de suivi des applications et leurs performances avec Jaeger Tracing.
+      * Le suivi des événements de sécurité (Auditbeat, Wazuh, Lynis).
+      * Création, suivi, analyse des reports du Bug bounty (Yeswehack).
       * Gestion du Gsuite et des différents projets clouds.
-      * Gestion, configuration, sécurisation du serveur gitlab.
-      * Utilisation de lynis, wazuh puis auditbeat pour l'audit de sécurité.
-      * Pas de SI interne aux locaux : ou que l'on soit physiquement, nous travaillons de façon identique.
+      * Gestion, configuration, sécurisation du serveur Gitlab.
     graph:
       - category: "Systèmes"
         data:
@@ -99,7 +97,7 @@ experience:
             value: 15
       - category: "Cloud abstrators"
         data:
-          - subcategory: "hashicorp Vault"
+          - subcategory: "Hashicorp Vault"
             value: 60
           - subcategory: "Consul"
             value: 150
@@ -123,7 +121,7 @@ experience:
             value: 60
           - subcategory: "Pagerduty"
             value: 60
-          - subcategory: "uptime.com"
+          - subcategory: "Uptime.com"
             value: 60
   - where: 'Orange Applications for Business'
     when: '2013-2018'
@@ -137,7 +135,7 @@ experience:
             - 'Système et réseau de la plateforme de paiement par CB de la boutique orange.fr et divers grands comptes.'
         - name: 'En charge de la sécurisation, du design et de l’administration des plateformes de paiement :'
           points:
-            - 'saisie IBAN et leur tokenisation des boutiques sosh.fr et orange.fr.'
+            - 'Saisie IBAN et leur tokenisation des boutiques sosh.fr et orange.fr.'
             - 'Serveurs de paiement CB via code court sur le réseau mobile SS7 Orange France.'
     achievements: |
       * Interventions sur des portails à forte affluence, impliquant des opérations HNO, des études et solutions de diminution des arrêts de services.
@@ -181,11 +179,11 @@ experience:
         data:
           - subcategory: "RHVM/Ovirt"
             value: 40
-          - subcategory: "libvirt"
+          - subcategory: "Libvirt"
             value: 5
-          - subcategory: "docker"
+          - subcategory: "Docker"
             value: 40
-          - subcategory: "vagrant"
+          - subcategory: "Vagrant"
             value: 15
       - category: "Automatisation"
         data:
@@ -374,7 +372,7 @@ experience:
         data:
           - subcategory: "Dataprotector"
             value: 90
-          - subcategory: "fbackup"
+          - subcategory: "Fbackup"
             value: 10
 
 
@@ -382,9 +380,9 @@ personally:
   title: 'Sur mon temps personnel'
   content: |
     * Mon expérience de sécurisation de serveur était à l’origine un besoin personnel, car je pratique l’auto hébergement, j’ai donc pu en faire profiter mon équipe en me basant dessus : [Github](https://github.com/pihomecloud/pihomecloud)
-    * Passionné de domotique, j'ai une solution ne nécessitant pas de cloud provider.
-    * Je maintiens des paquets archlinux soit sur [l'AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) soit sur github : [Nominatif](https://github.com/saez0pub?tab=repositories) ou [Anonyme](https://github.com/pihomecloud?tab=repositories)
-    * J'ai testé des technologies comme l'OCR, la vision par ordinateur ou bien la reconnaissance vocale. Ces  essais sont disponibles sur mon [github](https://github.com/saez0pub?tab=repositories).
+    * Passionné de domotique, j’ai une solution ne nécessitant pas de cloud provider.
+    * Je maintiens des paquets archlinux soit sur [l’AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) soit sur github : [Nominatif](https://github.com/saez0pub?tab=repositories) ou [Anonyme](https://github.com/pihomecloud?tab=repositories)
+    * J’ai testé des technologies comme l’OCR, la vision par ordinateur ou bien la reconnaissance vocale. Ces  essais sont disponibles sur mon [github](https://github.com/saez0pub?tab=repositories).
 
 formations:
   - '2016 – EC-Council Certified Ethical Hacker v8'

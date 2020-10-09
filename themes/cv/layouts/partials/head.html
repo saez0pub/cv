@@ -17,8 +17,11 @@
   
   {{ $styles := resources.Get "scss/styles.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" media="screen">
-  <link rel="stylesheet" href="css/custom.css" media="screen">
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" media="screen">
 
   <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
+  <script>
+    curentLanguage = "{{ .Site.Language.Lang }}";
+  </script>
 </head>

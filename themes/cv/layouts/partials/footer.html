@@ -34,7 +34,7 @@
 
 
 {{ range site.Params.plugins.js }}
-<script src="{{ .link | safeURL }}"></script>
+<script src="{{ .link | relURL }}"></script>
 {{ end }}
 
 {{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate "js/graph.js" . | fingerprint }}
