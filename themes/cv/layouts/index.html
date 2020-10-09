@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main>
-  {{ $data_with_language := index .Site.Data .Site.Language.Lang }}
-  {{ $data := $data_with_language.homepage }}
-  {{ with $data.about }}
+  {{ $site_data_with_target_language := index .Site.Data .Site.Language.Lang }}
+  {{ $homepage_data := $site_data_with_target_language.homepage }}
+  {{ with $homepage_data.about }}
   <section id="{{ anchorize .title }}">
-    {{ with $data.radar }}
+    {{ with $homepage_data.radar }}
     <div class="container">
       <div class="row">
         <div class="col" id="radar"></div>
@@ -23,7 +23,7 @@
     </div>
   </section>
   {{ end }}
-  {{ with $data.experience }}
+  {{ with $homepage_data.experience }}
   <section>
     <div class="container">
       <div class="row">
@@ -74,7 +74,7 @@
     </div>
   </section>
   {{- end -}}
-  {{ with $data.personally }}
+  {{ with $homepage_data.personally }}
   <section  id="{{ anchorize .title }}">
     <div class="container">
       <div class="row">
@@ -90,7 +90,7 @@
     </div>
   </section>
   {{- end -}}
-  {{ with $data.formations }}
+  {{ with $homepage_data.formations }}
   <section id="{{ anchorize site.Params.formations }}">
     <div class="container">
       <div class="row">
@@ -110,7 +110,7 @@
     </div>
   </section>
   {{- end -}}
-  {{ with $data.languages }}
+  {{ with $homepage_data.languages }}
   <section id="{{ anchorize site.Params.languages }}">
     <div class="container">
       <div class="row">

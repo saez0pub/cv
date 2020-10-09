@@ -1,3 +1,5 @@
+{{ $site_data_with_target_language := index .Site.Data .Site.Language.Lang }}
+{{ $homepage_data := $site_data_with_target_language.homepage }}
 <header class="{{if site.Params.navbar.stickytop}}sticky-top {{end}}bg-light">
   <nav id="navbar" class="navbar navbar-expand-lg">
     <div>
@@ -13,12 +15,12 @@
         <li class="nav-item">
           <a class="nav-link" href="#home">{{ with site.Params.Home }} {{ . }} {{ end }}</a>
         </li>
-        {{ with site.Data.homepage.about }}
+        {{ with $homepage_data.about }}
         <li class="nav-item">
           <a class="nav-link" href="#{{ anchorize .title }}">{{ .title }}</a>
         </li>
         {{ end }}
-        {{ with site.Data.homepage.experience }}
+        {{ with $homepage_data.experience }}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ site.Params.experience }}</a>
           <div class="dropdown-menu">
@@ -27,17 +29,17 @@
             {{ end }}
           </div>
         {{ end }}
-        {{ with site.Data.homepage.personally }}
+        {{ with $homepage_data.personally }}
         <li class="nav-item">
           <a class="nav-link" href="#{{ anchorize .title }}">{{ .title }}</a>
         </li>
         {{ end }}
-        {{ with site.Data.homepage.formations }}
+        {{ with $homepage_data.formations }}
         <li class="nav-item">
           <a class="nav-link" href="#{{ anchorize site.Params.formations }}">{{ site.Params.formations }}</a>
         </li>
         {{ end }}
-        {{ with site.Data.homepage.languages }}
+        {{ with $homepage_data.languages }}
         <li class="nav-item">
           <a class="nav-link" href="#{{ anchorize site.Params.languages }}">{{ site.Params.languages }}</a>
         </li>

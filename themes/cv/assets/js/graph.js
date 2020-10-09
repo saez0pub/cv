@@ -1,12 +1,14 @@
 "use strict";
 
-{{ with site.Data.homepage.radar }}
-{{ $seriesName := slice }}
-{{ $seriesValue := slice }}
-{{ range $i, $v := . }}
-{{ $seriesName = $seriesName | append $v.name }}
-{{ $seriesValue = $seriesValue | append $v.value }}
-{{end}}
+{{ $site_data_with_target_language := index .Site.Data .Site.Language.Lang -}}
+{{- $homepage_data := $site_data_with_target_language.homepage -}}
+{{- with $homepage_data.radar -}}
+{{- $seriesName := slice -}}
+{{- $seriesValue := slice -}}
+{{- range $i, $v := . -}}
+{{- $seriesName = $seriesName | append $v.name -}}
+{{- $seriesValue = $seriesValue | append $v.value -}}
+{{- end -}}
 
 Highcharts.chart('radar', {
   chart: {
@@ -67,21 +69,21 @@ Highcharts.chart('radar', {
 {{ end }}
 
 
-{{ with site.Data.homepage.experience }}
+{{- with $homepage_data.experience -}}
 let container;
 let categories;
 let data;
-{{ range . }}
+{{- range . -}}
 {{- if .graph -}}
-{{ $series := slice }}
-{{ range .graph }}
-  {{ $data := slice }}
-  {{ range .data }}
-    {{ $data = $data | append (dict "name" .subcategory "value" .value) }}
-  {{end}}
-  {{ $serie := dict "name" .category "data" $data }}
-  {{ $series = $series | append $serie }}
-{{end}}
+{{- $series := slice -}}
+{{- range .graph -}}
+  {{- $data := slice -}}
+  {{- range .data -}}
+    {{- $data = $data | append (dict "name" .subcategory "value" .value) -}}
+  {{- end -}}
+  {{- $serie := dict "name" .category "data" $data -}}
+  {{- $series = $series | append $serie -}}
+{{- end }}
 container="graph{{ anchorize .when }}";
 Highcharts.chart(container, {
   chart: {
@@ -119,6 +121,6 @@ Highcharts.chart(container, {
   },
   series: {{ $series | jsonify }}
 });
-{{ end }}
-{{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}
+{{- end -}}

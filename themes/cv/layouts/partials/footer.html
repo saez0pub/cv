@@ -37,5 +37,5 @@
 <script src="{{ .link | safeURL }}"></script>
 {{ end }}
 
-{{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate "js/graph.js" . | fingerprint  }}
-<script type="text/javascript" src="{{ $built.Permalink | relURL }}" {{ printf "integrity=%q" $built.Data.Integrity | safeHTMLAttr }} ></script>
+{{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate "js/graph.js" . | fingerprint }}
+<script type="text/javascript" src="{{ $built.Permalink | relURL }}" {{ printf "integrity=%q" $built.Data.Integrity  | safeHTMLAttr }} ></script>
