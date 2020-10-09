@@ -12,7 +12,7 @@ params:
   graphtitle: "Compétences"
   formations: "Formations"
   languages: "Langues"
-  footerNotes: "Vous etes arrivés ici et je vous remercie, si vous souhaitez savoir comment a été fait ce site, apporter un retour, ou une modification, [voici le code](https://github.com/saez0pub/saez0pub.github.io)"
+  footerNotes: "Vous etes arrivés ici et je vous remercie, si vous souhaitez savoir comment a été fait ce site, apporter un retour, ou une modification, [voici le code](https://github.com/saez0pub/cv)"
   navbar:
     Title: "Expert système et réseau"
     stickytop: true
