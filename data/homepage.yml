@@ -11,7 +11,7 @@ radar:
     value: 10
 
 about:
-  title: 'A Propos'
+  title: 'À Propos'
   content: |
     Ayant beaucoup pratiqué l’autoformation durant mes 16 années d’expérience et l’écoute des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je me suis constitué une base de connaissance au fil des ans.
     
@@ -21,7 +21,7 @@ about:
     
     Autonome, je sais aller chercher l’information où elle est précise et faire preuve de réactivité afin de m’adapter aux situations complexes autant techniques qu’humaines ou organisationnelles.
     
-    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité, j’ai pu ne jamais mettre en retard ou bloquer la livraison d’applications. Aujourd’hui je travaille avec les développeurs à l'interieur du cycle de vie de l'application.
+    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité, j’ai pu ne jamais mettre en retard ou bloquer la livraison d’applications. Aujourd’hui je travaille avec les développeurs à l'intérieur du cycle de vie de l'application.
     
     J’ai pour projet de passer la certification OSCP.
 
@@ -30,40 +30,40 @@ experience:
     when: 'Depuis 2018'
     title: 'Infrastructure and security engineer'
     summary:
-      title: 'Création et maintient de platformes dédiées à la finance dans le cloud'
+      title: 'Création et maintient de plateformes dédiées à la finance dans le cloud'
       forces:
         - name: 'Infrastructure as code'
           points:
-            - "Création, développement et maintient d'infrastrutures immuables"
+            - "Création, développement et maintient d'infrastructures immuables"
             - 'Automatisation des tests, builds et déploiements'
             - 'Découpages des "bounded contextes" systèmes pour refléter l’applicatif'
         - name: "La recherche de la performance et la sécurité"
           points:
-            - 'Une infrastructure centralisée de log de platformes distribuées'
+            - 'Une infrastructure centralisée de log de plateformes distribuées'
             - 'Suivi des performances applicatives et systèmes'
-            - 'Le suivi des évenements de sécurité'
+            - 'Le suivi des événements de sécurité'
         - name: "La recherche de la performance et la sécurité au sein d’une équipe expérimentée"
           points:
-            - 'Equipe fortement XP, de confiance et accordant l’autonomie necessaire pour être efficace'
-            - 'Sujets cryptomonnaie passionants'
+            - 'Équipe fortement XP, de confiance et accordant l’autonomie nécessaire pour être efficace'
+            - 'Sujets cryptomonnaie passionnants'
             - 'Revue de code, pair programming, mob programming'
-            - 'Participation à des évenements comme le forum ouvert d’agile open ou newcrafts'
-            - 'Menace de piratage réelle, c’est des millions qui transitent chaque jours sur notre infrastruture'
+            - 'Participation à des événements comme le forum ouvert d’agile open ou newcrafts'
+            - 'Menace de piratage réelle, c’est des millions qui transitent chaque jour sur notre infrastructure'
     achievements: |
-      * Garantie d'état fonctionnel de la platforme via une infrastructure immuable :
+      * Garantie d'état fonctionnel de la plateforme via une infrastructure immuable :
         * Planification et exécution des mises à jour simple.
         * Système de réparation automatique.
-        * Duplication des environments facilité.
-        * Limite des deltas des envirronements à la configuration et l'emplacement.
-        * Suppression de la condition de connaitre l'ip des equipements.
+        * Duplication des environnements facilité.
+        * Limite des deltas des environnements à la configuration et l'emplacement.
+        * Suppression de la contrainte de connaître l’IP des équipements.
       * Création d'un zero trust network avec consul connect
       * Infrastructure de log distribuée et centralisée (Stack Elastic).
       * Suivi des performances systèmes via prometheus et centralisation via thanos.
-      * Infrasructure de suivi des applications et leurs performances avec jaeger tracing.
-      * Le suivi des évenements de sécurité (auditbeat, wazuh, lynis)
+      * Infrastructure de suivi des applications et leurs performances avec jaeger tracing.
+      * Le suivi des événements de sécurité (auditbeat, wazuh, lynis)
       * Création, suivi, analyse des reports du Bug bounty (yeswehack)
       * Gestion du Gsuite et des différents projets clouds
-      * Gestion, configuration, securisation du serveur gitlab
+      * Gestion, configuration, sécurisation du serveur gitlab
       * Utilisation de lynis, wazuh puis auditbeat pour l'audit de sécurité
       * Pas de SI interne aux locaux : ou que l'on soit physiquement, nous travaillons de façon identique.
     graph:
@@ -146,14 +146,14 @@ experience:
       * Développement par les tests de rôles Ansible et mise en œuvre d’une intégration continue des rôles Ansible.
       * Utilisation de lynis pour effectuer un scoring CIS.
       * Mise en œuvre d’un système de livraison continu compatible PCI-DSS via Gitlab-CI, Ansible et AWX.
-      * Mise en œuvre d’un cloud privé à base de RHVM (KVM+QEMU sous libvirt) allant du choix du matériel réseau et serveurs à son installation, en passant par la sécurisation de l’infrastructure jusqu’a l’automatisation du provisionning sous Ansible.
-      * Passage d’une architecture mono site à un multi site actif-actif pour le paiement CB orange.fr : les mises à jour des applications et systèmes se font maintenant en heure de bureau.
+      * Mise en œuvre d’un cloud privé à base de RHVM (KVM+QEMU sous libvirt) allant du choix du matériel réseau et serveurs à son installation, en passant par la sécurisation de l’infrastructure jusqu’à l’automatisation du provisionning sous Ansible.
+      * Passage d’une architecture mono site à un multi site actif-actif pour le paiement CB orange.fr : les mises à jour des applications et systèmes se font maintenant en heure de bureau.
       * Préparation des audits PCI-DSS et pentests.
-      * Réduction des temps de mise à jour des cluster de Pare feux et passage des upgrades sans interruption.
-      * Création d’indicateurs de bench, audit et optimisation des performance allant des aspects physiques des serveurs aux applicatifs tels que MySQL ou Apache.
+      * Réduction des temps de mise à jour des clusters de Pare-feux et passage des upgrades sans interruption.
+      * Création d’indicateurs de bench, audit et optimisation des performances allant des aspects physiques des serveurs aux applicatifs tels que MySQL ou Apache.
       * Mise à niveau à l’aide de puppet de l’infrastructure tri site hébergeant les services vocaux Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
-      * Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision.
-      * Passage de 2 jours pour l’installation d’un serveur à 10 serveurs physiques installés en 2 jours.
+      * Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi-site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision.
+      * Passage de 2 jours pour l’installation d’un serveur à 10 serveurs physiques installés en 2 jours.
     graph:
       - category: "Systèmes"
         data:
@@ -240,14 +240,14 @@ experience:
             - 'Réseau'
         - name: 'Incident Manager de 2008 à 2010'
     achievements: |
-      * Nous avons monté un service infogérance partant de zéro pour des clients allant du géant de la cosmétique à des cliniques en passant par des sites de e-commerce à forte affluence.
+      * Nous avons monté un service infogérance partant de zéro pour des clients allant du géant de la cosmétique à des cliniques en passant par des sites d’e-commerce à forte affluence.
       * Certification Hébergeur de données de santé.
       * Mise en place d’une plateforme redondante et multi-site de supervision sous Nagios.
       * Mise en œuvre PRA/PCA multi-site (Load balancing, geoDNS, boot on SAN, Réplication BDD).
       * Administration Réseau en environnement cloud privé et mutualisé.
-      * Adaptation des outils à l’aide de PHP, MySQL et javascript, dont la création d’une interface de communication Nagios/GLPI.
-      * Développement des processus métiers et application de la méthodologie ITIL :
-        * Mise en œuvre d’une CMDB et d’un outil de gestion des SLA et incidents à base de GLPI et OCS inventor.
+      * Adaptation des outils à l’aide de PHP, MySQL et JavaScript, dont la création d’une interface de communication Nagios/GLPI.
+      * Développement des processus métiers et application de la méthodologie ITIL :
+        * Mise en œuvre d’une CMDB et d’un outil de gestion des SLA et incidents à base de GLPI et OCS inventory.
         * Mise en œuvre d’un outil de documentation sous mediawiki et conception des templates de pages.
         * Rédaction des procédures d’exploitation, d’incidents et des documents d’architecture.
         * Contrôle des liens entre les alarmes de supervision et procédures d’incidents.
@@ -381,15 +381,16 @@ experience:
 personally:
   title: 'Sur mon temps personnel'
   content: |
-    * Mon expérience de sécurisation de serveur était à l’origine un besoin personnel car je pratique l’auto hébergement, j’ai donc pu en faire profiter mon équipe en me basant dessus : Github
-    * Je maintiens des paquets archlinux soit sur l’AUR soit sur github : Nominatif ou Anonyme
-    * J’ai testé des technologies comme l’OCR, la vision par ordinateur ou bien la reconnaissance vocale. Ces essais sont disponible sur mon github.
+    * Mon expérience de sécurisation de serveur était à l’origine un besoin personnel, car je pratique l’auto hébergement, j’ai donc pu en faire profiter mon équipe en me basant dessus : [Github](https://github.com/pihomecloud/pihomecloud)
+    * Passionné de domotique, j'ai une solution ne nécessitant pas de cloud provider.
+    * Je maintiens des paquets archlinux soit sur [l'AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) soit sur github : [Nominatif](https://github.com/saez0pub?tab=repositories) ou [Anonyme](https://github.com/pihomecloud?tab=repositories)
+    * J'ai testé des technologies comme l'OCR, la vision par ordinateur ou bien la reconnaissance vocale. Ces  essais sont disponibles sur mon [github](https://github.com/saez0pub?tab=repositories).
 
 formations:
-  - '2016 - EC-Council Certified Ethical Hacker v8'
-  - '2013 - MySQL Tuning'
-  - '2004 - BTS Informatique de gestion, Pau (64)'
-  - '2002 - Baccalauréat S, Lesparre (33)'
+  - '2016 – EC-Council Certified Ethical Hacker v8'
+  - '2013 – MySQL Tuning'
+  - '2004 – BTS Informatique de gestion, Pau (64)'
+  - '2002 – Baccalauréat S, Lesparre (33)'
 
 languages:
   - 'Français'
