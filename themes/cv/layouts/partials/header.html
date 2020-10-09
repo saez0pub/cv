@@ -1,0 +1,52 @@
+<header class="{{if site.Params.navbar.stickytop}}sticky-top {{end}}bg-light">
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div>
+      <h1>{{ with site.Params.navbar.title }}{{ . }}{{ end }}</h1>
+      <span id="author">{{ with site.Params.author }}{{ . }}{{ end }}</span>
+      {{ with site.Params.email }}<span id="email"><a href="mailto:{{ . }}"><{{ . }}></a></span>{{ end }}
+    </div>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+      <i class="ti-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav nav-pills mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">{{ with site.Params.Home }} {{ . }} {{ end }}</a>
+        </li>
+        {{ with site.Data.homepage.about }}
+        <li class="nav-item">
+          <a class="nav-link" href="#{{ anchorize .title }}">{{ .title }}</a>
+        </li>
+        {{ end }}
+        {{ with site.Data.homepage.experience }}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ site.Params.experience }}</a>
+          <div class="dropdown-menu">
+            {{ range . }}
+            <a class="dropdown-item" href="#{{ anchorize .when }}">{{ .when }} - {{ .where }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ with site.Data.homepage.personally }}
+        <li class="nav-item">
+          <a class="nav-link" href="#{{ anchorize .title }}">{{ .title }}</a>
+        </li>
+        {{ end }}
+        {{ with site.Data.homepage.formations }}
+        <li class="nav-item">
+          <a class="nav-link" href="#{{ anchorize site.Params.formations }}">{{ site.Params.formations }}</a>
+        </li>
+        {{ end }}
+        {{ with site.Data.homepage.languages }}
+        <li class="nav-item">
+          <a class="nav-link" href="#{{ anchorize site.Params.languages }}">{{ site.Params.languages }}</a>
+        </li>
+        {{ end }}
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">{{ with site.Params.Contact }} {{ . }} {{ end }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

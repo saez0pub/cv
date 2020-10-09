@@ -1,0 +1,26 @@
+baseURL: "https://cv.prat.xyz/"
+languageCode: "fr-fr"
+title: "Jean Prat - Expert système et réseau"
+theme: "cv"
+
+params:
+  author: "Jean Prat"
+  email: "recrutement@prat.xyz"
+  mobile: "+33677131316"
+  experience: "Expérience"
+  achievements: "Réalisations"
+  graphtitle: "Compétences"
+  formations: "Formations"
+  languages: "Langues"
+  footerNotes: "Vous etes arrivés ici et je vous remercie, si vous souhaitez savoir comment a été fait ce site, apporter un retour, ou une modification, [voici le code](https://github.com/saez0pub/saez0pub.github.io)"
+  navbar:
+    Title: "Expert système et réseau"
+    stickytop: true
+  plugins:
+    css:
+      - link: "assets/css/themify-icons.css"
+    js:
+      - link: "assets/js/jquery-3.5.1.min.js"
+      - link: "assets/js/bootstrap.min.js"
+      - link: "assets/js/highcharts.js"
+      - link: "assets/js/highcharts-more.js"

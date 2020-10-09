@@ -1,0 +1,132 @@
+{{ define "main" }}
+<main>
+  {{ with site.Data.homepage.about }}
+  <section id="{{ anchorize .title }}">
+    {{ with site.Data.homepage.radar }}
+    <div class="container">
+      <div class="row">
+        <div class="col" id="radar"></div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="container">
+      <div class="row">
+        <div class="col-12 border-bottom mt-2 mb-2">
+          <h2 class="text-primary font-weight-bold">{{ .title | markdownify }}</h2>
+        </div>
+        <div class="col-12 border rounded p-4">
+          {{ .content | markdownify }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ with site.Data.homepage.experience }}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 border-bottom mt-2 mb-2">
+          <h2 class="text-primary font-weight-bold">{{ site.Params.experience | markdownify }}</h2>
+        </div>
+        {{ range . }}
+        <div class="col-12 timeline-item">
+          <div class="row" id="{{ anchorize .when }}">
+            <div class="col-12">
+              <h3 class="font-weight-bold">{{- .when | markdownify }} - {{ .where | markdownify -}}</h3>
+              <div class="col-12 border rounded p-0">
+                <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- .title -}}</div>
+                <div class="p-4">
+                  <div>
+                    {{- .summary.title | markdownify -}}
+                    <ul>
+                      {{- range .summary.forces -}}
+                      <li>
+                        {{- .name | markdownify -}}
+                        {{- with .points -}}
+                        <ul>
+                          {{- range . -}}
+                          <li>
+                            {{- . | markdownify -}}
+                          </li>
+                          {{- end -}}
+                        </ul>
+                        {{- end -}}
+                      </li>
+                      {{- end -}}
+                    </ul>
+                  </div>
+                  {{- if .achievements -}}
+                  {{- site.Params.achievements | markdownify -}}
+                  {{- .achievements | markdownify -}}
+                  {{- end -}}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{- if .graph -}}
+          <div class="col-12" id="graph{{ anchorize .when }}"></div>
+          {{- end -}}
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+  </section>
+  {{- end -}}
+  {{ with site.Data.homepage.personally }}
+  <section  id="{{ anchorize .title }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 border-bottom mt-2 mb-2">
+          <h2 class="text-primary font-weight-bold">{{ .title }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 border rounded p-4">
+          {{- .content | markdownify -}}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{- end -}}
+  {{ with site.Data.homepage.formations }}
+  <section id="{{ anchorize site.Params.formations }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 border-bottom mt-2 mb-2">
+          <h2 class="text-primary font-weight-bold">{{ site.Params.formations }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            {{- range . -}}
+            <li>{{- . | markdownify -}}</li>
+            {{- end -}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{- end -}}
+  {{ with site.Data.homepage.languages }}
+  <section id="{{ anchorize site.Params.languages }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 border-bottom mt-2 mb-2">
+          <h2 class="text-primary font-weight-bold">{{ site.Params.languages }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            {{- range . -}}
+            <li>{{- . | markdownify -}}</li>
+            {{- end -}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{- end -}}
+</main>
+{{ end }}
