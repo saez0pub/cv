@@ -36,7 +36,7 @@ experience:
           points:
             - "Création, développement et maintient d'infrastrutures immuables"
             - 'Automatisation des tests, builds et déploiements'
-            - 'Découpages des "bounded contextes" systèmes pour refléter l’aplicatif'
+            - 'Découpages des "bounded contextes" systèmes pour refléter l’applicatif'
         - name: "La recherche de la performance et la sécurité"
           points:
             - 'Une infrastructure centralisée de log de platformes distribuées'
@@ -46,7 +46,7 @@ experience:
           points:
             - 'Equipe fortement XP, de confiance et accordant l’autonomie necessaire pour être efficace'
             - 'Sujets cryptomonnaie passionants'
-            - 'Revue de code, pair programing, mob programing'
+            - 'Revue de code, pair programming, mob programming'
             - 'Participation à des évenements comme le forum ouvert d’agile open ou newcrafts'
             - 'Menace de piratage réelle, c’est des millions qui transitent chaque jours sur notre infrastruture'
     achievements: |
