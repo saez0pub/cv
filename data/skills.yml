@@ -37,6 +37,14 @@
           value: 150
         - subcategory: "Nomad"
           value: 90
+    - category: "Performance Monitoring"
+      data:
+        - subcategory: "Metricbeat"
+          value: 90
+        - subcategory: "Jaeger Tracing"
+          value: 60
+        - subcategory: "Prometheus"
+          value: 150
     - category: "Automation"
       data:
         - subcategory: "Terraform"
@@ -62,11 +70,15 @@
     - category: "Miscellaneous"
       data:
         - subcategory: "Gsuite"
-          value: 60
+          value: 40
         - subcategory: "Pagerduty"
-          value: 60
+          value: 40
         - subcategory: "uptime.com"
-          value: 60
+          value: 40
+        - subcategory: "Thanos"
+          value: 90
+        - subcategory: "Traefik"
+          value: 90
 - graph:
     - category: "Systems"
       data:

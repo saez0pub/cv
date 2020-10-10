@@ -8,6 +8,8 @@
   translation: "cloud abstrators"
 - id: "automation"
   translation: "Automatisation"
+- id: "performance monitoring"
+  translation: "Performance Monitoring"
 - id: "miscellaneous"
   translation: "Divers"
 - id: "ha/web"
