@@ -22,7 +22,7 @@
         {{ end }}
         {{ with $homepage_data.experience }}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ i18n "experiences" }}</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#experience" role="button" aria-haspopup="true" aria-expanded="false">{{ i18n "experiences" }}</a>
           <div class="dropdown-menu">
             {{ range . }}
             <a class="dropdown-item" href="#{{ anchorize .when }}">{{ .when }} - {{ .where }}</a>

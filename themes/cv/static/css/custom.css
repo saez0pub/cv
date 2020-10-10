@@ -1,3 +1,12 @@
+*[id]:before
+{
+  display: block;
+  content: " ";
+  margin-top: -250px;
+  height: 250px;
+  visibility: hidden;
+}
+
 .timeline-item {
   border-left: 2px solid #325D72;
   padding: 10px 2em 2em;
