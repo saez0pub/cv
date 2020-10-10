@@ -8,17 +8,16 @@
       <div class="col-6 mx-auto section-sm">
         <ul class="list-unstyled mb-5">
           <li class="mb-3">
-            <a class="text-dark text-decoration-none" href="tel:{{ site.Params.mobile }}">
-              <i class="ti-mobile mr-2"></i>{{ site.Params.mobile }}
+            <a class="text-decoration-none text-primary" href="tel:{{ site.Params.mobile }}">
+              <i class="ti-mobile mr-2 text-primary"></i>{{ site.Params.mobile }}
             </a>
           </li>
           <li class="mb-3">
-            <a class="text-dark text-decoration-none" href="mailto:{{ site.Params.email }}">
+            <a class="text-decoration-none text-primary" href="mailto:{{ site.Params.email }}">
               <i class="ti-email mr-2"></i> {{ site.Params.email }}
             </a>
           </li>
         </ul>
-        <!-- social icon -->
         <ul class="list-inline">
           {{ range site.Params.social }}
           <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary"></i></a></li>

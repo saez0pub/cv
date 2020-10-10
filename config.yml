@@ -25,6 +25,13 @@ params:
   mobile: "+33677131316"
   navbar:
     stickytop: true
+  social:
+    - icon: "ti-twitter-alt"
+      link: "https://twitter.com/JeanPrat"
+    - icon: "ti-linkedin"
+      link: "https://www.linkedin.com/in/jean-prat-9a6b8715b/"
+    - icon: "ti-github"
+      link: "https://github.com/saez0pub"
   plugins:
     css:
       - link: "assets/css/themify-icons.css"
