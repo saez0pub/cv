@@ -10,6 +10,11 @@
 main{
   padding: 2px;
 }
+
+.graph{
+  height: 400px;
+}
+
 .timeline-item {
   border-left: 2px solid #325D72;
   padding: 10px 2em 2em;

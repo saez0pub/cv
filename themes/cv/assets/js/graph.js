@@ -86,8 +86,7 @@ let container;
 container="graph{{ $i }}";
 Highcharts.chart(container, {
   chart: {
-    type: 'packedbubble',
-    height: '400px'
+    type: 'packedbubble'
   },
   title: {
     text: '{{ i18n "skills" }}'
@@ -109,12 +108,13 @@ Highcharts.chart(container, {
       },
       dataLabels: {
         enabled: true,
-        format: '{point.name}',
+        format: '<div class="text-center text-wrap">{point.name}</div>',
         style: {
           color: 'black',
           textOutline: 'none',
           fontWeight: 'normal'
-        }
+        },
+        useHTML: true
       }
     }
   },
