@@ -1,14 +1,28 @@
 {{ $site_data := index .Site.Data .Site.Language.Lang }}
 {{ $homepage_data := $site_data.homepage }}
+<div class="container bg-light d-none d-print-block">
+  <div class="row">
+    <div class="col-3">
+      <ul class="list-unstyled">
+        {{ with site.Params.email }}<li><a href="mailto:{{ . }}"><i class="ti-email text-primary"></i> {{ . }}</a></li>{{ end }}
+        <li><a href="tel:{{ site.Params.mobile }}"><i class="ti-mobile text-primary"></i>{{ site.Params.mobile }}</a></li>
+        <li><a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a></li>
+      </ul>
+    </div>
+    <div class="col test-center">
+      <h2>{{ with site.Params.MyTitle }}{{ . }}{{ end }}</h2>
+    </div>
+  </div>
+</div>
 <header class="{{if site.Params.navbar.stickytop}}sticky-top {{end}}bg-light">
   <nav id="navbar" class="navbar navbar-expand-lg">
     <div>
-      <h1>{{ with site.Params.MyTitle }}{{ . }}{{ end }}</h1>
+      <h2>{{ with site.Params.MyTitle }}{{ . }}{{ end }}</h2>
       <div class="row">
         <div class="col-3 text">{{ with site.Params.author }}{{ . }}{{ end }}</div>
         <div class="col-9">
           <ul class="list-inline">
-            {{ with site.Params.email }}<li class=""><a href="mailto:{{ . }}"><i class="ti-email text-primary"></i> {{ . }}</a></li>{{ end }}
+            {{ with site.Params.email }}<li><a href="mailto:{{ . }}"><i class="ti-email text-primary"></i> {{ . }}</a></li>{{ end }}
             <li class="list-inline-item"><a href="tel:{{ site.Params.mobile }}"><i class="ti-mobile text-primary"></i></a></li>
             {{ range site.Params.social }}
             <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary"></i></a></li>
@@ -54,30 +68,29 @@
           <a class="nav-link" href="#languages">{{ i18n "languages" }}</a>
         </li>
         {{ end }}
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="#footer">{{i18n "contact" }}</a>
         </li>
       </ul>
-      <ul>
-      <select id="select-language"  class="custom-select" onchange="location = this.value;">
-        {{ $siteLanguages := site.Languages}}
-        {{ $pageLang := .Page.Lang}}
-        {{ range .Page.AllTranslations }}
-        {{ $translation := .}}
-        {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-        {{ $selected := false }}
-        {{ if eq $pageLang .Lang}}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-        </option>
-        {{ else }}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </select>
-    </ul>
+      <div>
+        <select id="select-language"  class="custom-select" onchange="location = this.value;">
+          {{- $siteLanguages := site.Languages -}}
+          {{- $pageLang := .Page.Lang -}}
+          {{- range .Page.AllTranslations -}}
+            {{- $translation := . -}}
+            {{- range $siteLanguages -}}
+              {{- if eq $translation.Lang .Lang -}}
+                {{- $selected := false -}}
+                {{- if eq $pageLang .Lang -}}
+                  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+                {{- else -}}
+                  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+                {{- end -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        </select>
+      </div>
+    </div>
   </nav>
 </header>

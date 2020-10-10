@@ -90,3 +90,8 @@ $font-family-sans-serif: helvetica, arial, freesans, clean, sans-serif;
     background-color: $background
   }
 }
+
+@media print {
+  $font-size-base: 0.9rem;
+  @import "reboot";
+}

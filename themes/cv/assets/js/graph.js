@@ -87,17 +87,18 @@ container="graph{{ $i }}";
 Highcharts.chart(container, {
   chart: {
     type: 'packedbubble'
+    {{ if $v.height }},height: "{{ $v.height }}"{{ end }}
   },
   title: {
-    text: '{{ i18n "skills" }}'
+    text: '<div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{ i18n "skills" }}</div>'
   },
   tooltip: {
     useHTML: true,
-    pointFormat: '<b>{point.name}:</b>'
+    pointFormat: '<b>{point.name}</b>'
   },
   plotOptions: {
     packedbubble: {
-      minSize: '70%',
+      minSize: '45%',
       maxSize: '300%',
       zMin: 0,
       zMax: 1000,

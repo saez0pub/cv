@@ -17,7 +17,7 @@
         <div class="col-12 border-bottom mt-2 mb-2">
           <h2 class="text-primary font-weight-bold">{{ i18n "about_title" }}</h2>
         </div>
-        <div class="col-12 border rounded p-4">
+        <div class="col-12 border rounded p-2">
           {{ $homepage_data.about.content | markdownify }}
         </div>
       </div>
@@ -38,11 +38,11 @@
     <a id="{{ anchorize $v.when }}"></a>
     <div class="container timeline-item">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-6">
           <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
           <div class="col-12 border rounded p-0">
             <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
-            <div class="p-4">
+            <div class="p-2">
               <div>
                 {{- $v.summary.title | markdownify -}}
                 <ul>
@@ -63,21 +63,22 @@
                 </ul>
               </div>
               {{- if $v.achievements -}}
+              {{ i18n "achievements" }}
               {{- site.Params.achievements | markdownify -}}
               {{- $v.achievements | markdownify -}}
               {{- end -}}
             </div>
           </div>
         </div>
+        <div class="col-md-6 graph" id="graph{{ anchorize $i }}"></div>
       </div>
-      <div class="col-12 graph" id="graph{{ anchorize $i }}"></div>
     </div>
     {{- end -}}
   </section>
   {{- end -}}
   {{ with $homepage_data.personally }}
   <a id="personally"></a>
-  <section  id="personally">
+  <section>
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
@@ -85,7 +86,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 border rounded p-4">
+        <div class="col-12 border rounded p-2">
           {{- .content | markdownify -}}
         </div>
       </div>

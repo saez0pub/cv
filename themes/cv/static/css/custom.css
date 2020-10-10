@@ -1,23 +1,38 @@
-*[id]:before
-{
-  display: block;
-  content: " ";
-  margin-top: -250px;
-  height: 250px;
-  visibility: hidden;
+@media screen {
+  *[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -250px;
+    height: 250px;
+    visibility: hidden;
+  }
 }
 
-main{
+main {
   padding: 2px;
 }
 
-.graph{
-  height: 400px;
+#radar {
+  height: 300px;
 }
 
+@media print {
+  #radar .highcharts-container{
+    height: 150px;
+  }
+  .timeline-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  main {
+    padding: 0px;
+  }
+  ul, p {
+    margin-block-end: 0.2em;
+  }
+}
 .timeline-item {
   border-left: 2px solid #325D72;
-  padding: 10px 2em 2em;
   position: relative;
 }
 
