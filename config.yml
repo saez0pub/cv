@@ -2,12 +2,16 @@ baseURL: "https://cv.prat.xyz/"
 DefaultContentLanguage: 'fr'
 languages:
   fr:
+    languageName: "Fr"
+    languageCode: "fr-fr"
     title: "Jean Prat - Expert systèmes et réseaux"
     params:
       MyTitle: "Expert systèmes et réseaux"
       footerNotes: "Vous êtes arrivés ici et je vous remercie, si vous souhaitez savoir comment a été fait ce site, apporter un retour, ou une modification, [voici le code](https://github.com/saez0pub/cv)"
     weight: 1
   en:
+    languageName: "En"
+    languageCode: "en-us"
     title: "Jean Prat - System and network expert"
     params:
       MyTitle: "System and network expert"
