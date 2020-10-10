@@ -86,7 +86,8 @@ let container;
 container="graph{{ $i }}";
 Highcharts.chart(container, {
   chart: {
-    type: 'packedbubble'
+    type: 'packedbubble',
+    height: '400px'
   },
   title: {
     text: '{{ i18n "skills" }}'
@@ -97,15 +98,14 @@ Highcharts.chart(container, {
   },
   plotOptions: {
     packedbubble: {
-      minSize: '40px',
-      maxSize: '300px',
+      minSize: '70%',
+      maxSize: '300%',
       zMin: 0,
       zMax: 1000,
       Draggable: true,
       layoutAlgorithm: {
-        enableSimulation: false,
         splitSeries: false,
-        gravitationalConstant: 0.001
+        gravitationalConstant: 0.02,
       },
       dataLabels: {
         enabled: true,
