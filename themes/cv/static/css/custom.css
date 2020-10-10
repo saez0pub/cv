@@ -7,6 +7,9 @@
   visibility: hidden;
 }
 
+main{
+  padding: 2px;
+}
 .timeline-item {
   border-left: 2px solid #325D72;
   padding: 10px 2em 2em;
