@@ -1,9 +1,9 @@
-{{ $site_data_with_target_language := index .Site.Data .Site.Language.Lang }}
-{{ $homepage_data := $site_data_with_target_language.homepage }}
+{{ $site_data := index .Site.Data .Site.Language.Lang }}
+{{ $homepage_data := $site_data.homepage }}
 <header class="{{if site.Params.navbar.stickytop}}sticky-top {{end}}bg-light">
   <nav id="navbar" class="navbar navbar-expand-lg">
     <div>
-      <h1>{{ with site.Params.navbar.title }}{{ . }}{{ end }}</h1>
+      <h1>{{ with site.Params.MyTitle }}{{ . }}{{ end }}</h1>
       <span id="author">{{ with site.Params.author }}{{ . }}{{ end }}</span>
       {{ with site.Params.email }}<span id="email"><a href="mailto:{{ . }}"><{{ . }}></a></span>{{ end }}
     </div>
@@ -13,16 +13,16 @@
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav nav-pills mx-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#home">{{ with site.Params.Home }} {{ . }} {{ end }}</a>
+          <a class="nav-link" href="#">{{ i18n "home" }}</a>
         </li>
         {{ with $homepage_data.about }}
         <li class="nav-item">
-          <a class="nav-link" href="#{{ anchorize .title }}">{{ .title }}</a>
+          <a class="nav-link" href="#about">{{ i18n "about_title" }}</a>
         </li>
         {{ end }}
         {{ with $homepage_data.experience }}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ site.Params.experience }}</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ i18n "experiences" }}</a>
           <div class="dropdown-menu">
             {{ range . }}
             <a class="dropdown-item" href="#{{ anchorize .when }}">{{ .when }} - {{ .where }}</a>
@@ -31,22 +31,22 @@
         {{ end }}
         {{ with $homepage_data.personally }}
         <li class="nav-item">
-          <a class="nav-link" href="#{{ anchorize .title }}">{{ .title }}</a>
+          <a class="nav-link" href="#personally">{{ i18n "personally" }}</a>
         </li>
         {{ end }}
         {{ with $homepage_data.formations }}
         <li class="nav-item">
-          <a class="nav-link" href="#{{ anchorize site.Params.formations }}">{{ site.Params.formations }}</a>
+          <a class="nav-link" href="#formations">{{ i18n "formations" }}</a>
         </li>
         {{ end }}
         {{ with $homepage_data.languages }}
         <li class="nav-item">
-          <a class="nav-link" href="#{{ anchorize site.Params.languages }}">{{ site.Params.languages }}</a>
+          <a class="nav-link" href="#languages">{{ i18n "languages" }}</a>
         </li>
         {{ end }}
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#footer">{{ with site.Params.Contact }} {{ . }} {{ end }}</a>
+          <a class="nav-link" href="#footer">{{i18n "contact" }}</a>
         </li>
       </ul>
     </div>

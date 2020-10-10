@@ -1,0 +1,10 @@
+- name: "autonomy"
+  value: 10
+- name: "effectiveness"
+  value: 10
+- name: "warmachine"
+  value: 10
+- name: "paranoïa"
+  value: 9
+- name: "conviviality"
+  value: 10

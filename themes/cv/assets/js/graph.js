@@ -1,24 +1,13 @@
 "use strict";
 
-{{- $seriesNames := dict -}}
-{{- $seriesValues := dict -}}
-{{ range $lang, $site_data := .Site.Data }}
-  {{- $homepage_data := $site_data.homepage -}}
-  {{- $seriesName := slice -}}
-  {{- $seriesValue := slice }}
-  {{ range $i, $v := $homepage_data.radar -}}
-    {{- $seriesName = $seriesName | append $v.name -}}
-    {{- $seriesValue = $seriesValue | append $v.value -}}
-  {{- end -}}
-  {{- $seriesNames = merge $seriesNames (dict $lang $seriesName) -}}
-  {{- $seriesValues = merge $seriesValues (dict $lang $seriesValue) -}}
-{{- end }}
-const seriesNames={{ $seriesNames | jsonify }};
-const seriesValues={{ $seriesValues | jsonify }};
-
-{{- $site_data_with_target_language := index .Site.Data .Site.Language.Lang -}}
-{{-  $homepage_data := $site_data_with_target_language.homepage -}}
-{{- with $homepage_data.radar }}
+{{- with .Site.Data.radar }}
+{{- $seriesName := slice -}}
+{{- $seriesValue := slice }}
+{{ range $i, $v := . -}}
+  {{ $name := i18n $v.name}}
+  {{- $seriesName = $seriesName | append $name -}}
+  {{- $seriesValue = $seriesValue | append $v.value -}}
+{{- end -}}
 Highcharts.chart('radar', {
   chart: {
     polar: true,
@@ -32,7 +21,7 @@ Highcharts.chart('radar', {
       size: '80%'
   },
   xAxis: {
-      categories: seriesNames[curentLanguage],
+      categories: {{ $seriesName | jsonify }},
       tickmarkPlacement: 'on',
       lineWidth: 0
   },
@@ -54,7 +43,7 @@ Highcharts.chart('radar', {
   },
   series: [{
       name: '{{ with site.Params.author }}{{ . }}{{ end }}',
-      data:  seriesValues[curentLanguage],
+      data:  {{ $seriesValue | jsonify }},
       pointPlacement: 'on'
   }],
   responsive: {
@@ -77,42 +66,30 @@ Highcharts.chart('radar', {
 });
 {{ end }}
 
-let series;
-{{- $datas := dict -}}
-{{- $categories := slice -}}
-{{ range $lang, $site_data := .Site.Data }}
-  {{- $experience_data := $site_data.homepage.experience }}
-  {{- $series := slice -}}
-  {{- range $i, $v := $experience_data -}}
-    {{- $series := slice -}} 
-    {{- if $v.graph }}
-      {{ range $v.graph }}
-        {{- $data := slice }}
-        {{- range .data -}}
-          {{- $data = $data | append (dict "name" .subcategory "value" .value) -}}
-        {{- end -}}
-        {{- $serie := dict "name" .category "data" $data -}}
-        {{- $series = $series | append $serie -}}
-      {{ end }}
-    {{- end }}
-    {{- $categories = $categories | append (slice $series) -}}
-  {{- end }}
-  {{- $datas = merge $datas (dict $lang $categories) -}}
-{{- end }}
 
-series={{ $datas | jsonify }};
+{{ with .Site.Data.skills }}
 
-{{ with $homepage_data.experience }}
 let container;
 
 {{- range $i, $v := . -}}
+{{- $series := slice -}} 
+{{- if $v.graph }}
+  {{ range $v.graph }}
+    {{- $data := slice }}
+    {{- range .data -}}
+      {{- $data = $data | append (dict "name" .subcategory "value" .value) -}}
+    {{- end -}}
+    {{ $categoryName :=  i18n (lower .category) | humanize }}
+    {{- $serie := dict "name" $categoryName "data" $data -}}
+    {{- $series = $series | append $serie -}}
+    {{ end }}
 container="graph{{ $i }}";
 Highcharts.chart(container, {
   chart: {
     type: 'packedbubble'
   },
   title: {
-    text: '{{ site.Params.graphtitle }}'
+    text: '{{ i18n "skills" }}'
   },
   tooltip: {
     useHTML: true,
@@ -141,7 +118,8 @@ Highcharts.chart(container, {
       }
     }
   },
-  series: series[curentLanguage][{{ $i }}]
+  series: {{ $series | jsonify }}
 });
+  {{- end -}}
 {{- end -}}
 {{- end -}}

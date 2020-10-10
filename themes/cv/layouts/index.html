@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main>
-  {{ $site_data_with_target_language := index .Site.Data .Site.Language.Lang }}
-  {{ $homepage_data := $site_data_with_target_language.homepage }}
-  {{ with $homepage_data.about }}
-  <section id="{{ anchorize .title }}">
-    {{ with $homepage_data.radar }}
+  {{ $site_data := index .Site.Data .Site.Language.Lang }}
+  {{ $homepage_data := $site_data.homepage }}
+  {{ if $homepage_data.about }}
+  <section id="about">
+    {{ with .Site.Data.radar }}
     <div class="container">
       <div class="row">
         <div class="col" id="radar"></div>
@@ -14,21 +14,21 @@
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ .title | markdownify }}</h2>
+          <h2 class="text-primary font-weight-bold">{{ i18n "about_title" }}</h2>
         </div>
         <div class="col-12 border rounded p-4">
-          {{ .content | markdownify }}
+          {{ $homepage_data.about.content | markdownify }}
         </div>
       </div>
     </div>
   </section>
   {{ end }}
   {{ with $homepage_data.experience }}
-  <section>
+  <section id="experiences">
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ site.Params.experience | markdownify }}</h2>
+          <h2 class="text-primary font-weight-bold">{{ i18n "experiences" }}</h2>
         </div>
         {{ range $i, $v :=. }}
         <div class="col-12 timeline-item">
@@ -65,9 +65,7 @@
               </div>
             </div>
           </div>
-          {{- if $v.graph -}}
           <div class="col-12" id="graph{{ anchorize $i }}"></div>
-          {{- end -}}
         </div>
         {{- end -}}
       </div>
@@ -75,11 +73,11 @@
   </section>
   {{- end -}}
   {{ with $homepage_data.personally }}
-  <section  id="{{ anchorize .title }}">
+  <section  id="personally">
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ .title }}</h2>
+          <h2 class="text-primary font-weight-bold">{{ i18n "personally" }}</h2>
         </div>
       </div>
       <div class="row">
@@ -91,11 +89,11 @@
   </section>
   {{- end -}}
   {{ with $homepage_data.formations }}
-  <section id="{{ anchorize site.Params.formations }}">
+  <section id="formations">
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ site.Params.formations }}</h2>
+          <h2 class="text-primary font-weight-bold">{{ i18n "formations" }}</h2>
         </div>
       </div>
       <div class="row">
@@ -111,11 +109,11 @@
   </section>
   {{- end -}}
   {{ with $homepage_data.languages }}
-  <section id="{{ anchorize site.Params.languages }}">
+  <section id="languages">
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ site.Params.languages }}</h2>
+          <h2 class="text-primary font-weight-bold">{{ i18n "languages" }}</h2>
         </div>
       </div>
       <div class="row">

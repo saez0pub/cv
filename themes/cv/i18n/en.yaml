@@ -1,0 +1,28 @@
+- id: skills
+  translation: "Skills"
+- id: experiences
+  translation: "Professional experiences"
+- id: achievements
+  translation: "Achievements"
+- id: formations
+  translation: "Educations"
+- id: languages
+  translation: "Languages"
+- id: "home"
+  translation: "Home"
+- id: "about_title"
+  translation: "About me"
+- id: "personally"
+  translation: "Personally"
+- id: "contact"
+  translation: "Contact"
+- id: "autonomy"
+  translation: "Autonomy"
+- id: "effectiveness"
+  translation: "Effectiveness"
+- id: "warmachine"
+  translation: "War machine"
+- id: "paranoïa"
+  translation: "Paranoïa"
+- id: "conviviality"
+  translation: "Conviviality"

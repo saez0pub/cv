@@ -37,5 +37,6 @@
 <script src="{{ .link | relURL }}"></script>
 {{ end }}
 
-{{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate "js/graph.js" . | fingerprint }}
+{{ $scriptPath := printf "js/graph.%s.js" .Site.Language.Lang }}
+{{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate $scriptPath . | fingerprint }}
 <script type="text/javascript" src="{{ $built.Permalink | relURL }}" {{ printf "integrity=%q" $built.Data.Integrity  | safeHTMLAttr }} ></script>
