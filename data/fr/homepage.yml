@@ -1,14 +1,23 @@
 about:
   content: |
-    Ayant beaucoup pratiqué l’autoformation durant mes 16 années d’expérience et l’écoute des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je me suis constitué une base de connaissance au fil des ans.
+    Ayant beaucoup pratiqué l’autoformation durant mes 16 années d’expérience et l’écoute 
+    des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je 
+    me suis constitué une base de connaissance au fil des ans.
     
-    Ceci m’a permis de faire reconnaître mes compétences et de pouvoir mettre en avant mon expertise dans la gestion d’incidents et la vision technique.
+    Ceci m’a permis de faire reconnaître mes compétences et de pouvoir mettre en avant mon 
+    expertise dans la gestion d’incidents et la vision technique.
     
-    J’ai commencé à travailler sur les environnements Unix en tant qu’administrateur SAP en 2004 pour devenir aujourd’hui Administrateur infrastructure et sécurité. Je travaille aujourd’hui essentiellement sur Linux et des logiciels Open Source.
+    J’ai commencé à travailler sur les environnements Unix en tant qu’administrateur SAP 
+    en 2004 pour devenir aujourd’hui Administrateur infrastructure et sécurité. Je 
+    travaille aujourd’hui essentiellement sur Linux et des logiciels Open Source.
     
-    Autonome, je sais aller chercher l’information où elle est précise et faire preuve de réactivité afin de m’adapter aux situations complexes autant techniques qu’humaines ou organisationnelles.
+    Autonome, je sais aller chercher l’information où elle est précise et faire preuve 
+    de réactivité afin de m’adapter aux situations complexes autant techniques 
+    qu’humaines ou organisationnelles.
     
-    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant ceci à ma réactivité, j’ai permis à l’équipe de respecter ses délais de livraison. Je travaille de concert avec les développeurs sur tout le cycle de vie de l’application.
+    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant 
+    ceci à ma réactivité, j’ai permis à l’équipe de respecter ses délais de livraison. 
+    Je travaille de concert avec les développeurs sur tout le cycle de vie de l’application.
     
     J’ai pour projet de passer la certification OSCP.
 
@@ -42,9 +51,8 @@ experience:
         * Système de réparation automatique.
         * Duplication des environnements facilitée.
         * Limite des deltas des environnements à la configuration et l’emplacement.
-        * Suppression de la contrainte de connaître l’IP des équipements.
       * Création d’un zero trust network avec Consul Connect.
-      * Infrastructure de log distribuée et centralisée (Stack Elastic).
+      * Infrastructure de log centralisée (Stack Elastic).
       * Suivi des performances systèmes via Prometheus et centralisation via Thanos.
       * Infrastructure de suivi des applications et leurs performances avec Jaeger Tracing.
       * Le suivi des événements de sécurité (Auditbeat, Wazuh, Lynis).
@@ -77,7 +85,7 @@ experience:
       * Préparation des audits PCI-DSS et pentests.
       * Réduction des temps de mise à jour des clusters de Pare-feux et passage des upgrades sans interruption.
       * Création d’indicateurs de bench, audit et optimisation des performances allant des aspects physiques des serveurs aux applicatifs tels que MySQL ou Apache.
-      * Mise à niveau à l’aide de puppet de l’infrastructure tri site hébergeant les services vocaux Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
+      * Mise à niveau à l’aide de Puppet de l’infrastructure tri site hébergeant les services vocaux Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
       * Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi-site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision.
       * Passage de 2 jours pour l’installation d’un serveur à 10 serveurs physiques installés en 2 jours.
   - where: 'Cheops Technology France'
