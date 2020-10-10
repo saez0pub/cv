@@ -32,11 +32,10 @@
 </footer>
 
 
-
 {{ range site.Params.plugins.js }}
 <script src="{{ .link | relURL }}"></script>
 {{ end }}
 
 {{ $scriptPath := printf "js/graph.%s.js" .Site.Language.Lang }}
-{{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate $scriptPath . | fingerprint }}
+{{ $built := resources.Get "js/graph.js" | resources.ExecuteAsTemplate $scriptPath . | minify | fingerprint }}
 <script type="text/javascript" src="{{ $built.Permalink | relURL }}" {{ printf "integrity=%q" $built.Data.Integrity  | safeHTMLAttr }} ></script>
