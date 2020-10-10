@@ -30,46 +30,46 @@
         <div class="col-12 border-bottom mt-2 mb-2">
           <h2 class="text-primary font-weight-bold">{{ i18n "experiences" }}</h2>
         </div>
-        {{ range $i, $v :=. }}
-        <div class="col-12 timeline-item">
-          <div class="row" id="{{ anchorize $v.when }}">
-            <div class="col-12">
-              <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
-              <div class="col-12 border rounded p-0">
-                <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
-                <div class="p-4">
-                  <div>
-                    {{- $v.summary.title | markdownify -}}
+      </div>
+    </div>
+    {{ range $i, $v :=. }}
+    <div class="container timeline-item">
+      <div class="row" id="{{ anchorize $v.when }}">
+        <div class="col-12">
+          <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
+          <div class="col-12 border rounded p-0">
+            <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
+            <div class="p-4">
+              <div>
+                {{- $v.summary.title | markdownify -}}
+                <ul>
+                  {{- range $v.summary.forces -}}
+                  <li>
+                    {{- .name | markdownify -}}
+                    {{- with .points -}}
                     <ul>
-                      {{- range $v.summary.forces -}}
+                      {{- range . -}}
                       <li>
-                        {{- .name | markdownify -}}
-                        {{- with .points -}}
-                        <ul>
-                          {{- range . -}}
-                          <li>
-                            {{- . | markdownify -}}
-                          </li>
-                          {{- end -}}
-                        </ul>
-                        {{- end -}}
+                        {{- . | markdownify -}}
                       </li>
                       {{- end -}}
                     </ul>
-                  </div>
-                  {{- if $v.achievements -}}
-                  {{- site.Params.achievements | markdownify -}}
-                  {{- $v.achievements | markdownify -}}
+                    {{- end -}}
+                  </li>
                   {{- end -}}
-                </div>
+                </ul>
               </div>
+              {{- if $v.achievements -}}
+              {{- site.Params.achievements | markdownify -}}
+              {{- $v.achievements | markdownify -}}
+              {{- end -}}
             </div>
           </div>
-          <div class="col-12" id="graph{{ anchorize $i }}"></div>
         </div>
-        {{- end -}}
       </div>
+      <div class="col-12" id="graph{{ anchorize $i }}"></div>
     </div>
+    {{- end -}}
   </section>
   {{- end -}}
   {{ with $homepage_data.personally }}
