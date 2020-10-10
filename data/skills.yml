@@ -49,6 +49,16 @@
           value: 150
         - subcategory: "Gitlab"
           value: 100
+    - category: "Languages"
+      data:
+        - subcategory: "Bash"
+          value: 120
+        - subcategory: "Javascript"
+          value: 50
+        - subcategory: "Python"
+          value: 25
+        - subcategory: "GO"
+          value: 10
     - category: "Miscellaneous"
       data:
         - subcategory: "Gsuite"
