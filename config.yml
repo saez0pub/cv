@@ -21,7 +21,7 @@ theme: "cv"
 
 params:
   author: "Jean Prat"
-  email: "recrutement@prat.xyz"
+  email: "job@prat.xyz"
   mobile: "+33677131316"
   navbar:
     stickytop: true
