@@ -38,36 +38,36 @@
     <a id="{{ anchorize $v.when }}"></a>
     <div class="container timeline-item">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-12">
           <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
-          <div class="col-12 border rounded p-0">
-            <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
-            <div class="p-2">
-              <div>
-                {{- $v.summary.title | markdownify -}}
-                <ul>
-                  {{- range $v.summary.forces -}}
-                  <li>
-                    {{- .name | markdownify -}}
-                    {{- with .points -}}
-                    <ul>
-                      {{- range . -}}
-                      <li>
-                        {{- . | markdownify -}}
-                      </li>
-                      {{- end -}}
-                    </ul>
+        </div>
+        <div class="col-md-6 border rounded p-0">
+          <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
+          <div class="p-2">
+            <div>
+              {{- $v.summary.title | markdownify -}}
+              <ul>
+                {{- range $v.summary.forces -}}
+                <li>
+                  {{- .name | markdownify -}}
+                  {{- with .points -}}
+                  <ul>
+                    {{- range . -}}
+                    <li>
+                      {{- . | markdownify -}}
+                    </li>
                     {{- end -}}
-                  </li>
+                  </ul>
                   {{- end -}}
-                </ul>
-              </div>
-              {{- if $v.achievements -}}
-              {{ i18n "achievements" }}
-              {{- site.Params.achievements | markdownify -}}
-              {{- $v.achievements | markdownify -}}
-              {{- end -}}
+                </li>
+                {{- end -}}
+              </ul>
             </div>
+            {{- if $v.achievements -}}
+            {{ i18n "achievements" }}
+            {{- site.Params.achievements | markdownify -}}
+            {{- $v.achievements | markdownify -}}
+            {{- end -}}
           </div>
         </div>
         <div class="col-md-6 graph" id="graph{{ anchorize $i }}"></div>

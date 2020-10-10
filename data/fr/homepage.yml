@@ -50,15 +50,10 @@ experience:
         * Planification et exécution des mises à jour sont simples.
         * Système de réparation automatique.
         * Duplication des environnements facilitée.
-        * Limite des deltas des environnements à la configuration et l’emplacement.
       * Création d’un zero trust network avec Consul Connect.
-      * Infrastructure de log centralisée (Stack Elastic).
-      * Suivi des performances systèmes via Prometheus et centralisation via Thanos.
-      * Infrastructure de suivi des applications et leurs performances avec Jaeger Tracing.
+      * Infrastructure de log centralisée (Stack Elastic), suivi des performances via Prometheus et centralisation via Thanos ouJaeger Tracing.
       * Le suivi des événements de sécurité (Auditbeat, Wazuh, Lynis).
       * Création, suivi, analyse des reports du Bug bounty (Yeswehack).
-      * Gestion du Gsuite et des différents projets clouds.
-      * Gestion, configuration, sécurisation du serveur Gitlab.
   - where: 'Orange Applications for Business'
     when: '2013-2018'
     title: 'Responsable architecture système et réseau des plateformes de paiement, mise en sécurité et support Niveau 3'
@@ -75,17 +70,14 @@ experience:
             - 'Serveurs de paiement CB via code court sur le réseau mobile SS7 Orange France.'
     achievements: |
       * Interventions sur des portails à forte affluence, impliquant des opérations HNO, des études et solutions de diminution des arrêts de services.
-      * Mise à l’actualité de plateformes vieillissantes, implémentant une meilleure sécurité et une meilleure disponibilité.
-      * Que ce soit dans un projet de modernisation ou un départ à zéro, j’ai une autonomie complète.
       * Développement par les tests de rôles Ansible, mise en œuvre d’une intégration continue et tilisation de lynis pour effectuer un scoring CIS.
       * Mise en œuvre d’un système de livraison continu compatible PCI-DSS via Gitlab-CI, Ansible et AWX.
-      * Mise en œuvre d’un cloud privé à base de RHVM (KVM+QEMU sous libvirt) allant du choix du matériel réseau et serveurs à son installation, en passant par la sécurisation de l’infrastructure jusqu’à l’automatisation du provisionning sous Ansible.
-      * Passage d’une architecture mono site à un multi site actif-actif pour le paiement CB orange.fr : les mises à jour des applications et systèmes se font maintenant en heure de bureau.
-      * Préparation des audits PCI-DSS et pentests.
+      * Mise en œuvre d’un cloud privé à base de RHVM.
+      * Passage d’une architecture mono site à un multi site actif-actif permettant les mises à jour en heure de bureau.
       * Réduction des temps de mise à jour des clusters de Pare-feux et passage des upgrades sans interruption.
       * Création d’indicateurs de bench, audit et optimisation des performances allant des aspects physiques des serveurs aux applicatifs tels que MySQL ou Apache.
-      * Mise à niveau à l’aide de Puppet de l’infrastructure tri site hébergeant les services vocaux Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
-      * Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi-site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision.
+      * Mise à niveau de l’infrastructure tri site hébergeant les services vocaux Orange utilisateurs finaux, afin ne plus avoir de coupure de service.
+      * Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi-site actif-actif.
       * Reduction du temps de déploiement de 2 jours pour un serveur à 10 serveurs en 2 jours.
   - where: 'Cheops Technology France'
     when: '2007-2013'
@@ -104,15 +96,13 @@ experience:
     achievements: |
       * Nous avons monté un service infogérance partant de zéro pour des clients allant du géant de la cosmétique à des cliniques en passant par des sites d’e-commerce à forte affluence.
       * Certification Hébergeur de données de santé.
-      * Mise en place d’une plateforme redondante et multi-site de supervision sous Nagios.
       * Mise en œuvre PRA/PCA multi-site (Load balancing, geoDNS, boot on SAN, Réplication BDD).
       * Administration Réseau en environnement cloud privé et mutualisé.
       * Adaptation des outils à l’aide de PHP, MySQL et JavaScript, dont la création d’une interface de communication Nagios/GLPI.
       * Développement des processus métiers et application de la méthodologie ITIL :
         * Mise en œuvre d’une CMDB et d’un outil de gestion des SLA et incidents à base de GLPI et OCS inventory.
         * Mise en œuvre d’un outil de documentation sous mediawiki et conception des templates de pages.
-        * Rédaction des procédures d’exploitation, d’incidents et des documents d’architecture.
-        * Contrôle des liens entre les alarmes de supervision et procédures d’incidents.
+        * Rédaction des procédures d’exploitation, d’incidents et des documents d’architecture liés avec les alarmes de supervision et procédures d’incidents.
       * Construction d’un système de gestion des logs ELK intégrant plus de 2000 messages par secondes.
   - where: 'Arexia SAS'
     when: '2004-2007'
@@ -120,11 +110,10 @@ experience:
     summary:
       title: 'En charge de l’administration SAP, Oracle et Unix'
       forces:
-        - name: 'Gestion des remontées de bug logiciel SAP'
-        - name: 'Mise en place et gestion des stratégies de sauvegarde'
-        - name: 'Gestion, intervention et résolution des incidents matériels et logiciels'
-        - name: 'Développement de programmes réduisant les temps des taches quotidiennes'
-
+        - name: 'Gestion des remontées de bug logiciel SAP.'
+        - name: 'Mise en place et gestion des stratégies de sauvegarde.'
+        - name: 'Gestion, intervention et résolution des incidents matériels et logiciels.'
+        - name: 'Développement de programmes réduisant les temps des taches quotidiennes.'
 
 personally:
   content: |
