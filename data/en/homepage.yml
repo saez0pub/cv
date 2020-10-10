@@ -125,3 +125,20 @@ experience:
         - name: 'Implementation and management of backup strategies.'
         - name: 'Management, intervention and resolution of hardware and software incidents.'
         - name: 'Development of programs reducing the time of daily tasks.'
+
+personally:
+  content: |
+    * My experience of server security was originally a personal need, because I practice self-hosting, so I was able to share this knowledge with my team based on it: [Github](https://github.com/pihomecloud/pihomecloud)
+    * Being passionate about home automation, I have a solution that does not require a cloud provider.
+    * I maintain archlinux packages either on [the AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) or on github : [Me](https://github.com/saez0pub?tab=repositories) or [Anoher Me](https://github.com/pihomecloud?tab=repositories)
+    * I have tested technologies such as OCR, computer vision and speech recognition. These tests are available on my [github](https://github.com/saez0pub?tab=repositories).
+
+formations:
+  - '2016 – EC-Council Certified Ethical Hacker v8'
+  - '2013 – MySQL Tuning'
+  - '2004 – BTS Informatique de gestion'
+  - '2002 – Baccalauréat S'
+
+languages:
+  - 'French'
+  - 'English'
