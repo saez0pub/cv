@@ -77,8 +77,7 @@ experience:
       * Interventions sur des portails à forte affluence, impliquant des opérations HNO, des études et solutions de diminution des arrêts de services.
       * Mise à l’actualité de plateformes vieillissantes, implémentant une meilleure sécurité et une meilleure disponibilité.
       * Que ce soit dans un projet de modernisation ou un départ à zéro, j’ai une autonomie complète.
-      * Développement par les tests de rôles Ansible et mise en œuvre d’une intégration continue des rôles Ansible.
-      * Utilisation de lynis pour effectuer un scoring CIS.
+      * Développement par les tests de rôles Ansible, mise en œuvre d’une intégration continue et tilisation de lynis pour effectuer un scoring CIS.
       * Mise en œuvre d’un système de livraison continu compatible PCI-DSS via Gitlab-CI, Ansible et AWX.
       * Mise en œuvre d’un cloud privé à base de RHVM (KVM+QEMU sous libvirt) allant du choix du matériel réseau et serveurs à son installation, en passant par la sécurisation de l’infrastructure jusqu’à l’automatisation du provisionning sous Ansible.
       * Passage d’une architecture mono site à un multi site actif-actif pour le paiement CB orange.fr : les mises à jour des applications et systèmes se font maintenant en heure de bureau.
@@ -87,7 +86,7 @@ experience:
       * Création d’indicateurs de bench, audit et optimisation des performances allant des aspects physiques des serveurs aux applicatifs tels que MySQL ou Apache.
       * Mise à niveau à l’aide de Puppet de l’infrastructure tri site hébergeant les services vocaux Orange utilisateurs finaux, amélioration de la gestion du tri-site en refaisant la répartition des appels afin ne plus avoir de coupure de service.
       * Refonte et automatisation de l’installation avec Ansible de l’infrastructure des Serveurs Vocaux pour passer sur VOIP, en bi-site actif-actif, pour des services hébergeant des numéros tels que l’horloge parlante, Téléthon ou bien des numéros surtaxés passant à la télévision.
-      * Passage de 2 jours pour l’installation d’un serveur à 10 serveurs physiques installés en 2 jours.
+      * Reduction du temps de déploiement de 2 jours pour un serveur à 10 serveurs en 2 jours.
   - where: 'Cheops Technology France'
     when: '2007-2013'
     title: 'Responsable supervision, support N3'
@@ -129,7 +128,7 @@ experience:
 
 personally:
   content: |
-    * Mon expérience de sécurisation de serveur était à l’origine un besoin personnel, car je pratique l’auto hébergement, j’ai donc pu en faire profiter mon équipe en me basant dessus : [Github](https://github.com/pihomecloud/pihomecloud)
+    * Mon expérience de sécurisation de serveur était à l’origine un besoin personnel, car je pratique l’auto hébergement : [Github](https://github.com/pihomecloud/pihomecloud)
     * Passionné de domotique, j’ai une solution ne nécessitant pas de cloud provider.
     * Je maintiens des paquets archlinux soit sur [l’AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) soit sur github : [Moi](https://github.com/saez0pub?tab=repositories) ou [Un autre moi](https://github.com/pihomecloud?tab=repositories)
     * J’ai testé des technologies comme l’OCR, la vision par ordinateur ou bien la reconnaissance vocale. Ces  essais sont disponibles sur mon [github](https://github.com/saez0pub?tab=repositories).

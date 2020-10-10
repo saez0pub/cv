@@ -50,15 +50,10 @@ experience:
         * Planning and execution of updates are simple.
         * Auto healing system.
         * Duplication of environments facilitated.
-        * Limit environment deltas to configuration and location.
+        * Automated produciton updates throught the CI
       * Build of a zero trust network with Consul Connect.
-      * Centralized logging infrastructure (Stack Elastic).
-      * System performance monitoring via Prometheus and centralization via Thanos.
-      * Application and performance monitoring infrastructure with Jaeger Tracing.
-      * Monitoring of security events (Auditbeat, Wazuh, Lynis).
+      * Centralized logging with Elastic and performance monitoring via Prometheus and centralization via Thanos or Jaeger Tracing.
       * Build a program and analysis of the reports of the Bug Bounty (Yeswehack).
-      * Management of the Gsuite and various cloud projects.
-      * Management, configuration, security of the Gitlab server.
   - where: 'Orange Applications for Business'
     when: '2013-2018'
     title: 'Responsible for system and network architecture of payment platforms, security and support Level 3'
@@ -75,19 +70,15 @@ experience:
             - 'Credit card payment servers via short code on the Orange France SS7 mobile.'
     achievements: |
       * Interventions on high traffic portals, involving night operations, studies and solutions to reduce downtime.
-      * Updating of old platforms, implementing better security and availability.
-      * Whether in a modernization project or starting from scratch, I have complete autonomy.
-      * Development through Ansible role testing and implementation of continuous integration of Ansible roles.
-      * Use of lynis to perform CIS scoring.
+      * Development through Ansible role testing, implementation of continuous and use of lynis to perform CIS scoring.
       * Implementation of a PCI-DSS compatible continuous delivery system via Gitlab-CI, Ansible and AWX.
-      * Implementation of a RHVM-based private cloud (KVM+QEMU under Libvirt), from the choice of network and hardware of the servers to theirs installation, from securing the infrastructure to automating provisioning under Ansible.
-      * Transition from a single site architecture to a multi-site active-active architecture for Credit card payment orange.fr: application and system updates are now done during office hours.
-      * Preparation for PCI-DSS and penetration testing audits.
+      * Build of a RHVM-based private cloud.
+      * Transition from single site architecture to multi-site active-active architecture pemitting updates during office hours.
       * Reduction of firewall cluster update times and zero downtime upgrades.
       * Creation of bench indicators, auditing and performance optimization from the hardware of servers to applications such as MySQL or Apache.
-      * Upgrade using Puppet of the tri-site infrastructure hosting the Orange voice services for end users, improving the management of the tri-site by re-distributing calls so that there are no more service interruptions.
-      * Redesign and automation of the installation with Ansible of the Voice Server infrastructure to switch to VOIP, in active-active bi-site, for phone numbers such as the speaking clock, "Téléthon" or premium numbers seen on TV.
-      * Switching from 2 days for the installation of one server to 10 servers deployed in 2 days.
+      * Upgrade of tri-site infrastructure hosting the Orange voice services for end users so that there are no more service interruptions.
+      * Redesign and automation of the installation with Ansible of the Voice Server infrastructure to switch to VOIP, in active-active bi-site.
+      * Reducing deployment time from 2 days for a server to 10 servers in 2 days.
   - where: 'Cheops Technology France'
     when: '2007-2013'
     title: 'Monitoring manager, Level 3  support'
@@ -105,16 +96,14 @@ experience:
     achievements: |
       * We have built up an outsourcing service from scratch for clients ranging from cosmetics giants to clinics or high traffic webshops.
       * Certification as a Health Data Hosting provider.
-      * Implementation of a redundant and multi-site monitoring platform under Nagios.
       * Implementation of multi-site DRP/BCP (Load balancing, geoDNS, boot on SAN, DB replication).
       * Network administration in a private and shared cloud environment.
       * Adaptation of tools using PHP, MySQL and JavaScript, including the creation of a Nagios/GLPI communication interface.
       * Business process development and application of ITIL methodology:
         * Implementation of a CMDB, an SLA and incident management based on GLPI and OCS inventory.
         * Implementation of a documentation and knowledge base under mediawiki and design of page templates.
-        * Writing of operating procedures, incidents and architecture documents.
-        * Control of the links between monitoring alarms and incident procedures.
-      * Build of an ELK log management system integrating more than 2000 messages per second.
+        * Writing of operating procedures, incidents and architecture documents linked with monitoring alarms and incident procedures.
+      * Build of an ELK log management system ingesting more than 2000 messages per second.
   - where: 'Arexia SAS'
     when: '2004-2007'
     title: 'SAP Administrator'
@@ -128,9 +117,9 @@ experience:
 
 personally:
   content: |
-    * My experience of server security was originally a personal need, because I practice self-hosting, so I was able to share this knowledge with my team based on it: [Github](https://github.com/pihomecloud/pihomecloud)
+    * My experience of server security was originally a personal need, because I practice self-hosting: [Github](https://github.com/pihomecloud/pihomecloud)
     * Being passionate about home automation, I have a solution that does not require a cloud provider.
-    * I maintain archlinux packages either on [the AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) or on github : [Me](https://github.com/saez0pub?tab=repositories) or [Anoher Me](https://github.com/pihomecloud?tab=repositories)
+    * I maintain archlinux packages either on [the AUR](https://aur.archlinux.org/packages/?K=saez0pub&SeB=m) or on github : [Me](https://github.com/saez0pub?tab=repositories) or [Another Me](https://github.com/pihomecloud?tab=repositories)
     * I have tested technologies such as OCR, computer vision and speech recognition. These tests are available on my [github](https://github.com/saez0pub?tab=repositories).
 
 formations:
