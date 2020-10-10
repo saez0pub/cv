@@ -5,6 +5,7 @@ languages:
     languageName: "Fr"
     languageCode: "fr-fr"
     title: "Jean Prat - Expert systèmes et réseaux"
+    description: "Jean Prat - Expert systèmes et réseaux"
     params:
       MyTitle: "Expert systèmes et réseaux"
       footerNotes: "Vous êtes arrivés ici et je vous remercie, si vous souhaitez savoir comment a été fait ce site, apporter un retour, ou une modification, [voici le code](https://github.com/saez0pub/cv)"
@@ -13,6 +14,7 @@ languages:
     languageName: "En"
     languageCode: "en-us"
     title: "Jean Prat - System and network expert"
+    description: "Jean Prat - System and network expert"
     params:
       MyTitle: "System and network expert"
       footerNotes: "Thank you for reading, If you want to know how is made this site, give a feedback, or ask for modification, [here is the source code](https://github.com/saez0pub/cv)"
@@ -20,7 +22,11 @@ languages:
 theme: "cv"
 
 params:
+  image: "images/xkcd_friction_of_desk_chair_400x400.png"
+  keywords: "Jean Prat Informatique LGO OAB Cheops Computer Cloud"
   author: "Jean Prat"
+  themecolor: "#325D72"
+  icon: "images/apple_xkcd_friction_of_desk_chair_180x180.png"
   email: "job@prat.xyz"
   mobile: "+33677131316"
   navbar:

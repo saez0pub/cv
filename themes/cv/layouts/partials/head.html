@@ -8,7 +8,9 @@
   <meta name="thumbnail" content="{{ with site.Params.image }}{{ . }}{{ end }}">
   <meta name="keywords" content="{{ with site.Params.keywords }}{{ . }}{{ end }}">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="theme-color" content="{{ with site.Params.themecolor }}{{ . }}{{ end }}"/>
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ with site.Params.icon }}<link rel="apple-touch-icon" href="{{ . | relURL }}">{{ end }}
   {{ hugo.Generator }}
 
   {{ range site.Params.plugins.css }}
@@ -19,6 +21,6 @@
   <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}">
   <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ with site.Params.icon }}{{ . | relURL }}{{ else }}{{ `images/favicon.png` | relURL }}{{ end }}" type="image/x-icon">
+  <link rel="icon" href="{{ with site.Params.icon }}{{ . | relURL }}{{ else }}{{ `images/favicon.png` | relURL }}{{ end }}" type="image/x-icon">
 </head>
