@@ -16,7 +16,7 @@ about:
     technical, human or organizational.
 
     I have successfully entered the development cycle, combining this with my 
-    responsiveness, and I have enabled the team to meet its delivery deadlines. 
+    responsiveness, I have enabled the team to meet its delivery deadlines. 
     I work closely with the developers throughout the application’s lifecycle.
 
     I plan to pass the OSCP certification.
@@ -30,7 +30,7 @@ experience:
       forces:
         - name: 'Infrastructure as code :'
           points:
-            - "Creation, development and maintenance of immutable infrastructures."
+            - "Build, development and maintenance of immutable infrastructures."
             - 'Automation of tests, builds and deployments.'
             - 'Systems bounded contexts breakdowns to reflect the application.'
         - name: "The search for performance and security:"
@@ -51,12 +51,12 @@ experience:
         * Auto healing system.
         * Duplication of environments facilitated.
         * Limit environment deltas to configuration and location.
-      * Creation of a zero trust network with Consul Connect.
+      * Build of a zero trust network with Consul Connect.
       * Centralized logging infrastructure (Stack Elastic).
       * System performance monitoring via Prometheus and centralization via Thanos.
       * Application and performance monitoring infrastructure with Jaeger Tracing.
       * Monitoring of security events (Auditbeat, Wazuh, Lynis).
-      * Creation, monitoring, analysis of the reports of the Bug bounty (Yeswehack).
+      * Build a program and analysis of the reports of the Bug Bounty (Yeswehack).
       * Management of the Gsuite and various cloud projects.
       * Management, configuration, security of the Gitlab server.
   - where: 'Orange Applications for Business'
@@ -68,7 +68,7 @@ experience:
         - name: 'In charge of building, securing, day to day operations and PCI-DSS compliance. Participation in audits, definition of remediation plans:'
           points:
             - 'Network on all PCI-DSS OAB platforms (virtual credit card service, web stores, ...).'
-            - 'Systems and networks of the CB payment platform of the orange.fr store and various major accounts.'
+            - 'Systems and networks of the Credit card payment platform of the orange.fr store and various major accounts.'
         - name: 'In charge of the security, design and administration of the payment platforms: :'
           points:
             - 'IBAN entry and their tokenization of the stores sosh.fr and orange.fr.'
@@ -80,14 +80,14 @@ experience:
       * Development through Ansible role testing and implementation of continuous integration of Ansible roles.
       * Use of lynis to perform CIS scoring.
       * Implementation of a PCI-DSS compatible continuous delivery system via Gitlab-CI, Ansible and AWX.
-      * Implementation of a RHVM-based private cloud (KVM+QEMU under libvirt), from the choice of network and server hardware to its installation, from securing the infrastructure to automating provisioning under Ansible.
+      * Implementation of a RHVM-based private cloud (KVM+QEMU under Libvirt), from the choice of network and hardware of the servers to theirs installation, from securing the infrastructure to automating provisioning under Ansible.
       * Transition from a single site architecture to a multi-site active-active architecture for Credit card payment orange.fr: application and system updates are now done during office hours.
       * Preparation for PCI-DSS and penetration testing audits.
-      * Reduction of firewall cluster update times and seamless upgrades.
+      * Reduction of firewall cluster update times and zero downtime upgrades.
       * Creation of bench indicators, auditing and performance optimization from the hardware of servers to applications such as MySQL or Apache.
       * Upgrade using Puppet of the tri-site infrastructure hosting the Orange voice services for end users, improving the management of the tri-site by re-distributing calls so that there are no more service interruptions.
-      * Redesign and automation of the installation with Ansible of the Voice Server infrastructure to switch to VOIP, in active-active bi-site, for services hosting numbers such as the speaking clock, "Téléthon" or premium numbers seen on TV.
-      * Switching from 2 days for the installation of one server to 10 physical servers installed in 2 days.
+      * Redesign and automation of the installation with Ansible of the Voice Server infrastructure to switch to VOIP, in active-active bi-site, for phone numbers such as the speaking clock, "Téléthon" or premium numbers seen on TV.
+      * Switching from 2 days for the installation of one server to 10 servers deployed in 2 days.
   - where: 'Cheops Technology France'
     when: '2007-2013'
     title: 'Monitoring manager, Level 3  support'
@@ -103,18 +103,18 @@ experience:
             - 'Network'
         - name: 'Incident Manager from 2008 to 2010.'
     achievements: |
-      * We have built up an outsourcing service from scratch for clients ranging from cosmetics giants to clinics to high traffic e-commerce sites.
+      * We have built up an outsourcing service from scratch for clients ranging from cosmetics giants to clinics or high traffic webshops.
       * Certification as a Health Data Hosting provider.
       * Implementation of a redundant and multi-site monitoring platform under Nagios.
       * Implementation of multi-site DRP/BCP (Load balancing, geoDNS, boot on SAN, DB replication).
       * Network administration in a private and shared cloud environment.
       * Adaptation of tools using PHP, MySQL and JavaScript, including the creation of a Nagios/GLPI communication interface.
       * Business process development and application of ITIL methodology:
-        * Implementation of a CMDB and an SLA and incident management tool based on GLPI and OCS inventory.
-        * Implementation of a documentation tool under mediawiki and design of page templates.
+        * Implementation of a CMDB, an SLA and incident management based on GLPI and OCS inventory.
+        * Implementation of a documentation and knowledge base under mediawiki and design of page templates.
         * Writing of operating procedures, incidents and architecture documents.
-        * Control of the links between supervision alarms and incident procedures.
-      * Construction of an ELK log management system integrating more than 2000 messages per second.
+        * Control of the links between monitoring alarms and incident procedures.
+      * Build of an ELK log management system integrating more than 2000 messages per second.
   - where: 'Arexia SAS'
     when: '2004-2007'
     title: 'SAP Administrator'
