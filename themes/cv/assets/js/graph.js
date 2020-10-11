@@ -83,44 +83,63 @@ let container;
     {{- $serie := dict "name" $categoryName "data" $data -}}
     {{- $series = $series | append $serie -}}
     {{ end }}
-container="graph{{ $i }}";
-Highcharts.chart(container, {
-  chart: {
-    type: 'packedbubble'
-    {{ if $v.height }},height: "{{ $v.height }}"{{ end }}
-  },
-  title: {
-    text: '<div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{ i18n "skills" }}</div>'
-  },
-  tooltip: {
-    useHTML: true,
-    pointFormat: '<b>{point.name}</b>'
-  },
-  plotOptions: {
-    packedbubble: {
-      minSize: '45%',
-      maxSize: '300%',
-      zMin: 0,
-      zMax: 1000,
-      Draggable: true,
-      layoutAlgorithm: {
-        splitSeries: false,
-        gravitationalConstant: 0.02,
-      },
-      dataLabels: {
-        enabled: true,
-        format: '<div class="text-center text-wrap">{point.name}</div>',
-        style: {
-          color: 'black',
-          textOutline: 'none',
-          fontWeight: 'normal'
+const drawgraph{{ $i }} = async function(container) {
+  Highcharts.chart(container, {
+    chart: {
+      type: 'packedbubble'
+      {{ if $v.height }},height: "{{ $v.height }}"{{ end }}
+    },
+    title: {
+      text: '<div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{ i18n "skills" }}</div>'
+    },
+    tooltip: {
+      useHTML: true,
+      pointFormat: '<b>{point.name}</b>'
+    },
+    plotOptions: {
+      packedbubble: {
+        minSize: '45%',
+        maxSize: '300%',
+        zMin: 0,
+        zMax: 1000,
+        Draggable: true,
+        layoutAlgorithm: {
+          enableSimulation: false,
+          splitSeries: false,
+          gravitationalConstant: 0.02,
         },
-        useHTML: true
+        dataLabels: {
+          enabled: true,
+          format: '<div class="text-center text-wrap">{point.name}</div>',
+          style: {
+            color: 'black',
+            textOutline: 'none',
+            fontWeight: 'normal'
+          },
+          useHTML: true
+        }
       }
-    }
-  },
-  series: {{ $series | jsonify }}
-});
+    },
+    series: {{ $series | jsonify }}
+  });
+};
+
+container="graph{{ $i }}";
+drawgraph{{ $i }}(container);
+
   {{- end -}}
 {{- end -}}
+
+/** FIXME redraw is not using the new page size
+window.onbeforeprint = function() {
+  {{- range $i, $v := . -}}
+  drawgraph{{ $i }}("graph{{ $i }}").then( () => console.log("redraw before print graph {{$i}}"));
+  {{- end -}}
+};
+window.onafterprint = function() {
+  {{- range $i, $v := . -}}
+  drawgraph{{ $i }}("graph{{ $i }}");
+  {{- end -}}
+};
+**/
 {{- end -}}
