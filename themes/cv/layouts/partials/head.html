@@ -7,7 +7,7 @@
   <meta name="og:image" content="{{ with site.Params.image }}{{ . }}{{ end }}">
   <meta name="thumbnail" content="{{ with site.Params.image }}{{ . }}{{ end }}">
   <meta name="keywords" content="{{ with site.Params.keywords }}{{ . }}{{ end }}">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="description" content="{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}">
   <meta name="theme-color" content="{{ with site.Params.themecolor }}{{ . }}{{ end }}"/>
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ with site.Params.icon }}<link rel="apple-touch-icon" href="{{ . | relURL }}">{{ end }}
