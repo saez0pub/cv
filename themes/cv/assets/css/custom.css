@@ -12,20 +12,20 @@ main {
   padding: 2px;
 }
 
-#radar {
-  height: 300px;
+
+.graph {
+  max-width: 400px;
 }
 
+ul, p {
+  margin-block-end: 0.2em;
+}
+
+
 @media print {
-  #radar .highcharts-container{
-    height: 100px;
-  }
   .timeline-item {
     page-break-inside: avoid;
     break-inside: avoid;
-  }
-  ul, p {
-    margin-block-end: 0.2em;
   }
   .timeline-item:last-child {
     border-image: none !important;

@@ -237,7 +237,8 @@
           value: 5
         - subcategory: "Kibana"
           value: 5
-- graph:
+- height: 300px
+  graph:
     - category: "Systems"
       data:
         - subcategory: "HP/UX"

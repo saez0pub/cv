@@ -49,10 +49,9 @@ experience:
       * Garantie d’état fonctionnel de la plateforme via une infrastructure immuable :
         * Planification et exécution des mises à jour sont simples.
         * Système de réparation automatique.
-        * Duplication des environnements facilitée.
+        * Duplication et mise à jour des environnements facilités et automatisés par la CI.
       * Création d’un zero trust network avec Consul Connect.
       * Infrastructure de log centralisée (Stack Elastic), suivi des performances via Prometheus et centralisation via Thanos ouJaeger Tracing.
-      * Le suivi des événements de sécurité (Auditbeat, Wazuh, Lynis).
       * Création, suivi, analyse des reports du Bug bounty (Yeswehack).
   - where: 'Orange Applications for Business'
     when: '2013-2018'
@@ -85,13 +84,7 @@ experience:
     summary:
       title: 'Responsable de la supervision de plus de 2000 équipements et support N3'
       forces:
-        - name: 'Support H24, administration, audit et optimisation par compétences :'
-          points:
-            - 'Unix/Linux'
-            - 'Oracle'
-            - 'MySQL'
-            - 'SAP'
-            - 'Réseau'
+        - name: 'Support H24, administration, audit et optimisation par compétences.'
         - name: 'Incident Manager de 2008 à 2010.'
     achievements: |
       * Nous avons monté un service infogérance partant de zéro pour des clients allant du géant de la cosmétique à des cliniques en passant par des sites d’e-commerce à forte affluence.

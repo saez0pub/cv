@@ -5,21 +5,17 @@
   {{ if $homepage_data.about }}
   <section>
     <a id="about"></a>
-    {{ with .Site.Data.radar }}
-    <div class="container">
-      <div class="row">
-        <div class="col" id="radar"></div>
-      </div>
-    </div>
-    {{ end }}
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
           <h2 class="text-primary font-weight-bold">{{ i18n "about_title" }}</h2>
         </div>
-        <div class="col-12 border rounded p-2">
+        <div class="col-7 border rounded">
           {{ $homepage_data.about.content | markdownify }}
         </div>
+        {{ with .Site.Data.radar }}
+            <div class="col" id="radar"></div>
+        {{ end }}
       </div>
     </div>
   </section>
@@ -86,7 +82,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 border rounded p-2">
+        <div class="col-12 border rounded">
           {{- .content | markdownify -}}
         </div>
       </div>

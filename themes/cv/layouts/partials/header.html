@@ -10,7 +10,7 @@
       </ul>
     </div>
     <div class="col test-center">
-      <h2>{{ with site.Params.title }}{{ . }}{{ end }}</h2>
+      <h2>{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}</h2>
     </div>
   </div>
 </div>

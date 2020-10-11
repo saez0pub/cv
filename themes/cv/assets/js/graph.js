@@ -27,6 +27,7 @@ Highcharts.chart('radar', {
   },
   yAxis: {
       gridLineInterpolation: 'polygon',
+      tickInterval: 5,
       lineWidth: 0,
       min: 0,
       max: 10
@@ -36,33 +37,15 @@ Highcharts.chart('radar', {
       pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}/10</b><br/>'
   },
   legend: {
-      align: 'right',
-      verticalAlign: 'top',
-      y: 70,
-      layout: 'vertical'
+      align: 'center',
+      verticalAlign: 'bottom',
+      layout: 'horizontal'
   },
   series: [{
       name: '{{ with site.Params.author }}{{ . }}{{ end }}',
       data:  {{ $seriesValue | jsonify }},
       pointPlacement: 'on'
-  }],
-  responsive: {
-    rules: [{
-      condition: {
-        maxWidth: 500
-      },
-      chartOptions: {
-        legend: {
-          align: 'center',
-          verticalAlign: 'bottom',
-          layout: 'horizontal'
-        },
-        pane: {
-          size: '70%'
-        }
-      }
-    }]
-  }
+  }]
 });
 {{ end }}
 
@@ -130,16 +113,5 @@ drawgraph{{ $i }}(container);
   {{- end -}}
 {{- end -}}
 
-/** FIXME redraw is not using the new page size
-window.onbeforeprint = function() {
-  {{- range $i, $v := . -}}
-  drawgraph{{ $i }}("graph{{ $i }}").then( () => console.log("redraw before print graph {{$i}}"));
-  {{- end -}}
-};
-window.onafterprint = function() {
-  {{- range $i, $v := . -}}
-  drawgraph{{ $i }}("graph{{ $i }}");
-  {{- end -}}
-};
-**/
+
 {{- end -}}

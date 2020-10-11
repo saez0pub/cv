@@ -26,14 +26,14 @@ experience:
     when: 'Since 2018'
     title: 'Infrastructure and security engineer'
     summary:
-      title: 'Creation and maintenance of platforms dedicated to finance in the cloud'
+      title: 'Creation and maintenance of platforms dedicated to the finance in the cloud'
       forces:
         - name: 'Infrastructure as code :'
           points:
             - "Build, development and maintenance of immutable infrastructures."
             - 'Automation of tests, builds and deployments.'
             - 'Systems bounded contexts breakdowns to reflect the application.'
-        - name: "The search for performance and security:"
+        - name: "The research for performance and security:"
           points:
             - 'A centralized distributed platform logging infrastructure.'
             - 'Application and system performance monitoring.'
@@ -49,8 +49,7 @@ experience:
       * Guarantee of the functional state of the platform via an immutable infrastructure:
         * Planning and execution of updates are simple.
         * Auto healing system.
-        * Duplication of environments facilitated.
-        * Automated produciton updates throught the CI
+        * Duplication and updates of environments facilitated and automated throught the CI
       * Build of a zero trust network with Consul Connect.
       * Centralized logging with Elastic and performance monitoring via Prometheus and centralization via Thanos or Jaeger Tracing.
       * Build a program and analysis of the reports of the Bug Bounty (Yeswehack).
@@ -85,13 +84,7 @@ experience:
     summary:
       title: 'In charge of the monitoring of more than 2000 devices and Level 3 support'
       forces:
-        - name: 'Around-the-clock support, administration, audit and optimization:'
-          points:
-            - 'Unix/Linux'
-            - 'Oracle'
-            - 'MySQL'
-            - 'SAP'
-            - 'Network'
+        - name: 'Around-the-clock support, administration, audit and optimization.'
         - name: 'Incident Manager from 2008 to 2010.'
     achievements: |
       * We have built up an outsourcing service from scratch for clients ranging from cosmetics giants to clinics or high traffic webshops.

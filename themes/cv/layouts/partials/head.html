@@ -19,7 +19,8 @@
   
   {{ $styles := resources.Get "scss/styles.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}">
-  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+  {{ $custom_style := resources.Get "css/custom.css" | resources.Minify | resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $custom_style.RelPermalink }}"  integrity="{{ $custom_style.Data.Integrity }}" media='all' />
 
   <link rel="shortcut icon" href="{{ with site.Params.icon }}{{ . | relURL }}{{ else }}{{ `images/favicon.png` | relURL }}{{ end }}" type="image/x-icon">
   <link rel="icon" href="{{ with site.Params.icon }}{{ . | relURL }}{{ else }}{{ `images/favicon.png` | relURL }}{{ end }}" type="image/x-icon">

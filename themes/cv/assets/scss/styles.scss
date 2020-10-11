@@ -33,8 +33,3 @@ $font-family-sans-serif: helvetica, arial, freesans, clean, sans-serif;
 @import "list-group";
 @import "utilities";
 @import "print";
-
-@media print {
-  $font-size-base: 0.9rem;
-  @import "reboot";
-}
