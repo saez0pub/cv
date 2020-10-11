@@ -29,67 +29,10 @@ $font-family-sans-serif: helvetica, arial, freesans, clean, sans-serif;
 @import "custom-forms";
 @import "nav";
 @import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "jumbotron";
-@import "alert";
-@import "progress";
 @import "media";
 @import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
 @import "utilities";
 @import "print";
-
-@each $color-name, $value in $theme-colors {
-  $background: $value;
-  $border: $value;
-  $hover-border: $border;
-  .btn-gradient-#{$color-name} {
-    $hover-background: lighten($value, 17%);
-    border-color: $border;
-    @include box-shadow($btn-box-shadow);
-
-    @include hover {
-      color: $white;
-      @include gradient-directional($background 0%, $hover-background 100%, $deg: 25deg);
-      border-color: $hover-border;
-    }
-  }
-  .bg-gradient-directional-#{$color-name} {
-    $hover-background: lighten($value, 50%);
-    color: $dark;
-    @include gradient-directional($background 0%, $hover-background 100%, $deg: 25deg);
-  }
-
-  .border-separator-#{$color-name} {
-    border-top: 2px solid rgba(2, 14, 22, 0.397);
-    height: 1px;
-    margin: 15px auto 0;
-    position: relative;
-    margin-bottom: 20px;
-    width: 30%
-  }
-
-  .border-separator-#{$color-name}:before {
-    background-color: $white;
-    content: '';
-    height: 6px;
-    left: 50%;
-    margin-left: -20px;
-    position: absolute;
-    top: -4px;
-    width: 50px;
-    background-color: $background
-  }
-}
 
 @media print {
   $font-size-base: 0.9rem;
