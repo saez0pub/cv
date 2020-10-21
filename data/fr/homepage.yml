@@ -69,7 +69,7 @@ experience:
             - 'Serveurs de paiement CB via code court sur le réseau mobile SS7 Orange France.'
     achievements: |
       * Interventions sur des portails à forte affluence, impliquant des opérations HNO, des études et solutions de diminution des arrêts de services.
-      * Développement par les tests de rôles Ansible, mise en œuvre d’une intégration continue et tilisation de lynis pour effectuer un scoring CIS.
+      * Développement par les tests de rôles Ansible, mise en œuvre d’une intégration continue et utilisation de lynis pour effectuer un scoring CIS.
       * Mise en œuvre d’un système de livraison continu compatible PCI-DSS via Gitlab-CI, Ansible et AWX.
       * Mise en œuvre d’un cloud privé à base de RHVM.
       * Passage d’une architecture mono site à un multi site actif-actif permettant les mises à jour en heure de bureau.

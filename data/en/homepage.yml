@@ -68,8 +68,8 @@ experience:
             - 'IBAN entry and their tokenization of the stores sosh.fr and orange.fr.'
             - 'Credit card payment servers via short code on the Orange France SS7 mobile.'
     achievements: |
-      * Interventions on high traffic portals, involving night operations, studies and solutions to reduce downtime.
-      * Development through Ansible role testing, implementation of continuous and use of lynis to perform CIS scoring.
+      * Interventions on high traffic portals, involving night operations, research of solutions to reduce downtime.
+      * Development through Ansible role testing, implementation of continuous integration and use of lynis to perform CIS scoring.
       * Implementation of a PCI-DSS compatible continuous delivery system via Gitlab-CI, Ansible and AWX.
       * Build of a RHVM-based private cloud.
       * Transition from single site architecture to multi-site active-active architecture pemitting updates during office hours.
