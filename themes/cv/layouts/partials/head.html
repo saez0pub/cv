@@ -3,12 +3,31 @@
   <title>{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}</title>
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="og:image" content="{{ with site.Params.image }}{{ . }}{{ end }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="thumbnail" content="{{ with site.Params.image }}{{ . }}{{ end }}">
   <meta name="keywords" content="{{ with site.Params.keywords }}{{ . }}{{ end }}">
   <meta name="description" content="{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}">
   <meta name="theme-color" content="{{ with site.Params.themecolor }}{{ . }}{{ end }}"/>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:url" content="{{ site.BaseURL }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "knowsAbout": "{{ .Site.BaseURL }}",
+      "email": "mailto:{{ site.Params.email }}",
+      "telephone": "{{ site.Params.mobile }}",
+      "name": "{{ .Title }}",
+      "description": "{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}"
+  </script>
+
+  <link rel= "canonical" href= "{{ .Site.BaseURL }}" />
+
+  {{ $manifest := resources.Get "manifest.webmanifest" | resources.ExecuteAsTemplate "manifest.webmanifest" .  }}
+  <link rel="manifest" href="{{ $manifest.Permalink | relURL }}">
+
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ with site.Params.icon }}<link rel="apple-touch-icon" href="{{ . | relURL }}">{{ end }}
   {{ hugo.Generator }}

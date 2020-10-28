@@ -1,0 +1,9 @@
+{
+  "short_name": "{{ .Title }}",
+  "name": "{{ .Title }}",
+  "description": "{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}",
+  "background_color": "{{ site.Params.themecolor }}",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "{{ site.Params.themecolor }}"
+}
