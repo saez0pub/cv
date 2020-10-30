@@ -21,6 +21,7 @@
       "telephone": "{{ site.Params.mobile }}",
       "name": "{{ .Title }}",
       "description": "{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}"
+    }
   </script>
 
   <link rel= "canonical" href= "{{ .Site.BaseURL }}" />
