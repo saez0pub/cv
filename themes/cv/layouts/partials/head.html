@@ -24,7 +24,7 @@
     }
   </script>
 
-  <link rel= "canonical" href= "{{ .Site.BaseURL }}" />
+  <link rel= "canonical" href= "{{ .Permalink }}" />
 
   {{ $manifest := resources.Get "manifest.webmanifest" | resources.ExecuteAsTemplate "manifest.webmanifest" .  }}
   <link rel="manifest" href="{{ $manifest.Permalink | relURL }}">
