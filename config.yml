@@ -16,6 +16,7 @@ languages:
       footerNotes: "Thank you for reading, If you want to know how is made this site, give a feedback, or ask for modification, [here is the source code](https://github.com/saez0pub/cv)"
     weight: 2
 theme: "cv"
+disableKinds: ["taxonomy", "taxonomyTerm"]
 
 params:
   image: "images/xkcd_friction_of_desk_chair_400x400.png"
