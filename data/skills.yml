@@ -26,11 +26,11 @@
     - category: "Cloud abstrators"
       data:
         - subcategory: "Kubernetes"
-          value: 60
-        - subcategory: "Crossplane"
           value: 30
+        - subcategory: "Crossplane"
+          value: 10
         - subcategory: "Knative"
-          value: 50
+          value: 10
     - category: "Performance Monitoring"
       data:
         - subcategory: "Opentelemetry"
