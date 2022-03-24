@@ -1,29 +1,59 @@
 about:
   content: |
-    Ayant beaucoup pratiqué l’autoformation durant mes 16 années d’expérience et l’écoute 
-    des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je 
+    Ayant beaucoup pratiqué l’autoformation durant mes 18 années d’expérience et l’écoute
+    des personnes expérimentées autour de moi, autodidacte sur beaucoup de domaines, je
     me suis constitué une base de connaissances au fil des ans.
-    
-    Ceci m’a permis de faire reconnaître mes compétences et de pouvoir mettre en avant mon 
+
+    Ceci m’a permis de faire reconnaître mes compétences et de pouvoir mettre en avant mon
     expertise dans la gestion d’incidents et la vision technique.
-    
-    J’ai commencé à travailler sur les environnements Unix en tant qu’administrateur SAP 
-    en 2004 pour devenir aujourd’hui Administrateur infrastructure et sécurité. Je 
+
+    J’ai commencé à travailler sur les environnements Unix en tant qu’administrateur SAP
+    en 2004 pour devenir aujourd’hui Administrateur infrastructure et sécurité. Je
     travaille aujourd’hui essentiellement sur Linux et des logiciels Open Source.
-    
-    Autonome, je sais aller chercher l’information essentielle et faire preuve 
-    de réactivité afin de m’adapter aux situations complexes autant techniques 
+
+    Autonome, je sais aller chercher l’information essentielle et faire preuve
+    de réactivité afin de m’adapter aux situations complexes autant techniques
     qu’humaines ou organisationnelles.
-    
-    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant 
-    ceci à ma réactivité, j’ai permis à l’équipe de respecter ses délais de livraison. 
+
+    J’ai réussi à m’insérer efficacement dans le cycle de développement, en combinant
+    ceci à ma réactivité, j’ai permis à l’équipe de respecter ses délais de livraison.
     Je travaille de concert avec les développeurs sur tout le cycle de vie de l’application.
-    
-    J’ai pour projet de passer la certification OSCP.
+
+    J'ai de l'experience dans des domaines impliquant les contraintes de systèmes de finance,
+    gestion des données personnelles and audit de securité des cartes de paiement.
 
 experience:
+  - where: 'Sinch'
+    when: 'Depuis 2020'
+    title: 'Operations, Security & Software Engineer'
+    summary:
+      title: 'Déploiement sur le monde du Campaign Manager'
+      forces:
+        - name: 'Migration du baremetal sur du cloud:'
+          points:
+            - "Migration Baremetal vers le cloud étape par étape."
+            - "Ajout de l'infrastructure par le code."
+            - "Extration des composants afin d'utiliser les service gérés."
+        - name: "Être conscient de ce qu'il se passe:"
+          points:
+            - 'Avoir de la clareté sur le monitoring et les alertes.'
+            - 'Ajout de la télémetrie sur les applications existantes.'
+            - "Travail avec l'équipe sécurité pour leur envoyer les logs pertinentes."
+            - "Oragnisation holcratique pour des responsabilitées et roles clairs."
+        - name: "Enabling team:"
+          points:
+            - 'Partager le savori est la chose la plus ipmportante.'
+            - "Ne pas cacher la complexité, enseigner comment la gerer plus facilement et la réduire."
+            - 'Revue de code, pair programming, mob programming.'
+    achievements: |
+      * L'application Campaigns a été déployée sur plusieurs régions:
+        * Une nouvelle région est réduite à quelques configurations.
+        * Migration d'applications tournant sur des serveurs physiques vers des services ECS.
+        * ajout de la plomberie de CI capable de déployer à la fois sur un serveur pysique et sur du cloud au même moment.
+      * Implementation d'Opentelemetry sur les applications legacy.
+      * Ajout d'un support 24/7 avec astreinte dont le focus est le coeur métier.
   - where: 'LGO'
-    when: 'Depuis 2018'
+    when: '2018-2020'
     title: 'Infrastructure and security engineer'
     summary:
       title: 'Création et maintien de plateformes dédiées à la finance dans le cloud'

@@ -1,29 +1,59 @@
 about:
   content: |
-    Having practiced a lot of self-training during my 16 years of experience and listening to 
-    experienced people around me, self-taught in many fields, I have built up a knowledge 
+    Having practised a lot of self-training during my 18 years of experience and listening to
+    experienced people around me, self-taught in many fields, I have built up a knowledge
     base over the years.
 
-    This has allowed me to have my skills recognized and to be able to put forward my 
+    This has allowed me to have my skills recognized and to be able to put forward my
     expertise in incident management and technical vision.
 
-    I started working on Unix environments as a SAP administrator in 2004 to become today 
-    Infrastructure and Security Administrator. Today I work mainly on Linux and Open 
+    I started working on Unix environments as a SAP administrator in 2004 to become today
+    Infrastructure and Security Administrator. Today I work mainly on Linux and Open
     Source software.
 
-    As an autonomous person, I know how to get information where it is accurate and 
-    how to be reactive in order to adapt to complex situations, whether they are 
+    As an autonomous person, I know how to get information where it is accurate and
+    how to be reactive to adapt to complex situations, whether they are
     technical, human or organizational.
 
-    I have successfully entered the development cycle, combining this with my 
-    responsiveness, I have enabled the team to meet its delivery deadlines. 
+    I have successfully entered the development cycle, combining this with my
+    responsiveness, I have enabled the team to meet its delivery deadlines.
     I work closely with the developers throughout the application’s lifecycle.
 
-    I plan to pass the OSCP certification.
+    I have experience in finance systems constraints, personnal data management
+    and card payment security auditing.
 
 experience:
+  - where: 'Sinch'
+    when: 'Since 2020'
+    title: 'Operations, Security & Software Engineer'
+    summary:
+      title: 'Global deployment of Campaign Manager'
+      forces:
+        - name: 'Moving from baremetal to cloud:'
+          points:
+            - "Step by step moving from Baremetal to cloud."
+            - 'Adding infrastucture as code.'
+            - 'Extracting components to use managed ones.'
+        - name: "Being aware of what's happening:"
+          points:
+            - 'Getting a clear monitoring and alerting solution.'
+            - 'Adding telemetry to the existing applications.'
+            - 'Worked with security team to send them the good logs.'
+            - 'Holacracy organization for clear accountabilities and roles.'
+        - name: "Enabling team:"
+          points:
+            - 'Sharing knowledge is the most important thing.'
+            - "Don't hide the complexity, learn how to manage it easily and reducing it."
+            - 'Code review, peer programming, mob programming.'
+    achievements: |
+      * Successfully deployed on multiple regions the Campaign Manger:
+        * Reduced to some configuration a new region creation.
+        * Moved from Baremetal server runing applicaitons to ECS services.
+        * Adding CI tool able to deploy on barmetal servers and cloud services at the same time.
+      * Implementing Opentelemetry to legacy applications
+      * Adding an On call system focused on th eheart on the business.
   - where: 'LGO'
-    when: 'Since 2018'
+    when: '2018-2020'
     title: 'Infrastructure and security engineer'
     summary:
       title: 'Creation and maintenance of platforms dedicated to the finance in the cloud'
@@ -116,6 +146,7 @@ personally:
     * I have tested technologies such as OCR, computer vision and speech recognition. These tests are available on my [github](https://github.com/saez0pub?tab=repositories).
 
 formations:
+  - '2021 – Domain Driven Design stratégique'
   - '2016 – EC-Council Certified Ethical Hacker v8'
   - '2013 – MySQL Tuning'
   - '2004 – BTS Informatique de gestion'
