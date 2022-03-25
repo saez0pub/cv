@@ -48,10 +48,10 @@ experience:
     achievements: |
       * Successfully deployed on multiple regions the Campaign Manger:
         * Reduced to some configuration a new region creation.
-        * Moved from Baremetal server runing applicaitons to ECS services.
+        * Moved from Baremetal server runing applications to ECS services.
         * Adding CI tool able to deploy on barmetal servers and cloud services at the same time.
       * Implementing Opentelemetry to legacy applications
-      * Adding an On call system focused on th eheart on the business.
+      * Adding an On call system focused on the heart on the business.
   - where: 'LGO'
     when: '2018-2020'
     title: 'Infrastructure and security engineer'
