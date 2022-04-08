@@ -46,7 +46,7 @@ experience:
             - "Don't hide the complexity, learn how to manage it easily and reducing it."
             - 'Code review, peer programming, mob programming.'
     achievements: |
-      * Successfully deployed on multiple regions the Campaign Manger:
+      * Successfully deployed on multiple regions the Campaign Manager:
         * Reduced to some configuration a new region creation.
         * Moved from Baremetal server runing applications to ECS services.
         * Adding CI tool able to deploy on barmetal servers and cloud services at the same time.
