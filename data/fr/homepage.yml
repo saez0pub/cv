@@ -20,7 +20,7 @@ about:
     Je travaille de concert avec les développeurs sur tout le cycle de vie de l’application.
 
     J'ai de l'experience dans des domaines impliquant les contraintes de systèmes de finance,
-    gestion des données personnelles and audit de securité des cartes de paiement.
+    gestion des données personnelles et audit de securité des cartes de paiement.
 
 experience:
   - where: 'Sinch'
@@ -39,17 +39,17 @@ experience:
             - 'Avoir de la clareté sur le monitoring et les alertes.'
             - 'Ajout de la télémetrie sur les applications existantes.'
             - "Travail avec l'équipe sécurité pour leur envoyer les logs pertinentes."
-            - "Oragnisation holcratique pour des responsabilitées et roles clairs."
+            - "Oragnisation holacratique pour des responsabilitées et roles clairs."
         - name: "Enabling team:"
           points:
-            - 'Partager le savoir est la chose la plus ipmportante.'
+            - 'Partager le savoir est la chose la plus importante.'
             - "Ne pas cacher la complexité, enseigner comment la gerer plus facilement et la réduire."
             - 'Revue de code, pair programming, mob programming.'
     achievements: |
       * L'application Campaigns a été déployée sur plusieurs régions:
         * Une nouvelle région est réduite à quelques configurations.
         * Migration d'applications tournant sur des serveurs physiques vers des services ECS.
-        * ajout de la plomberie de CI capable de déployer à la fois sur un serveur pysique et sur du cloud au même moment.
+        * Ajout de la plomberie de CI capable de déployer à la fois sur un serveur physique et sur du cloud au même moment.
       * Implementation d'Opentelemetry sur les applications legacy.
       * Ajout d'un support 24/7 avec astreinte dont le focus est le coeur métier.
   - where: 'LGO'
