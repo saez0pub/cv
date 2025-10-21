@@ -2,6 +2,65 @@
     - category: "Systems"
       data:
         - subcategory: "Linux"
+          value: 100
+    - category: "Databases"
+      data:
+        - subcategory: "Postgresql"
+          value: 10
+    - category: "Cloud providers"
+      data:
+        - subcategory: "Google cloud"
+          value: 100
+        - subcategory: "OVH"
+          value: 30
+        - subcategory: "Fastly"
+          value: 50
+        - subcategory: "Datadog"
+          value: 50
+    - category: "Cloud abstrators"
+      data:
+        - subcategory: "Kubernetes"
+          value: 30
+        - subcategory: "Gateway API"
+          value: 30
+        - subcategory: "Nomad"
+          value: 10
+    - category: "Performance Monitoring"
+      data:
+        - subcategory: "Opentelemetry"
+          value: 120
+        - subcategory: "Faro"
+          value: 40
+        - subcategory: "Vector"
+          value: 40
+        - subcategory: "Prometheus"
+          value: 40
+        - subcategory: "Loki"
+          value: 40
+        - subcategory: "Tempo"
+          value: 40
+    - category: "Automation"
+      data:
+        - subcategory: "Terraform"
+          value: 60
+        - subcategory: "Atlantis"
+          value: 10
+        - subcategory: "Packer"
+          value: 10
+        - subcategory: "Ansible"
+          value: 50
+        - subcategory: "Github actions"
+          value: 60
+    - category: "Languages"
+      data:
+        - subcategory: "NodeJS"
+          value: 50
+        - subcategory: "Bash"
+          value: 20
+- graph:
+    - category: "Systems"
+      data:
+        - subcategory: "Linux"
           value: 200
     - category: "Databases"
       data:
@@ -19,7 +78,7 @@
           value: 200
         - subcategory: "Scaleway"
           value: 100
-        - subcategory: "GCP"
+        - subcategory: "Google Cloud"
           value: 5
         - subcategory: "Azure"
           value: 10
@@ -213,7 +272,8 @@
           value: 2
         - subcategory: "Telegraf"
           value: 2
-- graph:
+- height: 400px
+  graph:
     - category: "Systems"
       data:
         - subcategory: "HP/UX"
