@@ -39,6 +39,6 @@ params:
     css:
       - link: "assets/css/themify-icons.css"
     js:
-      - link: "assets/js/bootstrap.bundle.js"
+      - link: "assets/js/bootstrap.v5.3.8.bundle.js"
       - link: "assets/js/highcharts.js"
       - link: "assets/js/highcharts-more.js"
