@@ -16,7 +16,7 @@ languages:
       footerNotes: "Thank you for reading, If you want to know how is made this site, give a feedback, or ask for modification, [here is the source code](https://github.com/saez0pub/cv)"
     weight: 2
 theme: "cv"
-disableKinds: ["taxonomy", "taxonomyTerm"]
+disableKinds: ["taxonomy"]
 
 params:
   image: "images/xkcd_friction_of_desk_chair_400x400.png"
@@ -39,7 +39,6 @@ params:
     css:
       - link: "assets/css/themify-icons.css"
     js:
-      - link: "assets/js/jquery-3.5.1.min.js"
-      - link: "assets/js/bootstrap.min.js"
+      - link: "assets/js/bootstrap.bundle.js"
       - link: "assets/js/highcharts.js"
       - link: "assets/js/highcharts-more.js"

@@ -73,7 +73,7 @@ const drawgraph{{ $i }} = async function(container) {
       {{ if $v.height }},height: "{{ $v.height }}"{{ end }}
     },
     title: {
-      text: '<div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{ i18n "skills" }}</div>'
+      text: '<div class="bg-light border-bottom p-2 fw-bold text-secondary">{{ i18n "skills" }}</div>'
     },
     tooltip: {
       useHTML: true,

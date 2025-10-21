@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ i18n "about_title" }}</h2>
+          <h2 class="text-primary fw-bold">{{ i18n "about_title" }}</h2>
         </div>
         <div class="col-7 border rounded">
           {{ $homepage_data.about.content | markdownify }}
@@ -26,19 +26,19 @@
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ i18n "experiences" }}</h2>
+          <h2 class="text-primary fw-bold">{{ i18n "experiences" }}</h2>
         </div>
       </div>
     </div>
     {{ range $i, $v :=. }}
-    <a id="{{ anchorize $v.when }}"></a>
+    <a id="experiences-{{ anchorize $v.when }}"></a>
     <div class="container timeline-item">
       <div class="row">
         <div class="col-12">
-          <h3 class="font-weight-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
+          <h3 class="fw-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
         </div>
         <div class="col-md-7 border rounded p-0">
-          <div class="bg-light border-bottom p-2 font-weight-bold text-secondary">{{- $v.title -}}</div>
+          <div class="bg-light border-bottom p-2 fw-bold text-secondary">{{- $v.title -}}</div>
           <div class="p-2">
             <div>
               {{- $v.summary.title | markdownify -}}
@@ -78,7 +78,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ i18n "personally" }}</h2>
+          <h2 class="text-primary fw-bold">{{ i18n "personally" }}</h2>
         </div>
       </div>
       <div class="row">
@@ -95,7 +95,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ i18n "formations" }}</h2>
+          <h2 class="text-primary fw-bold">{{ i18n "formations" }}</h2>
         </div>
       </div>
       <div class="row">
@@ -116,7 +116,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary font-weight-bold">{{ i18n "languages" }}</h2>
+          <h2 class="text-primary fw-bold">{{ i18n "languages" }}</h2>
         </div>
       </div>
       <div class="row">

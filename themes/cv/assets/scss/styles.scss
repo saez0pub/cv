@@ -1,35 +1,8 @@
-/*!
- * Bootstrap v4.0.0 (https://getbootstrap.com)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-$primary: #325D72;
+$primary: #325d72;
+$navbar-light-active-color: white;
 $enable-gradients: true;
 $enable-shadows: true;
 $font-family-sans-serif: helvetica, arial, freesans, clean, sans-serif;
+$link-decoration: none;
+@import "bootstrap";
 
-@import "functions";
-@import "variables";
-@import "mixins";
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "code";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "media";
-@import "list-group";
-@import "utilities";
-@import "print";
