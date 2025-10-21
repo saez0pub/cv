@@ -68,6 +68,87 @@
           value: 200
     - category: "Databases"
       data:
+        - subcategory: "Postgresql"
+          value: 25
+        - subcategory: "Influxdb"
+          value: 25
+        - subcategory: "Elasticsearch"
+          value: 90
+    - category: "Cloud providers"
+      data:
+        - subcategory: "GCP"
+          value: 100
+        - subcategory: "OVH"
+          value: 40
+        - subcategory: "AWS"
+          value: 5
+        - subcategory: "Packet"
+          value: 5
+        - subcategory: "Scaleway"
+          value: 5
+        - subcategory: "Linode"
+          value: 5
+        - subcategory: "Vultr"
+          value: 10
+        - subcategory: "Azure"
+          value: 15
+    - category: "Cloud abstrators"
+      data:
+        - subcategory: "hashicorp Vault"
+          value: 60
+        - subcategory: "Consul"
+          value: 150
+        - subcategory: "Nomad"
+          value: 90
+    - category: "Performance Monitoring"
+      data:
+        - subcategory: "Metricbeat"
+          value: 90
+        - subcategory: "Jaeger Tracing"
+          value: 60
+        - subcategory: "Prometheus"
+          value: 150
+    - category: "Automation"
+      data:
+        - subcategory: "Terraform"
+          value: 120
+        - subcategory: "Packer"
+          value: 60
+        - subcategory: "Vagrant"
+          value: 5
+        - subcategory: "Ansible"
+          value: 150
+        - subcategory: "Gitlab"
+          value: 100
+    - category: "Languages"
+      data:
+        - subcategory: "Bash"
+          value: 120
+        - subcategory: "Javascript"
+          value: 50
+        - subcategory: "Python"
+          value: 25
+        - subcategory: "GO"
+          value: 10
+    - category: "Miscellaneous"
+      data:
+        - subcategory: "Gsuite"
+          value: 40
+        - subcategory: "Pagerduty"
+          value: 40
+        - subcategory: "uptime.com"
+          value: 40
+        - subcategory: "Thanos"
+          value: 90
+        - subcategory: "Traefik"
+          value: 90
+- graph:
+    - category: "Systems"
+      data:
+        - subcategory: "Linux"
+          value: 200
+    - category: "Databases"
+      data:
         - subcategory: "MySQL"
           value: 90
         - subcategory: "Elasticsearch"
