@@ -33,16 +33,14 @@ experience:
         - name: "Responsable infrastructure"
           points:
             - "Usage efficace des services cloud."
-            - "Décision d’internaliser certains composants."
             - "Garantie de haute disponibilité."
             - "Suivi et optimisation des coûts."
     achievements: |
       * Migration de GKE Autopilot vers GKE Standard avec Gateway API pour contrôle des coûts et fonctionnalités avancées 
         (auth, scale-to-zero, rate limiting via EnvoyGateway).
       * Ajout du tracing sur les applications front: Visibilitée du client (optimisation et detection d'erreurs).
-      * Industrialisation CI/CD via GitHub Actions avec runners internes bare metal pour optimiser coût et performance.
-      * Suppression de Datadog au profit d’OpenTelemetry + Loki/Grafana/Tempo/Prometheus : coûts divisés par trois tout en 
-        supprimant les filtres de signaux.
+      * Industrialisation CI/CD via GitHub Actions.
+      * Suppression de Datadog au profit d’OpenTelemetry + Loki/Grafana/Tempo/Prometheus : coûts divisés par trois.
       * Intégration des contraintes de Web3 (indexation, fiabilité, sécurité).
 
   - where: 'Sinch'
@@ -113,10 +111,10 @@ experience:
             - 'Tokenisation IBAN.'
             - 'Serveurs de paiement SS7.'
     achievements: |
-      * Implémenté un pipeline CI/CD PCI-DSS avec Gitlab-CI, Ansible et AWX.
-      * Automatisé les déploiements Ansible pour VoIP multi-site actif-actif.
-      * Migré l’infrastructure tri-site des services vocaux Orange.
-      * Réduit les temps de mise à jour de firewall sans interruption.
+      * Implémentation d'un pipeline CI/CD PCI-DSS avec Gitlab-CI, Ansible et AWX.
+      * Automatisation des déploiements Ansible pour VoIP multi-site actif-actif.
+      * Migration de l’infrastructure tri-site des services vocaux Orange.
+      * Réduction des temps de mise à jour des équipements réseau et sans interruption.
 
   - where: 'Cheops Technology France'
     when: '2007-2013'

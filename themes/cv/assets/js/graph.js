@@ -15,10 +15,18 @@ Highcharts.chart('radar', {
   },
   title: {
       text: '',
-      x: -80
   },
-  pane: {
-      size: '80%'
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 768
+      },
+      chartOptions: {
+        chart: {
+          height: 300
+        }
+      }
+    }]
   },
   xAxis: {
       categories: {{ $seriesName | jsonify }},
@@ -52,8 +60,6 @@ Highcharts.chart('radar', {
 
 {{ with .Site.Data.skills }}
 
-let container;
-
 {{- range $i, $v := . -}}
 {{- $series := slice -}} 
 {{- if $v.graph }}
@@ -69,8 +75,27 @@ let container;
 const drawgraph{{ $i }} = async function(container) {
   Highcharts.chart(container, {
     chart: {
-      type: 'packedbubble'
-      {{ if $v.height }},height: "{{ $v.height }}"{{ end }}
+      type: 'packedbubble'{{ if $v.height }},
+      height: "{{ $v.height }}"{{ end }}
+    },
+    legend: {
+      align: "center",
+        verticalAlign: "bottom",
+        layout: "horizontal"
+    },
+    responsive: {
+      rules: [{
+        condition: {
+          minWidth: 416
+        },
+        chartOptions: {
+          legend: {
+            align: 'right',
+            verticalAlign: 'middle',
+            layout: 'vertical'
+          }
+        }
+      }]
     },
     title: {
       text: '<div class="bg-light border-bottom p-2 fw-bold text-secondary">{{ i18n "skills" }}</div>'
@@ -107,11 +132,11 @@ const drawgraph{{ $i }} = async function(container) {
   });
 };
 
-container="graph{{ $i }}";
-drawgraph{{ $i }}(container);
+drawgraph{{ $i }}('graph{{ $i }}');
 
   {{- end -}}
 {{- end -}}
 
 
 {{- end -}}
+

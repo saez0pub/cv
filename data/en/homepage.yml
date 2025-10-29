@@ -32,16 +32,14 @@ experience:
         - name: 'Infrastructure ownership'
           points:
             - 'Efficient use of cloud services.'
-            - 'Deciding when to internalize components.'
             - 'Ensuring high availability.'
             - 'Monitoring and optimizing cost.'
     achievements: |
       * Migrated from GKE Autopilot to GKE Standard using Gateway API for cost control and advanced features
         (auth, scale-to-zero, rate limiting with EnvoyGateway).
       * Added tracing to front-end applications: Client visibility (optimization and error detection).
-      * Industrialized CI/CD using GitHub Actions with bare metal self-hosted runners for better performance and lower cost.
-      * Replaced Datadog with OpenTelemetry + Loki/Grafana/Tempo/Prometheus: monitoring costs cut by 66% while
-        eliminating signal filters.
+      * Industrialized CI/CD using GitHub Actions.
+      * Replaced Datadog with OpenTelemetry + Loki/Grafana/Tempo/Prometheus: monitoring costs cut by 66%.
       * Integrated Web3 constraints (event indexing, reliability, security).
 
   - where: 'Sinch'
@@ -115,7 +113,7 @@ experience:
       * Built PCI-DSS-compliant CI/CD pipeline with Gitlab-CI, Ansible, and AWX.
       * Automated multi-site active-active VoIP deployments with Ansible.
       * Migrated tri-site infrastructure for Orange voice services.
-      * Achieved firewall upgrades with zero downtime.
+      * Achieved firewall and network devices upgrades with zero downtime and less upgrade time.
 
   - where: 'Cheops Technology France'
     when: '2007-2013'

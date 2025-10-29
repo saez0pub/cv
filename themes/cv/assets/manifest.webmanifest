@@ -1,7 +1,7 @@
 {
   "short_name": "{{ .Title }}",
   "name": "{{ .Title }}",
-  "description": "{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}",
+  "description": "{{ with site.Params.author }}{{ . }}{{ end }} - {{ .Title }}",
   "background_color": "{{ site.Params.themecolor }}",
   "display": "minimal-ui",
   "scope": "/",

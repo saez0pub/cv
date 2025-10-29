@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row border-bottom p-5 justify-content-between">
       <div class="col-12 text-center section-sm pb-5">
-        <a href="{{ site.BaseURL }}">{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}</a>
+        <a href="{{ site.BaseURL }}">{{ with site.Params.author }}{{ . }}{{ end }} - {{ .Title }}</a>
       </div>
       <div class="col-6 mx-auto section-sm">
         <ul class="list-unstyled mb-5">

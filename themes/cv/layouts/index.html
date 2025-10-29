@@ -1,135 +1,137 @@
 {{ define "main" }}
 <main>
-  {{ $site_data := index .Site.Data .Site.Language.Lang }}
-  {{ $homepage_data := $site_data.homepage }}
-  {{ if $homepage_data.about }}
-  <section>
-    <a id="about"></a>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary fw-bold">{{ i18n "about_title" }}</h2>
-        </div>
-        <div class="col-7 border rounded">
-          {{ $homepage_data.about.content | markdownify }}
-        </div>
-        {{ with .Site.Data.radar }}
-            <div class="col" id="radar"></div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  {{ end }}
-  {{ with $homepage_data.experience }}
-  <section>
-    <a id="experiences"></a>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary fw-bold">{{ i18n "experiences" }}</h2>
+  <div class="container-md">
+    {{ $site_data := index .Site.Data .Site.Language.Lang }}
+    {{ $homepage_data := $site_data.homepage }}
+    {{ if $homepage_data.about }}
+    <section>
+      <a id="about"></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 border-bottom mt-2 mb-2">
+            <h2 class="text-primary fw-bold">{{ i18n "about_title" }}</h2>
+          </div>
+          <div class="col border rounded">
+            {{ $homepage_data.about.content | markdownify }}
+          </div>
+          {{ with .Site.Data.radar }}
+              <div class="col-12 col-lg-4 d-print-none" id="radar"></div>
+          {{ end }}
         </div>
       </div>
-    </div>
-    {{ range $i, $v :=. }}
-    <a id="experiences-{{ anchorize $v.when }}"></a>
-    <div class="container timeline-item">
-      <div class="row">
-        <div class="col-12">
-          <h3 class="fw-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
-        </div>
-        <div class="col-md-7 border rounded p-0">
-          <div class="bg-light border-bottom p-2 fw-bold text-secondary">{{- $v.title -}}</div>
-          <div class="p-2">
-            <div>
-              {{- $v.summary.title | markdownify -}}
-              <ul>
-                {{- range $v.summary.forces -}}
-                <li>
-                  {{- .name | markdownify -}}
-                  {{- with .points -}}
-                  <ul>
-                    {{- range . -}}
-                    <li>
-                      {{- . | markdownify -}}
-                    </li>
-                    {{- end -}}
-                  </ul>
-                  {{- end -}}
-                </li>
-                {{- end -}}
-              </ul>
-            </div>
-            {{- if $v.achievements -}}
-            {{ i18n "achievements" }}
-            {{- site.Params.achievements | markdownify -}}
-            {{- $v.achievements | markdownify -}}
-            {{- end -}}
+    </section>
+    {{ end }}
+    {{ with $homepage_data.experience }}
+    <section>
+      <a id="experiences"></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 border-bottom mt-2 mb-2">
+            <h2 class="text-primary fw-bold">{{ i18n "experiences" }}</h2>
           </div>
         </div>
-        <div class="col-md-5 graph" id="graph{{ anchorize $i }}"></div>
       </div>
-    </div>
+      {{ range $i, $v :=. }}
+      <a id="experiences-{{ anchorize $v.when }}"></a>
+      <div class="container-fluid timeline-item">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="fw-bold">{{- .when | markdownify }} – {{ $v.where | markdownify -}}</h3>
+          </div>
+          <div class="col-12 col-lg-8 border rounded p-0">
+            <div class="bg-light border-bottom p-2 fw-bold text-secondary">{{- $v.title -}}</div>
+            <div class="p-2">
+              <div>
+                {{- $v.summary.title | markdownify -}}
+                <ul>
+                  {{- range $v.summary.forces -}}
+                  <li>
+                    {{- .name | markdownify -}}
+                    {{- with .points -}}
+                    <ul>
+                      {{- range . -}}
+                      <li>
+                        {{- . | markdownify -}}
+                      </li>
+                      {{- end -}}
+                    </ul>
+                    {{- end -}}
+                  </li>
+                  {{- end -}}
+                </ul>
+              </div>
+              {{- if $v.achievements -}}
+              {{ i18n "achievements" }}
+              {{- site.Params.achievements | markdownify -}}
+              {{- $v.achievements | markdownify -}}
+              {{- end -}}
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2 graph col-print-12 highcharts-container-skills" id="graph{{ anchorize $i }}"></div>
+        </div>
+      </div>
+      {{- end -}}
+    </section>
     {{- end -}}
-  </section>
-  {{- end -}}
-  {{ with $homepage_data.personally }}
-  <a id="personally"></a>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary fw-bold">{{ i18n "personally" }}</h2>
+    {{ with $homepage_data.personally }}
+    <a id="personally"></a>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 border-bottom mt-2 mb-2">
+            <h2 class="text-primary fw-bold">{{ i18n "personally" }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 border rounded">
+            {{- .content | markdownify -}}
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 border rounded">
-          {{- .content | markdownify -}}
+    </section>
+    {{- end -}}
+    {{ with $homepage_data.formations }}
+    <a id="formations"></a>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 border-bottom mt-2 mb-2">
+            <h2 class="text-primary fw-bold">{{ i18n "formations" }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              {{- range . -}}
+              <li>{{- . | markdownify -}}</li>
+              {{- end -}}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  {{- end -}}
-  {{ with $homepage_data.formations }}
-  <a id="formations"></a>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary fw-bold">{{ i18n "formations" }}</h2>
+    </section>
+    {{- end -}}
+    {{ with $homepage_data.languages }}
+    <a id="languages"></a>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 border-bottom mt-2 mb-2">
+            <h2 class="text-primary fw-bold">{{ i18n "languages" }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              {{- range . -}}
+              <li>{{- . | markdownify -}}</li>
+              {{- end -}}
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <ul>
-            {{- range . -}}
-            <li>{{- . | markdownify -}}</li>
-            {{- end -}}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{- end -}}
-  {{ with $homepage_data.languages }}
-  <a id="languages"></a>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 border-bottom mt-2 mb-2">
-          <h2 class="text-primary fw-bold">{{ i18n "languages" }}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <ul>
-            {{- range . -}}
-            <li>{{- . | markdownify -}}</li>
-            {{- end -}}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{- end -}}
+    </section>
+    {{- end -}}
+  </div>
 </main>
 {{ end }}

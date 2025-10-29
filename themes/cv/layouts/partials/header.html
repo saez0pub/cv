@@ -9,12 +9,12 @@
         <li><a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a></li>
       </ul>
     </div>
-    <div class="col test-center">
-      <h2>{{ with site.Params.author }}{{ . }}{{ end }} - {{ with site.Params.title }}{{ . }}{{ end }}</h2>
+    <div class="col-9 text-center">
+      <h2>{{ with site.Params.author }}{{ . }}{{ end }} - {{ .Title }}</h2>
     </div>
   </div>
 </div>
-<header class="{{if site.Params.navbar.stickytop}}sticky-top {{end}}bg-light">
+<header class="{{if site.Params.navbar.stickytop}}sticky-top {{end}}bg-light d-print-none">
   <nav id="navbar" class="navbar navbar-expand-lg px-3">
     <div>
       <h2><a href="#">{{ .Title }}</a></h2>
@@ -69,8 +69,7 @@
           <a class="nav-link" href="#footer">{{i18n "contact" }}</a>
         </li>
       </ul>
-      <div>
-        <select id="select-language"  class="custom-select" onchange="location = this.value;">
+      <div class="btn-group" role="group">
           {{- $siteLanguages := site.Languages -}}
           {{- $pageLang := .Page.Lang -}}
           {{- range .Page.AllTranslations -}}
@@ -79,14 +78,13 @@
               {{- if eq $translation.Lang .Lang -}}
                 {{- $selected := false -}}
                 {{- if eq $pageLang .Lang -}}
-                  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+                  <a href="{{ $translation.Permalink }}" class="btn btn-primary disabled">{{ .LanguageName }}</a>
                 {{- else -}}
-                  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+                  <a href="{{ $translation.Permalink }}" class="btn btn-primary">{{ .LanguageName }}</a>
                 {{- end -}}
               {{- end -}}
             {{- end -}}
           {{- end -}}
-        </select>
       </div>
     </div>
   </nav>

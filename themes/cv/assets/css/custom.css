@@ -1,57 +1,99 @@
 @media screen {
-  *[id]:before {
-    display: block;
-    content: " ";
-    margin-top: -250px;
-    height: 250px;
-    visibility: hidden;
-  }
+    *[id]:before {
+        display: block;
+        content: " ";
+        margin-top: -250px;
+        height: 250px;
+        visibility: hidden;
+    }
 }
 
 main {
-  padding: 2px;
-}
-
-
-.graph {
-  max-width: 400px;
+    padding: 2px;
 }
 
 ul, p {
-  margin-block-end: 0.2em;
+    margin-block-end: 0.2em;
 }
 
 
 @media print {
-  .timeline-item {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  .timeline-item:last-child {
-    border-image: none !important;
-  }
+    .timeline-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .timeline-item:last-child {
+        border-image: none !important;
+    }
+
+    .highcharts-container-skills {
+        height: 400px;
+    }
 
 }
+
 .timeline-item {
-  border-left: 2px solid #325D72;
-  position: relative;
+    border-left: 2px solid #325D72;
+    position: relative;
 }
 
 .timeline-item::after {
-  width: 10px;
-  height: 10px;
-  display: block;
-  top: 1em;
-  position: absolute;
-  left: -7px;
-  border-radius: 10px;
-  content: '';
-  border: 2px solid #325D72;
-  background: white;
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid #325D72;
+    background: white;
 }
 
 .timeline-item:last-child {
-  -o-border-image: linear-gradient(to bottom, #325d72 60%, rgba(0, 0, 0, 0)) 1 100%;
-  border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
-  border-image: linear-gradient(to bottom, #325d72 60%, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image: linear-gradient(to bottom, #325d72 60%, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+    border-image: linear-gradient(to bottom, #325d72 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+
+.highcharts-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+@media (min-width: 576px) {
+    .highcharts-container-sm, .highcharts-container {
+        max-width: 540px
+    }
+    .highcharts-container-skills {
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .highcharts-container-md, .highcharts-container-sm, .highcharts-container {
+        max-width: 720px
+    }
+    .highcharts-container-skills {
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .highcharts-container-lg, .highcharts-container-md, .highcharts-container-sm, .highcharts-container {
+        max-width: 960px
+    }
+    .highcharts-container-skills {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .highcharts-container-xl, .highcharts-container-lg, .highcharts-container-md, .highcharts-container-sm, .highcharts-container {
+        max-width: 1140px
+    }
 }
