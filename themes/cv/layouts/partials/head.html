@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="thumbnail" content="{{ with site.Params.image }}{{ . }}{{ end }}">
   <meta name="keywords" content="{{ with site.Params.keywords }}{{ . }}{{ end }}">
-  <meta name="description" content="{{ .Title }}">
+  <meta name="description" content="{{ with site.Params.author }}{{ . }}{{ end }} - {{ .Title }}">
   <meta name="theme-color" content="{{ with site.Params.themecolor }}{{ . }}{{ end }}"/>
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:url" content="{{ site.BaseURL }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ with site.Params.author }}{{ . }}{{ end }} - {{ .Title }}" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -20,7 +20,7 @@
       "email": "mailto:{{ site.Params.email }}",
       "telephone": "{{ site.Params.mobile }}",
       "name": "{{ .Title }}",
-      "description": "{{ .Title }}"
+      "description": "{{ with site.Params.author }}{{ . }}{{ end }} - {{ .Title }}"
     }
   </script>
 
