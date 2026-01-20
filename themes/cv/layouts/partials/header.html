@@ -6,7 +6,7 @@
       <ul class="list-unstyled">
         {{ with site.Params.email }}<li class="text-nowrap"><a href="mailto:{{ . }}"><i class="ti-email text-primary"></i> {{ . }}</a></li>{{ end }}
         <li class="text-nowrap"><a href="tel:{{ site.Params.mobile }}"><i class="ti-mobile text-primary"></i>{{ site.Params.mobile }}</a></li>
-        <li class="text-nowrap"><a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a></li>
+        <li class="text-nowrap"><a href="{{ .Permalink }}">{{ .Permalink }}</a></li>
       </ul>
     </div>
     <div class="col-9 text-center">
