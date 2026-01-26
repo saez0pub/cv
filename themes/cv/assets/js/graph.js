@@ -9,6 +9,9 @@
   {{- $seriesValue = $seriesValue | append $v.value -}}
 {{- end -}}
 Highcharts.chart('radar', {
+  credits: {
+    enabled: false
+  },
   chart: {
     polar: true,
     type: 'line'
@@ -74,6 +77,9 @@ Highcharts.chart('radar', {
     {{ end }}
 const drawgraph{{ $i }} = async function(container) {
   Highcharts.chart(container, {
+    credits: {
+      enabled: false
+    },
     chart: {
       type: 'packedbubble'{{ if $v.height }},
       height: "{{ $v.height }}"{{ end }}
