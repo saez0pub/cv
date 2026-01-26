@@ -1,22 +1,21 @@
 about:
   content: |
-    Infrastructure and security engineer with more than 20 years of experience in critical environments.
-    Self-taught, curious and passionate about open source and self-hosting, I built my expertise through continuous learning,
-    knowledge sharing with experts and hands-on work delivering resilient applications to production.
-    
-    I have worked within organizations of all sizes, from startups to large enterprises, including scale-ups and SMEs,
-    which has allowed me to adapt my practices to diverse contexts, maturity levels and constraints.
+    Infrastructure and security engineer with more than twenty years of experience in critical environments. 
+    Specialized in SRE, Devops and Devsecops, I improve platform reliability, security and performance through 
+    automation, observability and modern cloud architectures.
 
-    Specialized in Linux, cloud, CI/CD, security and observability, I am able to intervene across all layers of a modern
-    infrastructure. I work closely with developers and product teams with a strong product-oriented mindset. I also have a
-    strong interest in software development, with regular practice in Typescript, Effect.ts, Python and Bash, used to automate,
-    industrialize and improve system reliability.
-    
-    I am seeking a position as SRE, DevOps or DevSecOps within teams looking to strengthen the reliability,
-    security and overall quality of their platforms.
+    I have worked across organizations of all sizes, including startups, scale ups, SMBs and large enterprises, 
+    which has enabled me to adapt my practices to diverse levels of maturity and constraints.
 
-    I have solid experience in highly regulated sectors such as finance, personal data protection and PCI-DSS audits.
-    My approach emphasizes automation, shared understanding and transparency.
+    Expert in Linux, cloud, CI CD, security and observability, I operate across the entire production lifecycle. 
+    My strong interest in software development (Typescript, Effect.ts, Python, Bash) helps me industrialize 
+    environments and improve system reliability in depth.
+
+    I am seeking an SRE, Devops or Devsecops role within teams aiming to enhance the quality, security and 
+    resilience of their platforms.
+
+    My background includes highly regulated sectors such as finance, personal data protection and PCI DSS audits. 
+    I value automation, collective understanding and transparency.
 
 experience:
   - where: 'P00LS'
@@ -25,142 +24,141 @@ experience:
     when: '2022-2025'
     title: 'Senior Devops Engineer'
     summary:
-      title: 'Maintaining high-traffic applications in production'
+      title: 'Reliability, observability and cloud cost reduction'
       forces:
-        - name: 'Fast and reliable delivery'
+        - name: 'Stability and performance'
           points:
-            - 'Continuous improvement of delivery time.'
-            - 'Adoption of [Trunk Based Development](https://trunkbaseddevelopment.com/).'
-            - 'CI/CD tracing with OpenTelemetry.'
-        - name: 'Proactive problem detection'
+            - 'Stabilized high traffic workloads on GKE'
+            - 'Proactive detection through modern observability'
+            - 'Alerts understandable by every team member'
+        - name: 'Fast delivery'
           points:
-            - 'Reducing alert noise.'
-            - 'Anomaly detection in applications.'
-            - 'Making alerts understandable by all.'
-        - name: 'Infrastructure ownership'
+            - 'Adoption of [Trunk Based Development](https://trunkbaseddevelopment.com/)'
+            - 'Optimized CI CD pipelines'
+            - 'End to end deployment tracing'
+        - name: 'Cloud optimization'
           points:
-            - 'Efficient use of cloud services.'
-            - 'Ensuring high availability.'
-            - 'Monitoring and optimizing cost.'
+            - 'Migration from GKE Autopilot to Standard'
+            - 'Precise cost control'
+            - 'Environment simplification and industrialization'
     achievements: |
-      * Migrated from GKE Autopilot to GKE Standard using Gateway API for cost control and advanced features
-        (auth, scale-to-zero, rate limiting with EnvoyGateway).
-      * Added tracing to front-end applications: Client visibility (optimization and error detection).
-      * Industrialized CI/CD using GitHub Actions.
-      * Replaced Datadog with OpenTelemetry + Loki/Grafana/Tempo/Prometheus: monitoring costs cut by 66%.
-      * Integrated Web3 constraints (event indexing, reliability, security).
+      * Monitoring costs reduced by three using OpenTelemetry, Loki, Tempo and Prometheus.
+      * Migration to GKE Standard including Gateway API, authentication, scale to zero and rate limiting.
+      * Full tracing on front and back services providing client visibility and faster error detection.
+      * GitHub Actions CI CD standardized across all services.
+      * Web3 indexing and reliability improvements integrated into the platform.
 
   - where: 'Sinch'
-    description: 'Cloud platform for large-scale messaging and communication.'
+    description: 'Large scale cloud messaging and communication platform'
     when: '2020-2022'
-    title: 'Operations, Security & Software Engineer'
+    title: 'Operations, Security and Software Engineer'
     summary:
-      title: 'Cloud migration and overhaul of marketing tools'
+      title: 'Cloud migration and application resilience'
       forces:
-        - name: 'Cloud migration'
+        - name: 'Progressive migration'
           points:
-            - 'Step-by-step transition from bare-metal to ECS.'
-            - 'Infrastructure as Code.'
-            - 'Decommissioning non-critical components.'
+            - 'Bare metal to ECS transition'
+            - 'Deployment redesign using IaC'
+            - 'Removal of non critical components'
         - name: 'Observability and security'
           points:
-            - 'Improved monitoring and alerting.'
-            - 'Instrumented legacy apps with OpenTelemetry.'
-            - 'Forwarded relevant logs to the security team.'
-            - 'Holacratic organization for clear roles.'
+            - 'Instrumentation of legacy services'
+            - 'Monitoring improvements'
+            - 'Security integration on key log paths'
         - name: 'Enabling team'
           points:
-            - 'Knowledge sharing: pair/mob programming.'
-            - 'Making complexity explicit and reducing it.'
+            - 'Knowledge sharing'
+            - 'Pair and mob programming'
+            - 'Application complexity reduction'
     achievements: |
-      * Deployed Campaigns app across multiple regions via ECS.
-      * Automated simultaneous deployment to physical and cloud environments.
-      * Set up 24/7 on-call support focused on business-critical issues.
+      * Multi region deployment of Campaigns on ECS for high availability.
+      * Full automation of both physical and cloud deployments.
+      * Implementation of a 24 7 business aligned on call improving reaction time.
 
   - where: 'LGO'
-    description: 'Regulated crypto trading platform for institutions.'
+    description: 'Regulated crypto trading platform for institutions'
     when: '2018-2020'
-    title: 'Infrastructure & Security Engineer'
+    title: 'Infrastructure and Security Engineer'
     summary:
-      title: 'Secure cloud infrastructure for finance'
+      title: 'Secure and highly available financial infrastructure'
       forces:
-        - name: 'Infrastructure as Code'
+        - name: 'IaC (Infrastructure as Code)'
           points:
-            - 'Immutable infra, segmented by business context.'
-            - 'Automated testing, building, and deployment.'
-        - name: 'Performance & Security'
+            - 'Immutable infrastructure split by business context'
+            - 'Automated tests, builds and deployments'
+        - name: 'Performance and security'
           points:
-            - 'Centralized logging, performance tracking.'
-            - 'Security event monitoring.'
-        - name: 'XP mindset'
+            - 'Centralized logging and performance monitoring'
+            - 'Security event monitoring'
+            - 'Real threats involving several million dollars'
+        - name: 'XP practices'
           points:
-            - 'Pair/mob programming, code reviews.'
-            - 'Attended Agile Open, Newcrafts.'
-            - 'Real threats involving millions of euros.'
+            - 'Pair and mob programming, code reviews'
+            - 'Participation in Agile Open and Newcrafts'
     achievements: |
-      * Designed cloud platform with simple updates and auto-healing.
-      * Deployed Zero Trust Network using Consul Connect.
-      * Implemented centralized logging + distributed monitoring (Elastic, Prometheus, Thanos, Jaeger).
-      * Proactively handled YesWeHack Bug Bounty program.
+      * Self healing cloud architecture with simple update processes.
+      * Zero Trust networking based on Consul Connect.
+      * Distributed logging and monitoring stack including Elastic, Prometheus, Thanos and Jaeger.
+      * Proactive management of the YesWeHack bug bounty program.
 
   - where: 'Orange Applications for Business'
     when: '2013-2018'
-    title: 'Systems & Network Architecture Lead'
+    title: 'Systems and Network Architecture Lead'
     summary:
-      title: 'Administered critical payment platforms'
+      title: 'Critical payment platforms and PCI DSS security'
       forces:
-        - name: 'PCI-DSS compliance'
+        - name: 'Compliance'
           points:
-            - 'Audit participation, remediation planning, security hardening.'
-            - 'Network and systems for CB payment services.'
+            - 'PCI DSS audit, remediation and hardening'
+            - 'Secure networks and systems for card payment services'
         - name: 'Secure design and administration'
           points:
-            - 'IBAN tokenization.'
-            - 'SS7 mobile network payment servers.'
+            - 'IBAN tokenization'
+            - 'SS7 payment servers'
     achievements: |
-      * Built PCI-DSS-compliant CI/CD pipeline with Gitlab-CI, Ansible, and AWX.
-      * Automated multi-site active-active VoIP deployments with Ansible.
-      * Migrated tri-site infrastructure for Orange voice services.
-      * Achieved firewall and network devices upgrades with zero downtime and less upgrade time.
+      * PCI DSS compliant CI CD pipeline using Gitlab CI, Ansible and AWX.
+      * Automated Ansible deployments for multi site active active VoIP.
+      * Migration of Orange voice services to a tri site architecture.
+      * Significant reduction in equipment update times.
 
   - where: 'Cheops Technology France'
     when: '2007-2013'
-    title: 'Monitoring Lead & L3 Support'
+    title: 'Monitoring Lead and Level 3 Support'
     summary:
-      title: 'Monitoring of 2000+ systems'
+      title: 'Monitoring of more than two thousand devices and critical production'
       forces:
-        - name: '24/7 support and auditing'
-        - name: 'Incident Manager (2008–2010)'
+        - name: '24 7 support and audits'
+        - name: 'Incident Manager (2008-2010)'
     achievements: |
-      * Built full-service IT outsourcing offering for clients ranging from cosmetics giants to high-traffic e-commerce.
-      * Earned “Health Data Hosting” certification.
-      * Deployed multi-site DRP/BCP with database replication and SAN boot.
-      * Built GLPI/Nagios interface using PHP/MySQL/JS.
-      * Deployed ELK stack processing 2000+ logs/sec.
+      * Built a full managed services offering from scratch for diverse clients.
+      * Achieved Health Data Hosting certification.
+      * Multi site DR and BC plan with database replication and boot on SAN.
+      * Development of a GLPI and Nagios integration.
+      * ELK stack processing more than two thousand messages per second.
 
   - where: 'Arexia SAS'
     when: '2004-2007'
-    title: 'SAP Administrator'
+    title: 'SAP, Oracle and Unix Administrator'
     summary:
-      title: 'SAP, Oracle & Unix administration'
+      title: 'Maintenance'
       forces:
-        - name: 'SAP bug management and backups.'
-        - name: 'Automation of daily tasks.'
-        - name: 'Hardware/software incident resolution.'
+        - name: 'SAP incident management'
+        - name: 'Automation of recurring tasks'
+        - name: 'Hardware and software troubleshooting'
 
 personally:
   content: |
-    * Self-hosting: [pihomecloud](https://github.com/pihomecloud/pihomecloud) (now simplified).
-    * Home automation without any cloud provider.
-    * Open source is essential to my practice: I contribute and share publicly on [GitHub](https://github.com/saez0pub?tab=repositories), [GitHub (pihomecloud)](https://github.com/pihomecloud?tab=repositories), and [GitLab](https://gitlab.com/saez0pub).
-    * Experimenting with OCR, computer vision, and voice recognition ([repos](https://github.com/saez0pub?tab=repositories)).
+    * Self hosting: [pihomecloud](https://github.com/pihomecloud/pihomecloud) (now simplified).
+    * Cloud free home automation enthusiast.
+    * Open source is central to my practice. I contribute and share publicly on [GitHub](https://github.com/saez0pub?tab=repositories), [GitHub (pihomecloud)](https://github.com/pihomecloud?tab=repositories), and [GitLab](https://gitlab.com/saez0pub).
+    * Experimentation: OCR, computer vision, speech recognition.
 
 education:
   - '2026 - Planned for end of february: [CKA (Certified Kubernetes Administrator)](https://www.cncf.io/training/certification/cka/) and [CKS (Certified Kubernetes Security Specialist)](https://www.cncf.io/training/certification/cks/)'
-  - '2021 – Strategic Domain-Driven Design'
+  - '2021 – Strategic Domain Driven Design'
   - '2016 – [EC-Council Certified Ethical Hacker v8](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/)'
   - '2013 – MySQL Tuning'
-  - '2004 – BTS in Computer Science and Business'
+  - '2004 – BTS in Computer Science'
   - '2002 – Scientific Baccalauréat'
 
 languages:

@@ -34,3 +34,5 @@
   translation: "Langages de programmation"
 - id: "network & security"
   translation: "Réseau & Sécurité"
+- id: "containers"
+  translation: "Conteneurs"

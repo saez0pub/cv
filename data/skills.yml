@@ -9,9 +9,14 @@ strong_skills:
       - "AWS"
       - "OVH"
       - "Fastly"
+  - category: "Containers"
+    data:
       - "Kubernetes"
+      - "GKE"
       - "Gateway API"
       - "Nomad"
+      - "ECS"
+      - "Docker"
   - category: "Observability"
     data:
       - "Opentelemetry"
@@ -30,18 +35,19 @@ strong_skills:
   - category: "Network & Security"
     data:
       - "Zero trust"
+      - "IAM"
       - "Consul"
       - "Vault"
       - "Load balancers"
       - "Firewalls"
+      - "PCI-DSS"
   - category: "Databases"
     data:
       - "PostgreSQL"
       - "MySQL"
   - category: "Programing languages"
     data:
-      - "Typescript"
-      - "Effect.ts"
+      - "Typescript / Effect.ts"
       - "Python"
       - "Bash"
 
@@ -68,6 +74,8 @@ graphs:
         - subcategory: "Kubernetes"
           value: 30
         - subcategory: "Gateway API"
+          value: 30
+        - subcategory: "Envoy Gateway"
           value: 30
         - subcategory: "Nomad"
           value: 10

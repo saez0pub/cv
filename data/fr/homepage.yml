@@ -1,23 +1,22 @@
 about:
   content: |
-    Ingénieur infrastructure et sécurité avec plus de 20 ans d’expérience dans des environnements critiques.
-    Autodidacte, curieux, passionné d’open source et d’auto-hébergement. J’ai acquis mon expertise par l’autoformation,
-    l’écoute des experts et une pratique constante de la mise en production d’applications résilientes.
-    
-    J’ai travaillé au sein d’organisations de toutes tailles, de la startup à la grande entreprise en passant par
-    les scale-ups et les PME, ce qui m’a permis d’adapter mes pratiques aux contextes, maturités et contraintes variés.    
+    Ingénieur infrastructure et sécurité avec plus de 20 ans d’expérience dans des environnements critiques. 
+    Spécialisé SRE, Devops et Devsecops, j’améliore la fiabilité, la sécurité et la performance des plateformes 
+    grâce à l’automatisation, l’observabilité et la modernisation des architectures cloud.
 
-    Spécialisé Linux, cloud, CI/CD, sécurité et observabilité, je suis capable d’intervenir à tous les niveaux d’une 
-    infrastructure moderne. Je travaille en étroite collaboration avec les développeurs et les métiers, 
-    avec une vision orientée produit. J’ai également une forte appétence pour le développement, avec une pratique 
-    régulière de Typescript, Effect.ts, Python et Bash, que j’utilise pour automatiser, industrialiser et améliorer la 
-    fiabilité des systèmes.
-    
-    Je recherche un poste orienté SRE, Devops ou Devsecops, au sein d’équipes souhaitant renforcer la fiabilité,
-    la sécurité et la qualité de leurs plateformes.
-    
-    J’ai une solide expérience dans les domaines soumis à fortes contraintes : finance, données personnelles, audit 
-    PCI-DSS. Mon approche privilégie l’automatisation, la compréhension collective, et la transparence.
+    J’ai travaillé dans des organisations de toutes tailles, startup, scale-up, PME et grande entreprise, ce qui m’a 
+    permis d’adapter mes pratiques aux contextes, maturités et exigences variés.
+
+    Expert Linux, cloud, CI/CD, sécurité et observabilité, j’interviens sur l’ensemble de la chaîne de production. 
+    Ma forte appétence pour le développement (Typescript, Effect.ts, Python, Bash) me permet d’industrialiser les 
+    environnements et d’optimiser la fiabilité des systèmes en profondeur.
+
+    Je recherche un poste SRE, Devops ou Devsecops au sein d’équipes cherchant à renforcer la qualité, 
+    la sécurité et la résilience de leurs plateformes.
+
+    Mon expérience couvre des secteurs soumis à fortes contraintes comme la finance, les données personnelles 
+    et les audits PCI-DSS. J’accorde une importance centrale à l’automatisation, la compréhension collective 
+    et la transparence.
 
 experience:
   - where: 'P00LS'
@@ -26,66 +25,65 @@ experience:
     when: '2022-2025'
     title: 'Senior Devops Engineer'
     summary:
-      title: 'Maintien d’applications à fort trafic en production'
+      title: 'Fiabilité, observabilité et réduction des coûts cloud'
       forces:
-        - name: 'Livraison rapide et fiable'
+        - name: 'Stabilité et performance'
           points:
-            - "Amélioration continue des temps de livraison."
-            - "Adoption du [Trunk Based Development](https://trunkbaseddevelopment.com/)."
-            - "Tracing CI/CD avec OpenTelemetry."
-        - name: "Détection proactive des problèmes"
+            - 'Fiabilisation du trafic élevé sur GKE'
+            - 'Détection proactive via observabilité moderne'
+            - "Alertes compréhensibles par toute l'équipes"
+        - name: 'Livraison rapide'
           points:
-            - 'Réduction du bruit dans les alertes.'
-            - 'Détection d’anomalies sur les applications.'
-            - 'Rendre les alarmes compréhensibles par tous.'
-        - name: "Responsable infrastructure"
+            - "Adoption du [Trunk Based Development](https://trunkbaseddevelopment.com/)"
+            - 'Optimisation des pipelines CI/CD'
+            - 'Tracing complet des déploiements'
+        - name: 'Optimisation cloud'
           points:
-            - "Usage efficace des services cloud."
-            - "Garantie de haute disponibilité."
-            - "Suivi et optimisation des coûts."
+            - 'Migration GKE Autopilot vers Standard'
+            - 'Contrôle précis des coûts'
+            - 'Simplification des environnements et industrialisation'
     achievements: |
-      * Migration de GKE Autopilot vers GKE Standard avec Gateway API pour contrôle des coûts et fonctionnalités avancées 
-        (auth, scale-to-zero, rate limiting via EnvoyGateway).
-      * Ajout du tracing sur les applications front: Visibilitée du client (optimisation et detection d'erreurs).
-      * Industrialisation CI/CD via GitHub Actions.
-      * Suppression de Datadog au profit d’OpenTelemetry + Loki/Grafana/Tempo/Prometheus : coûts divisés par trois.
-      * Intégration des contraintes de Web3 (indexation, fiabilité, sécurité).
+      * Réduction des coûts de monitoring par trois grâce à OpenTelemetry, Loki, Tempo et Prometheus.
+      * Migration vers GKE Standard incluant Gateway API, authentification, scale to zéro et rate limiting.
+      * Tracing complet du front et du back offrant visibilité client et détection d’erreurs plus rapide.
+      * CI/CD GitHub Actions industrialisé pour tous les services.
+      * Intégration des contraintes Web3 avec fiabilité accrue des indexations.
 
   - where: 'Sinch'
-    description: 'Plateforme cloud de messagerie et de communication à grande échelle.'
+    description: 'Plateforme cloud de communication à grande échelle'
     when: '2020-2022'
     title: 'Operations, Security & Software Engineer'
     summary:
-      title: 'Migration cloud et refonte des outils de communication marketing'
+      title: 'Migration cloud et résilience applicative'
       forces:
-        - name: 'Migration vers le cloud'
+        - name: 'Migration progressive'
           points:
-            - "Transition progressive du bare-metal vers ECS."
-            - "Infrastructure as Code."
-            - "Désengagement de composants non critiques."
+            - 'Passage bare-metal vers ECS'
+            - 'Refonte des déploiements avec IaC'
+            - 'Suppression des composants non critiques'
         - name: "Observabilité et sécurité"
           points:
-            - 'Amélioration du monitoring et alerting.'
-            - 'Instrumentation des applications legacy avec OpenTelemetry.'
-            - "Transmission des logs pertinents à l’équipe sécurité."
-            - "Organisation holacratique pour des rôles clairs."
+            - 'Instrumentation des services legacy'
+            - 'Amélioration du monitoring'
+            - 'Intégration sécurité sur les logs clés'
         - name: "Enabling team"
           points:
-            - 'Transmission de savoirs : pair/mob programming.'
-            - "Explicitation et réduction de la complexité."
+            - 'Partage de compétences'
+            - 'Pair et mob programming'
+            - 'Réduction de la complexité applicative'
     achievements: |
-      * Déploiement de l’application Campaigns sur plusieurs régions via ECS.
-      * Automatisation des déploiements physiques/cloud simultanés.
-      * Mise en place d'un support 24/7 avec astreinte centrée métier.
+      * Déploiement multirégion de Campaigns sur ECS pour haute disponibilité.
+      * Automatisation complète des déploiements physiques et cloud.
+      * Mise en place d’une astreinte 24/7 centrée métier réduisant le temps de réaction.
 
   - where: 'LGO'
     description: 'Plateforme crypto réglementée pour institutions.'
     when: '2018-2020'
     title: 'Infrastructure & Security Engineer'
     summary:
-      title: 'Infrastructure cloud sécurisée pour la finance'
+      title: 'Architecture sécurisée et hautement disponible pour la finance'
       forces:
-        - name: 'Infrastructure as Code'
+        - name: 'IaC (Infrastructure as Code)'
           points:
             - "Infra immuable, découpée par contextes métier."
             - 'Tests, build, déploiements automatisés.'
@@ -93,24 +91,24 @@ experience:
           points:
             - 'Logging centralisé, suivi des performances.'
             - 'Surveillance des événements de sécurité.'
+            - 'Menaces réelles sur plusieurs millions d’euros.'
         - name: "Esprit XP"
           points:
             - 'Pair/mob programming, revue de code.'
             - 'Participation à Agile Open, Newcrafts.'
-            - 'Menaces réelles sur plusieurs millions d’euros.'
     achievements: |
-      * Conception d'une plateforme cloud avec mise à jour simple et auto-réparation.
-      * Déplooiement d'un réseau Zero Trust avec Consul Connect.
-      * Mise en place d'une stack de logs centralisée + monitoring distribué (Elastic, Prometheus, Thanos, Jaeger).
-      * Gestion proactive du Bug Bounty YesWeHack.
+      * Architecture cloud auto réparatrice et simple à mettre à jour.
+      * Réseau Zero Trust basé sur Consul Connect.
+      * Stack logs et monitoring distribué: Elastic, Prometheus, Thanos, Jaeger.
+      * Gestion proactive du programme Bug Bounty YesWeHack.
 
   - where: 'Orange Applications for Business'
     when: '2013-2018'
     title: 'Responsable architecture systèmes et réseaux'
     summary:
-      title: 'Administration de plateformes de paiement critiques'
+      title: 'Plateformes de paiement critiques et sécurité PCI DSS'
       forces:
-        - name: 'Conformité PCI-DSS'
+        - name: 'Conformité'
           points:
             - 'Audit, plan de remédiation, mise en sécurité.'
             - 'Réseaux et systèmes pour services de paiement CB.'
@@ -119,35 +117,35 @@ experience:
             - 'Tokenisation IBAN.'
             - 'Serveurs de paiement SS7.'
     achievements: |
-      * Implémentation d'un pipeline CI/CD PCI-DSS avec Gitlab-CI, Ansible et AWX.
+      * Pipeline CI/CD PCI DSS avec Gitlab CI, Ansible et AWX.
       * Automatisation des déploiements Ansible pour VoIP multi-site actif-actif.
-      * Migration de l’infrastructure tri-site des services vocaux Orange.
-      * Réduction des temps de mise à jour des équipements réseau et sans interruption.
+      * Migration de sur une architecture tri-site des services vocaux Orange.
+      * Réduction significative du temps de mise à jour des équipements.
 
   - where: 'Cheops Technology France'
     when: '2007-2013'
     title: 'Responsable supervision & support N3'
     summary:
-      title: 'Supervision de +2000 équipements'
+      title: 'Supervision de +2000 équipements et production critique'
       forces:
         - name: 'Support 24/7 et audit'
         - name: 'Incident Manager (2008-2010)'
     achievements: |
       * Création d'un service infogérance de A à Z pour clients variés.
-      * Obtention de la certification Hébergeur de données de santé.
-      * Déploiement PRA/PCA multi-site avec réplication BDD, boot on SAN.
-      * Dévelopement outil d’interface GLPI/Nagios (PHP/MySQL/JS).
-      * Implémentation d'un ELK traitant 2000+ messages/sec.
+      * Certification Hébergeur de données de santé.
+      * PRA et PCA multi site, réplication BDD et boot on SAN.
+      * Développement interface GLPI et Nagios.
+      * Mise en place d’un ELK traitant plus de deux mille messages par seconde.
 
   - where: 'Arexia SAS'
     when: '2004-2007'
-    title: 'Administrateur SAP'
+    title: 'Administration SAP, Oracle, Unix'
     summary:
-      title: 'Administration SAP, Oracle, Unix'
+      title: 'Maintenance'
       forces:
-        - name: 'Gestion des bugs SAP et sauvegardes.'
-        - name: 'Automatisation de tâches quotidiennes.'
-        - name: 'Résolution incidents matériels/logiciels.'
+        - name: 'Gestion des incidents SAP'
+        - name: 'Automatisation des tâches récurrentes'
+        - name: 'Gestion matérielle et logicielle'
 
 personally:
   content: |
@@ -158,7 +156,7 @@ personally:
 
 education:
   - '2026 - Planifié pour fin février: [CKA (Certified Kubernetes Administrator)](https://www.cncf.io/training/certification/cka/) et [CKS (Certified Kubernetes Security Specialist)](https://www.cncf.io/training/certification/cks/)'
-  - '2021 – Strategic Domain-Driven Design'
+  - '2021 – Strategic Domain Driven Design'
   - '2016 – [EC-Council Certified Ethical Hacker v8](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/)'
   - '2013 – MySQL Tuning'
   - '2004 – BTS Informatique de gestion'
