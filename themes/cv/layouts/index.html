@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main>
+<main xmlns="http://www.w3.org/1999/html">
   <div class="container-md">
     {{ $site_data := index .Site.Data .Site.Language.Lang }}
     {{ $homepage_data := $site_data.homepage }}
@@ -31,8 +31,8 @@
           </div>
         </div>
         {{ range $i, $v :=. }}
-        <div class="row">
-          <div>{{ i18n (lower $v.category) | humanize }}: {{ delimit $v.data ", " }}</div>
+        <div class="row text-nowrap">
+          <p><strong>{{ i18n (lower $v.category) | humanize }}:</strong> {{ delimit $v.data ", " }}</p>
         </div>
         {{ end }}
       </div>

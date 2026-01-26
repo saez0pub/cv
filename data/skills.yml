@@ -1,8 +1,8 @@
-
 strong_skills:
-  - category: "Systems"
+  - category: "OS"
     data:
       - "Linux"
+      - "Unix"
   - category: "Cloud"
     data:
       - "Google cloud (GCP)"
@@ -12,7 +12,7 @@ strong_skills:
       - "Kubernetes"
       - "Gateway API"
       - "Nomad"
-  - category: "Performance Monitoring"
+  - category: "Observability"
     data:
       - "Opentelemetry"
       - "Datadog"
@@ -27,6 +27,13 @@ strong_skills:
       - "Ansible"
       - "Github actions"
       - "Gitlab CI"
+  - category: "Network & Security"
+    data:
+      - "Zero trust"
+      - "Consul"
+      - "Vault"
+      - "Load balancers"
+      - "Firewalls"
   - category: "Databases"
     data:
       - "PostgreSQL"
