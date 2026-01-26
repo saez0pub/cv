@@ -1,3 +1,44 @@
+
+strong_skills:
+  - category: "Systems"
+    data:
+      - "Linux"
+  - category: "Cloud"
+    data:
+      - "Google cloud (GCP)"
+      - "AWS"
+      - "OVH"
+      - "Fastly"
+      - "Kubernetes"
+      - "Gateway API"
+      - "Nomad"
+  - category: "Performance Monitoring"
+    data:
+      - "Opentelemetry"
+      - "Datadog"
+      - "Vector"
+      - "Prometheus"
+      - "Loki"
+      - "Tempo"
+  - category: "Automation"
+    data:
+      - "Terraform"
+      - "Packer"
+      - "Ansible"
+      - "Github actions"
+      - "Gitlab CI"
+  - category: "Databases"
+    data:
+      - "PostgreSQL"
+      - "MySQL"
+  - category: "Programing languages"
+    data:
+      - "Typescript"
+      - "Effect.ts"
+      - "Python"
+      - "Bash"
+
+graphs:
 - graph:
     - category: "Systems"
       data:
@@ -5,7 +46,7 @@
           value: 100
     - category: "Databases"
       data:
-        - subcategory: "Postgresql"
+        - subcategory: "PostgreSQL"
           value: 10
     - category: "Cloud providers"
       data:
@@ -64,7 +105,7 @@
           value: 200
     - category: "Databases"
       data:
-        - subcategory: "Postgresql"
+        - subcategory: "PostgreSQL"
           value: 10
         - subcategory: "Influxdb"
           value: 5
@@ -127,7 +168,7 @@
           value: 200
     - category: "Databases"
       data:
-        - subcategory: "Postgresql"
+        - subcategory: "PostgreSQL"
           value: 25
         - subcategory: "Influxdb"
           value: 25

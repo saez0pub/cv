@@ -21,6 +21,23 @@
       </div>
     </section>
     {{ end }}
+    {{ with .Site.Data.skills.strong_skills }}
+    <section>
+      <a id="strong_skills"></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 border-bottom mt-2 mb-2">
+            <h2 class="text-primary fw-bold">{{ i18n "strong_skills_title" }}</h2>
+          </div>
+        </div>
+        {{ range $i, $v :=. }}
+        <div class="row">
+          <div>{{ i18n (lower $v.category) | humanize }}: {{ delimit $v.data ", " }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
     {{ with $homepage_data.experience }}
     <section>
       <a id="experiences"></a>

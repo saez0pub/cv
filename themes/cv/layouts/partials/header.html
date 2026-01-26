@@ -4,8 +4,13 @@
   <div class="row">
     <div class="col-3">
       <ul class="list-unstyled">
-        {{ with site.Params.email }}<li class="text-nowrap"><a href="mailto:{{ . }}"><i class="ti-email text-primary"></i> {{ . }}</a></li>{{ end }}
-        <li class="text-nowrap"><a href="tel:{{ site.Params.mobile }}"><i class="ti-mobile text-primary"></i>{{ site.Params.mobile }}</a></li>
+        {{ with site.Params.email }}<li class="text-nowrap"><a href="mailto:{{ . }}"><i class="ti-email text-primary" aria-label="Mail"></i> Mail: {{ . }}</a></li>{{ end }}
+        <li class="text-nowrap"><a href="tel:{{ site.Params.mobile }}"><i class="ti-mobile text-primary" aria-label="Mobile"></i> Tel: {{ site.Params.mobile }}</a></li>
+        {{ range site.Params.social }}
+        {{ if not .hide_in_print }}
+        <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary" aria-label="{{ .name }}"></i> {{ .name }}</a></li>
+        {{ end }}
+        {{ end }}
         <li class="text-nowrap"><a href="{{ .Permalink }}">{{ .Permalink }}</a></li>
       </ul>
     </div>
@@ -22,10 +27,10 @@
         <div class="col-3 text">{{ with site.Params.author }}{{ . }}{{ end }}</div>
         <div class="col-9">
           <ul class="list-inline">
-            {{ with site.Params.email }}<li><a href="mailto:{{ . }}"><i class="ti-email text-primary"></i> {{ . }}</a></li>{{ end }}
-            <li class="list-inline-item"><a href="tel:{{ site.Params.mobile }}"><i class="ti-mobile text-primary"></i></a></li>
+            {{ with site.Params.email }}<li><a href="mailto:{{ . }}"><i class="ti-email text-primary" aria-label="Mail"></i> {{ . }}</a></li>{{ end }}
+            <li class="list-inline-item"><a href="tel:{{ site.Params.mobile }}" aria-label="Mobile"><i class="ti-mobile text-primary"></i></a></li>
             {{ range site.Params.social }}
-            <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary"></i></a></li>
+            <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary" aria-label="{{ .name }}"></i></a></li>
             {{ end }}
           </ul>
         </div>
@@ -39,6 +44,11 @@
         {{ with $homepage_data.about }}
         <li class="nav-item">
           <a class="nav-link" href="#about">{{ i18n "about_title" }}</a>
+        </li>
+        {{ end }}
+        {{ with .Site.Data.skills.strong_skills }}
+        <li class="nav-item">
+          <a class="nav-link" href="#strong_skills">{{ i18n "strong_skills_title" }}</a>
         </li>
         {{ end }}
         {{ with $homepage_data.experience }}

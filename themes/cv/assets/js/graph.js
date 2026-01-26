@@ -58,7 +58,7 @@ Highcharts.chart('radar', {
 {{ end }}
 
 
-{{ with .Site.Data.skills }}
+{{ with .Site.Data.skills.graphs }}
 
 {{- range $i, $v := . -}}
 {{- $series := slice -}} 

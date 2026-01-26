@@ -1,5 +1,7 @@
 - id: skills
   translation: "Skills"
+- id: strong_skills_title
+  translation: "Principal skills"
 - id: experiences
   translation: "Professional experiences"
 - id: achievements

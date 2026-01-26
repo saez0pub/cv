@@ -20,7 +20,7 @@ disableKinds: ["taxonomy"]
 
 params:
   image: "images/xkcd_friction_of_desk_chair_400x400.png"
-  keywords: "Jean Prat Informatique LGO OAB Cheops Computer Cloud"
+  keywords: "Jean Prat Informatique P00LS LGO OAB Cheops Computer Cloud SRE Devops Devsecops Kubernetes Terraform"
   author: "Jean Prat"
   themecolor: "#325D72"
   icon: "images/apple_xkcd_friction_of_desk_chair_180x180.png"
@@ -29,12 +29,16 @@ params:
   navbar:
     stickytop: true
   social:
-    - icon: "ti-twitter-alt"
-      link: "https://twitter.com/JeanPrat"
     - icon: "ti-linkedin"
+      name: "LinkedIn"
       link: "https://www.linkedin.com/in/jean-prat-9a6b8715b/"
     - icon: "ti-github"
+      name: "Github"
       link: "https://github.com/saez0pub"
+    - icon: "ti-twitter-alt"
+      hide_in_print: true
+      name: "X"
+      link: "https://x.com/JeanPrat"
   plugins:
     css:
       - link: "assets/css/themify-icons.css"
