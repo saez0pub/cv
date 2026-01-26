@@ -28,7 +28,8 @@ ul, p {
     }
 
     .highcharts-container-skills {
-        height: 400px;
+        min-height: 300px;
+        max-height: 400px;
     }
 
 }
@@ -70,7 +71,8 @@ ul, p {
         max-width: 540px
     }
     .highcharts-container-skills {
-        height: 400px;
+        min-height: 300px;
+        max-height: 400px;
     }
 }
 
@@ -79,7 +81,8 @@ ul, p {
         max-width: 720px
     }
     .highcharts-container-skills {
-        height: 400px;
+        min-height: 300px;
+        max-height: 400px;
     }
 }
 
