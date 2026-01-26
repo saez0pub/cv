@@ -19,6 +19,7 @@ strong_skills:
       - "Docker"
   - category: "Observability"
     data:
+      - RED method/Four golden signals
       - "Opentelemetry"
       - "Datadog"
       - "Vector"
