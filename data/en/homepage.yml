@@ -1,14 +1,22 @@
 about:
   content: |
-    Infrastructure and security engineer with over 20 years of experience in critical environments.
-    Self-taught, curious, passionate about open source and self-hosting. I acquired my expertise through self-learning,
-    listening to experts, and constant hands-on experience deploying resilient applications.
+    Infrastructure and security engineer with more than 20 years of experience in critical environments.
+    Self-taught, curious and passionate about open source and self-hosting, I built my expertise through continuous learning,
+    knowledge sharing with experts and hands-on work delivering resilient applications to production.
+    
+    I have worked within organizations of all sizes, from startups to large enterprises, including scale-ups and SMEs,
+    which has allowed me to adapt my practices to diverse contexts, maturity levels and constraints.
 
-    Specialized in Linux, cloud, CI/CD, security, and observability, I can operate at all levels of modern infrastructure.
-    I work closely with developers and business teams, with a product-oriented mindset.
+    Specialized in Linux, cloud, CI/CD, security and observability, I am able to intervene across all layers of a modern
+    infrastructure. I work closely with developers and product teams with a strong product-oriented mindset. I also have a
+    strong interest in software development, with regular practice in Typescript, Effect.ts, Python and Bash, used to automate,
+    industrialize and improve system reliability.
+    
+    I am seeking a position as SRE, DevOps or DevSecOps within teams looking to strengthen the reliability,
+    security and overall quality of their platforms.
 
-    I have strong experience in highly regulated domains: finance, personal data, PCI-DSS audits.
-    My approach focuses on automation, collective understanding, and transparency.
+    I have solid experience in highly regulated sectors such as finance, personal data protection and PCI-DSS audits.
+    My approach emphasizes automation, shared understanding and transparency.
 
 experience:
   - where: 'P00LS'

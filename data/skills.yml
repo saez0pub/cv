@@ -15,8 +15,6 @@
           value: 30
         - subcategory: "Fastly"
           value: 50
-        - subcategory: "Datadog"
-          value: 50
     - category: "Cloud abstrators"
       data:
         - subcategory: "Kubernetes"
@@ -29,6 +27,8 @@
       data:
         - subcategory: "Opentelemetry"
           value: 120
+        - subcategory: "Datadog"
+          value: 50
         - subcategory: "Faro"
           value: 40
         - subcategory: "Vector"
