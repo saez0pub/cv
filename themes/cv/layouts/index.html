@@ -84,7 +84,20 @@
               {{- end -}}
             </div>
           </div>
-          <div class="col-12 col-lg-4 p-2 graph col-print-12 highcharts-container-skills" id="graph{{ anchorize $i }}"></div>
+          <div class="col-12 col-lg-4 p-2 graph col-print-12 highcharts-container-skills d-print-none" id="graph{{ anchorize $i }}"></div>
+          <div class="col-12 col-lg-4 p-0 border rounded d-none d-print-block">
+            <h4 class="bg-light border-bottom p-2 fw-bold text-secondary">{{ i18n "skills" }}</h4>
+            {{ with index hugo.Data.skills.graphs $i }}
+              <ul>
+              {{ range .graph }}
+              {{ $categoryName :=  i18n (lower .category) | humanize }}
+                  <li>
+                  <span class="fw-bold">{{$categoryName}}: </span>{{ range $idData, $vData := .data -}}{{ if gt $idData 0 }}, {{ end }}{{$vData.subcategory}}{{- end -}}
+                  </li>
+              {{ end }}
+              </ul>
+            {{- end -}}
+          </div>
         </div>
       </div>
       {{- end -}}
